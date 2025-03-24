@@ -1,0 +1,25 @@
+# Healthcare Summarization Configuration
+
+# Data Settings
+data_path: "./data"
+output_path: "./results"
+datasets:
+  # - "train.json"
+  - "test.json"
+  - "valid.json"
+max_samples: null  # Set to a number for testing or null to process all samples
+
+# Model Settings
+model_size: "8B"  # Options: "8B" or "70B"
+device: "cuda"  # Options: "cuda" or "cpu"
+quantization: null  # Options: null, "8bit", "4bit"
+model_name: "meta-llama/Llama-3.2-3B-Instruct"
+
+# Generation Settings
+max_new_tokens: 50000
+temperature: 0.1
+do_sample: true
+
+# System Settings
+batch_processing: false  # Future feature for batch processing
+cache_dir: null  # Optional custom cache directory for models
