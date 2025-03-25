@@ -170,16 +170,13 @@ pip install -r requirements.txt
   - GitHub: [@shashank23088](https://github.com/shashank23088)
   - Email: shashank23088@iiitd.ac.in
   - Roll No: MT23088
-  - Contributions: LLM Baseline Development using LLAMA 3.2
 
 - **Shreyas Gupta**
   - GitHub: [@Shreyas-Gupta-IIITD](https://github.com/Shreyas-Gupta-IIITD)
   - Email: shreyas23221@iiitd.ac.in
   - Roll No: MT23221
-  - Contributions: FLAN-T5 Baseline Development
  
 - **Sajid Javid**
   - GitHub: [@sajidjavid222](https://github.com/sajidjavid222)
   - Email: sajidj@iiitd.ac.in
   - Roll No: PhD24002
-  - Contributions: Plan Formation and Baseline Report Compilation, Debugging in FLAN-T5 Baseline 
