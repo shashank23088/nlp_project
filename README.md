@@ -179,8 +179,4 @@ pip install -r requirements.txt
 - **Sajid Javid**
   - GitHub: [@sajidjavid222](https://github.com/sajidjavid222)
   - Email: sajidj@iiitd.ac.in
-<<<<<<< HEAD
   - Roll No: PhD24002
-=======
-  - Roll No: PhD24002
->>>>>>> bb328a3 (updated contributions)
