@@ -24,8 +24,8 @@ if __name__=="__main__":
     parser.add_argument('--model_file', type=str, required=False)
     parser.add_argument('--batch_size_test', type=int, default=4)
     parser.add_argument("--num_epochs", type=int, default=5)
-    parser.add_argument("--ckpt_dir", type=str, default="None")
-    parser.add_argument("--ckpt_name", type=str, default="best_ckpt_epoch=3_valid_loss=35.0366")
+    parser.add_argument("--ckpt_dir", type=str, default="checkpoints")
+    parser.add_argument("--ckpt_name", type=str, default="adapter_epoch=10_valid_loss=32.818")
     
     args = parser.parse_args()
     
@@ -89,5 +89,17 @@ if __name__=="__main__":
     df['Input'] = inputs
 
     save_path = './generated/generated_result.csv'
+    save_dir = os.path.dirname(save_path)
+    if not os.path.exists(save_dir):
+        os.makedirs(save_dir)
     df.to_csv(save_path, index=False)
     print(f"generated predictions saved to: {save_path}!")
+
+
+
+
+
+
+
+
+

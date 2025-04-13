@@ -5,6 +5,7 @@ from rouge import Rouge
 from bert_score import score as bert_score
 import numpy as np
 import pandas as pd
+import os
 
 class EvaluationMetrics:
     def __init__(self, predictions, references):
@@ -98,7 +99,40 @@ if __name__=="__main__":
     references = df['Actual'].tolist()
     eval_metrics = EvaluationMetrics(predictions, references)
 
-    print("ROUGE scores:", eval_metrics.compute_rouge_score())
-    print("METEOR score:", eval_metrics.compute_meteor_score())
-    print("BLEU scores:", eval_metrics.compute_bleu_scores())
-    print("Bert score:", eval_metrics.compute_bertscore(predictions, references))
+    # print("ROUGE scores:", eval_metrics.compute_rouge_score())
+    # print("METEOR score:", eval_metrics.compute_meteor_score())
+    # print("BLEU scores:", eval_metrics.compute_bleu_scores())
+    # print("Bert score:", eval_metrics.compute_bertscore(predictions, references))
+
+    # Compute all metrics
+    metrics_dict = {
+        "ROUGE": eval_metrics.compute_rouge_score(),
+        "METEOR": eval_metrics.compute_meteor_score(),
+        "BLEU": eval_metrics.compute_bleu_scores(),
+        "BERTScore": eval_metrics.compute_bertscore(predictions, references),
+    }
+
+    # Print all metrics nicely
+    print("Evaluation Metrics:")
+    for metric, score in metrics_dict.items():
+        print(f"{metric}: {score}")
+
+    # Flatten the dictionary if needed
+    flat_metrics = {}
+    for key, value in metrics_dict.items():
+        if isinstance(value, dict):
+            for sub_key, sub_value in value.items():
+                flat_metrics[f"{key}_{sub_key}"] = sub_value
+        else:
+            flat_metrics[key] = value
+
+    # Convert to DataFrame and save
+    metrics_df = pd.DataFrame([flat_metrics])
+
+    # Ensure the directory exists
+    save_path = './results/eval_metrics.csv'
+    os.makedirs(os.path.dirname(save_path), exist_ok=True)
+
+    metrics_df.to_csv(save_path, index=False)
+
+    print("Evaluation metrics saved to", save_path)
