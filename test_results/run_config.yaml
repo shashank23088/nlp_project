@@ -1,0 +1,14 @@
+batch_processing: false
+cache_dir: null
+data_path: ./data
+datasets:
+- actual_test.json
+device: cuda
+do_sample: true
+max_new_tokens: 50000
+max_samples: null
+model_name: meta-llama/Llama-3.2-3B-Instruct
+model_size: 8B
+output_path: ./test_results
+quantization: null
+temperature: 0.1

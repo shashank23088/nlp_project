@@ -1,0 +1,68 @@
+[
+    {
+        "uri": "1309809",
+        "question": "what is orgasm?",
+        "context": "",
+        "answers": [
+            "An orgasm, also known as a sexual climax, is a pleasurable physical, psychological or emotional response to prolonged sexual stimulation. It is often accompanied by a notable physiological reaction, such as ejaculation, blushing or spasm and may be followed by aftershocks.\n\nDictionaries still give the subsidiary meaning, \"a similar point of intensity of emotional excitement,\" but as of 2005 this usage has become obscure. It can be startling to modern readers when encountered in older literature.\n\n\nGeneral\nBoth males and females can experience orgasm, but the exact response varies across gender. Generally speaking, orgasm is the third stage of four in the human sexual response cycle, which is the currently accepted model of the physiological process of sexual stimulation",
+            "You asked two questions that you might think are the same; but they are not. Orgasm is an experience resulting from the combined effects of physical stimulation, emotional bonding, intellectual intimacy and total surrender or giving to the experience of the moment that crest or climax in overwhelming sensual and spiritual thunderclaps.\n\nMany concepts may play a role in building orgasm, including thinking about making a baby, dominance and submission, etc.\n\nTrue love might be a component of a good orgasm, but is itself different and in the long term more fundamental than the orgasm. Having orgasms with someone you love is wonderful, but the existence of the orgasms does not in and of itself serve to indicate whether the relationship will endure over a long term."
+        ],
+        "labelled_answer_spans": {
+            "INFORMATION": [
+                {
+                    "txt": "An orgasm, also known as a sexual climax, is a pleasurable physical, psychological or emotional response to prolonged sexual stimulation. It is often accompanied by a notable physiological reaction, such as ejaculation, blushing or spasm and may be followed by aftershocks",
+                    "label_spans": [
+                        59,
+                        331
+                    ]
+                },
+                {
+                    "txt": "GeneralBoth males and females can experience orgasm, but the exact response varies across gender.",
+                    "label_spans": [
+                        557,
+                        654
+                    ]
+                },
+                {
+                    "txt": "Generally speaking, orgasm is the third stage of four in the human sexual response cycle, which is the currently accepted model of the physiological process of sexual stimulation",
+                    "label_spans": [
+                        655,
+                        833
+                    ]
+                },
+                {
+                    "txt": "Orgasm is an experience resulting from the combined effects of physical stimulation, emotional bonding, intellectual intimacy and total surrender or giving to the experience of the moment that crest or climax in overwhelming sensual and spiritual thunderclaps",
+                    "label_spans": [
+                        921,
+                        1180
+                    ]
+                },
+                {
+                    "txt": "Many concepts may play a role in building orgasm, including thinking about making a baby, dominance and submission, etc",
+                    "label_spans": [
+                        1181,
+                        1300
+                    ]
+                },
+                {
+                    "txt": "True love might be a component of a good orgasm, but is itself different and in the long term more fundamental than the orgasm",
+                    "label_spans": [
+                        1301,
+                        1427
+                    ]
+                },
+                {
+                    "txt": "Having orgasms with someone you love is wonderful, but the existence of the orgasms does not in and of itself serve to indicate whether the relationship will endure over a long term",
+                    "label_spans": [
+                        1429,
+                        1610
+                    ]
+                }
+            ]
+        },
+        "labelled_summaries": {
+            "INFORMATION_SUMMARY": "For information purposes, an orgasm is a pleasurable response to sexual stimulation, involving physical, emotional, and sometimes spiritual reactions. Both genders can experience it, but the specific response varies. It's the third stage in the human sexual response cycle, influenced by physical touch, emotional connection, mental intimacy, and complete involvement in the moment. Various factors like thoughts of procreation, power dynamics, and genuine love can contribute to the experience. While having orgasms with someone you love can be great, it doesn't guarantee the long-term success of a relationship."
+        },
+        "raw_text": "uri: 1309809\nquestion: what is orgasm?\ncontext: \nanswer_0: An orgasm, also known as a sexual climax, is a pleasurable physical, psychological or emotional response to prolonged sexual stimulation. It is often accompanied by a notable physiological reaction, such as ejaculation, blushing or spasm and may be followed by aftershocks.Dictionaries still give the subsidiary meaning, \"a similar point of intensity of emotional excitement,\" but as of 2005 this usage has become obscure. It can be startling to modern readers when encountered in older literature.GeneralBoth males and females can experience orgasm, but the exact response varies across gender. Generally speaking, orgasm is the third stage of four in the human sexual response cycle, which is the currently accepted model of the physiological process of sexual stimulation\nanswer_1: You asked two questions that you might think are the same; but they are not. Orgasm is an experience resulting from the combined effects of physical stimulation, emotional bonding, intellectual intimacy and total surrender or giving to the experience of the moment that crest or climax in overwhelming sensual and spiritual thunderclaps.Many concepts may play a role in building orgasm, including thinking about making a baby, dominance and submission, etc.True love might be a component of a good orgasm, but is itself different and in the long term more fundamental than the orgasm. Having orgasms with someone you love is wonderful, but the existence of the orgasms does not in and of itself serve to indicate whether the relationship will endure over a long term.\nINFORMATION_GROUP: An orgasm, also known as a sexual climax, is a pleasurable physical, psychological or emotional response to prolonged sexual stimulation. It is often accompanied by a notable physiological reaction, such as ejaculation, blushing or spasm and may be followed by aftershocks.GeneralBoth males and females can experience orgasm, but the exact response varies across gender..Generally speaking, orgasm is the third stage of four in the human sexual response cycle, which is the currently accepted model of the physiological process of sexual stimulation.Orgasm is an experience resulting from the combined effects of physical stimulation, emotional bonding, intellectual intimacy and total surrender or giving to the experience of the moment that crest or climax in overwhelming sensual and spiritual thunderclaps.Many concepts may play a role in building orgasm, including thinking about making a baby, dominance and submission, etc.True love might be a component of a good orgasm, but is itself different and in the long term more fundamental than the orgasm.Having orgasms with someone you love is wonderful, but the existence of the orgasms does not in and of itself serve to indicate whether the relationship will endure over a long term\n"
+    }
+]

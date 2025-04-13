@@ -2,11 +2,12 @@
 
 # Data Settings
 data_path: "./data"
-output_path: "./results"
+output_path: "./test_results"
 datasets:
   # - "train.json"
-  - "test.json"
-  - "valid.json"
+  # - "test.json"
+  # - "valid.json"
+  - "actual_test.json"
 max_samples: null  # Set to a number for testing or null to process all samples
 
 # Model Settings
