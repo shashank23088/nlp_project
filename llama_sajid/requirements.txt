@@ -1,0 +1,32 @@
+# Transformer models and utilities
+transformers>=4.30.0
+
+# Parameter-Efficient Fine Tuning tools
+peft
+
+# Tokenizers and language model heads based on Hugging Face
+tqdm
+
+# Numerical computing library (also used by many ML packages)
+numpy>=1.19.0
+
+# PyTorch – ensure you install the correct version for CUDA if needed.
+torch
+
+# Scientific computing (for cosine distance)
+scipy
+
+# Evaluation metrics – BERTScore
+bert-score
+
+# ROUGE metric for text summarization evaluation
+rouge
+
+# Natural Language Toolkit (for BLEU scores, among other NLP tasks)
+nltk
+
+# Data analysis and manipulation
+pandas
+
+# Evaluation library from Hugging Face for additional metrics
+evaluate

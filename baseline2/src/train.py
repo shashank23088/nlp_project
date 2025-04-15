@@ -33,7 +33,7 @@ bert_model = BertModel.from_pretrained('bert-base-uncased').to(device)
 
 roberta_tokenizer = RobertaTokenizer.from_pretrained('roberta-base')
 roberta_model = RobertaForSequenceClassification.from_pretrained('roberta-base', num_labels=5).to(device)
-ckpt_path = f"./classifier/checkpoint_classifier"
+ckpt_path = f"./classifier/checkpoints/best_ckpt_epoch=5_valid_loss=0.2561.ckpt"
 if os.path.exists(ckpt_path):
         print("Loading the trained checkpoint...")
         ckpt = torch.load(ckpt_path)

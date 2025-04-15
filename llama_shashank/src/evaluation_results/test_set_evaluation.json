@@ -1,0 +1,702 @@
+{
+  "overall_metrics": {
+    "rouge_1": 0.8372239392883779,
+    "rouge_2": 0.8046619485540955,
+    "rouge_l": 0.8347500132906372,
+    "bleu": 0.787459241974607,
+    "bert_score_precision": 0.7718304671323337,
+    "bert_score_recall": 0.8298303541896966,
+    "bert_score_f1": 0.7995288218970383,
+    "perspective_adherence": 0.8715728092053459
+  },
+  "perspective_distribution": {
+    "INFORMATION": 116,
+    "SUGGESTION": 107,
+    "EXPERIENCE": 51,
+    "QUESTION": 19,
+    "CAUSE": 20
+  },
+  "perspective_metrics": {
+    "INFORMATION": {
+      "count": 116,
+      "rouge_1": 0.9077284516750241,
+      "rouge_l": 0.9063403684846192,
+      "perspective_adherence": 0.9375164979888547,
+      "bleu": 0.8619059743722919,
+      "bert_f1": 0.8849330871335922
+    },
+    "SUGGESTION": {
+      "count": 107,
+      "rouge_1": 0.7533911584072127,
+      "rouge_l": 0.748847949254718,
+      "perspective_adherence": 0.8059847637545318,
+      "bleu": 0.7015535772666224,
+      "bert_f1": 0.7034835550934077
+    },
+    "EXPERIENCE": {
+      "count": 51,
+      "rouge_1": 0.8281073358822227,
+      "rouge_l": 0.8261158487466352,
+      "perspective_adherence": 0.8723429851233959,
+      "bleu": 0.7786800621812203,
+      "bert_f1": 0.7923141873131195
+    },
+    "QUESTION": {
+      "count": 19,
+      "rouge_1": 0.999999995,
+      "rouge_l": 0.999999995,
+      "perspective_adherence": 0.9903097947438558,
+      "bleu": 1.0,
+      "bert_f1": 0.9999998807907104
+    },
+    "CAUSE": {
+      "count": 20,
+      "rouge_1": 0.9999999949999999,
+      "rouge_l": 0.9999999949999999,
+      "perspective_adherence": 0.9949138998985291,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    }
+  },
+  "examples": [
+    {
+      "perspective": "INFORMATION",
+      "generated": "For information purposes, an orgasm is a pleasurable response to sexual stimulation, involving physical, emotional, and sometimes spiritual reactions. Both genders can experience it, but the specific response varies. It's the third stage in the human sexual response cycle, influenced by physical touch, emotional connection, mental intimacy, and complete involvement in the moment. Various factors like thoughts of procreation, power dynamics, and genuine love can contribute to the experience. While having orgasms with someone you love can be great, it doesn't guarantee the long-term survival of a relationship.",
+      "reference": "For information purposes, an orgasm is a pleasurable response to sexual stimulation, involving physical, emotional, and sometimes spiritual reactions. Both genders can experience it, but the specific response varies. It's the third stage in the human sexual response cycle, influenced by physical touch, emotional connection, mental intimacy, and complete involvement in the moment. Various factors like thoughts of procreation, power dynamics, and genuine love can contribute to the experience. While having orgasms with someone you love can be great, it doesn't guarantee the long-term success of a relationship.",
+      "adherence_score": 0.9979084730148315,
+      "rouge_l": 0.9857142807142858,
+      "bleu": 0.9708351611332822,
+      "bert_f1": 0.991580605506897
+    },
+    {
+      "perspective": "SUGGESTION",
+      "generated": "It is suggested While being active is beneficial, it's advised to consult a doctor for personalized weight loss guidance. To enhance weight loss efforts, consider incorporating additional strategies, such as walking for 30 minutes before eating and experimenting with food combinations and exercise routines. Additionally, it's suggested to drink lemon juice with honey tea to support overall health.",
+      "reference": "It is suggested While being active is beneficial, it's advised to consult a doctor for personalized weight loss guidance. To enhance weight loss efforts, consider incorporating additional strategies, such as walking for 30 minutes before evening meals, experimenting with food combinations, and trying various exercise routines. Balancing input and output is key, focusing on raw vegetables and fruits to feel full before enjoying other foods. Engaging in a sport or physical activity, even casually, contributes to overall well-being. Prioritize happiness, proper sleep, and enjoyment of life. Additionally, drinking lemon juice with honey tea is suggested, potentially offering additional health benefits. Overall, a multifaceted approach that includes both dietary and lifestyle adjustments can contribute to effective and sustainable weight management.",
+      "adherence_score": 0.9958950281143188,
+      "rouge_l": 0.5986394513841455,
+      "bleu": 0.24905042515783118,
+      "bert_f1": 0.6239937543869019
+    },
+    {
+      "perspective": "INFORMATION",
+      "generated": "For information purposes Having a cyst on the scrotum is not a good thing.",
+      "reference": "For information purposes Having a cyst on the scrotum is not a good thing.",
+      "adherence_score": 0.9978224039077759,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 0.9999996423721313
+    },
+    {
+      "perspective": "SUGGESTION",
+      "generated": "It is suggested one user suggests popping with a sterilized needle and applying a bandage, while another user advises against popping. Another user suggests draining the blister but refrain from removing the skin covering it. For non-popped blisters, use antibiotic ointment and mild compression. If caused by fungus, apply Pfizer's Trosyd.",
+      "reference": "It is suggested one user suggests popping with a sterilized needle and applying a bandage, while another user advises against popping. Another user suggests draining the blister but refrain from removing the skin covering it. For non-popped blisters, use antibiotic ointment and mild compression. If caused by fungus, apply Pfizer's Trosyd.",
+      "adherence_score": 0.9935553669929504,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "perspective": "INFORMATION",
+      "generated": "For information purposes Proper hydration is essential for overall health as our bodies are about 70% water. It regulates bodily functions, supports kidney function, and keeps skin moisturized. Alongside water, electrolytes are crucial, lost through urination, vomiting, diarrhea, and sweating. Failure to replace lost fluids and salts can lead to dehydration, which, if severe, can cause death. Drinking water regularly prevents dehydration, maintaining clear skin and a healthy appearance.",
+      "reference": "For information purposes Proper hydration is essential for overall health as our bodies are about 70% water. It regulates bodily functions, supports kidney function, and keeps skin moisturized. Alongside water, electrolytes are crucial, lost through urination, vomiting, diarrhea, and sweating. Failure to replace lost fluids and salts can lead to dehydration, which, if severe, can be fatal. Feeling thirsty is an early sign of dehydration. Stay hydrated to maintain good health and bodily functions.",
+      "adherence_score": 0.9979131817817688,
+      "rouge_l": 0.8032786835299651,
+      "bleu": 0.7404580346245108,
+      "bert_f1": 0.8733261227607727
+    },
+    {
+      "perspective": "SUGGESTION",
+      "generated": "It is suggested While Ambien is not recommended for sleeping problems, alternative solutions include following the step-by-step 6-week program outlined in 'Say Goodnight to Insomnia' by Glenn Jacobs or trying a hypnosis tape by UK therapist Glenn Harrold. Incorporating exercise, maintaining a regular diet, and keeping a journal can also contribute to improving sleep patterns.",
+      "reference": "It is suggested While Ambien is not recommended for sleeping problems, alternative solutions include following the step-by-step 6-week program outlined in 'Say Goodnight to Insomnia' by Glenn Jacobs or trying a hypnosis tape by UK therapist Glenn Harrold. Incorporating exercise, maintaining a regular diet, and keeping a journal can also contribute to improving sleep patterns.",
+      "adherence_score": 0.9946802258491516,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "perspective": "EXPERIENCE",
+      "generated": "<|system|>\nYou are an AI assistant specialized in healthcare summarization. Your task is to summarize medical information from a specific perspective while maintaining accuracy.\n<|user|>\nI need you to summarize the following medical content from the EXPERIENCE perspective.\nEXPERIENCE Definition: Defined as individual experiences, anecdotes, or firsthand insights related to health, medical treatments, medication usage, and coping strategies\nBegin Summary with: In user's experience\nTone of summary: Personal, Narrative\nContent to summarize:\nIt sure can - read this... it tells you what else can cause ulcers and explains what an ulcer is.  My uncle had to stop soda altogether because of this (good luck!):An ulcer is an open wound that develops in the tissue of a digestive tract. There are two main types of ulcers- Peptic or gastric ulcers, they form in the stomach. The gastric juice that is produced in the stomach contains hydrochloric acid, mucus, and an enzyme called pepsin. Sometimes, the mixture of pepsin and acids acts on the wall of the digestive tract and the result is a peptic ulcer. Duodenal ulcer forms in the small intestines near the stomach. They are more common than gastric ulcers. How do you know if you have an ulcer? Pain! The pain may occur from 30 to 60 minutes after eating. The pain rarely comes in the morning, but usually follows after lunch and dinner. And it may occur after midnight. Intense burning pain occurs in the area of the lower chest and/or upper abdomen. Additional symptoms that may be experienced are weight loss, a decrease in appetite, anemia, nausea, and vomiting. There may be times when the pain of an ulcer seems to be gone and then it suddenly returns. Pain associated with ulcers affect different people in different ways. There are different causes for the formation of ulcers. In some cases the bacterium \"H. pylori\" is responsible for the majority of ulcers. It says that too much stomach acid aggravates the already existing problem. People who develop ulcers usually have a higher concentration of hydrochloric acid than is normal. Some medications are known to cause ulcers such as those used to relieve the swelling of arthritis. Aditionally care should be taken when using ibuprofen and aspirin since they can cause irritation and bleeding. Tense, ambitious, hard-driving people are more likely to develop ulcers than calm people. Other causes are alcoholic beverages, caffeine, stress, smoking, and poor diet.  A treatment plan includes:  - Antibiotics to eliminate bacteria.  - Antacids to raise the pH of the stomach and prevent acids from irritating the stomach lining.  - Anti-inflammatory drugs to reduce the production of stomach acids.  - H2 blockers to neutralize stomach acid and reduce acid production.  - Medications such as ranitidine, famotidine, and nizatidine.  - Medications that protect the stomach lining such",
+      "reference": "In user's experience Although not correlated scientifically, A person shared that their relative had to quit soda as it caused or exacerbated their ulcers.",
+      "adherence_score": 0.0037823552265763283,
+      "rouge_l": 0.08191126135190861,
+      "bleu": 0.0029847309862848074,
+      "bert_f1": -0.12651073932647705
+    },
+    {
+      "perspective": "EXPERIENCE",
+      "generated": "In user's experience In users expereince, one individual successfully went from a size 10 to a size 5 by incorporating apple cider vinegar into their routine. They also adopted healthy habits such as drinking lots of water, exercising, and eliminating red meat from their diet. To maintain their ideal weight, the person continues to take 2 tablespoons of apple cider vinegar daily and supplements with \"diet smart,\" a multivitamin and dietary supplement.",
+      "reference": "In user's experience In users expereince, one individual successfully went from a size 10 to a size 5 by incorporating apple cider vinegar into their routine. They also adopted healthy habits such as drinking lots of water, exercising, and eliminating red meat from their diet. To maintain their ideal weight, the person continues to take 2 tablespoons of apple cider vinegar daily and supplements with \"diet smart,\" a multivitamin and dietary supplement.",
+      "adherence_score": 0.9977222084999084,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0000007152557373
+    },
+    {
+      "perspective": "SUGGESTION",
+      "generated": "<|system|>\nYou are an AI assistant specialized in healthcare summarization. Your task is to summarize medical information from a specific perspective while maintaining accuracy.\n<|user|>\nI need you to summarize the following medical content from the SUGGESTION perspective.\nSUGGESTION Definition: Defined as advice or recommendations to assist users in making informed medical decisions, solving problems, or improving health issues.\nBegin Summary with: It is suggested\nTone of summary: Advisory, Recommending\nContent to summarize:\nI have suffered from acute asthma since I was a Home remedy for asthmaYou should use this infusion when you have an asthma attack or as a prevention measure. Composition and preparation 10 grams Marjoram flower tips10 grams Minth flower tips10 grams Pouliot plant20 grams Bouillon blanc20 grams Capillaire20 grams Poppy flower20 grams Eucalyptus leaves20 grams Hyssop flower tips20 grams Grey lichen20 grams Ground Ivy20 grams Pine buds20 grams Pulmonaire20 grams Thyme leaves\u00a4 Put four tablespoon of the above mix in a non-metallic, heat-resistant pot.\u00a4 Pour four glasses of water on top.\u00a4 Bring to boil and simmer for three minutes.\u00a4 Cover and rest.\u00a4 Let infuse for fifteen minutes.\u00a4 Filter and drink two glasses during the day or more in case of an attack.The quantity prepared of this Home remedy for asthma is enough for two daysAnd stay CALM! Asthma Asthma [Respiratory] is a natural homeopathic medicine for control of the symptoms of asthma and bronchitis, including difficulty in breathing, shortness of breath, tightness of chest, wheezing or coughing. Contains 20 percent USP Alcohol.CAUTION: For asthma sufferers only. Seek medical assistance immediately if symptoms do not improve within 1 hour or become worse. Do not use this product unless you have been diagnosed by a doctor as having asthma. If you have ever been hospitalized for asthma, or if you currently take any prescription drugs for asthma, use only when directed by a doctor.Take 10\u201315 drops under the tongue every 10\u201315 minutes or as needed until symptoms improve; then decrease to every one or two hours, then to four times daily until symptoms are relieved. For children under 12, consult your health care professional.4 Kids Too! Purchase Information ASTHMA (1 FL OZ)  Stock No.:8704-4 QV: 9.85 Member Cost: $9.85 Buy Online: Order Online or Call 1-877-253-3742",
+      "reference": "It is suggested A person who suffered from acute asthma described their go to home remedies which could be employed as preventive care or an active measure during an asthma attack. This infusion  is made of 10 grams of Marjoram flower and Mint flower tips, 10 grams of Pouliot plant, 20 gram sof Bouillon blanc, 20 grams of Capillaire, 20 grams of poppy flower, 20 grams of eucalyptus leaves, 20 grams Hyssop flower tips, 20 grams Grey lichen, 20 grams Ground Ivy, 20 grams Pine buds, 20 grams Pulmonaire and 20 grams Thyme leaves. The ingredients should be mixed in a non-metallic pot in 4 glasses of water. The mixure should be boiled and filtered. It should be consumed 2 times a day, more in case of attacks. They also stated the importance of the natural remedies over other medication as they had stopped using medicines for chronic pain, asthma and other allergies.",
+      "adherence_score": 0.21272753179073334,
+      "rouge_l": 0.24137930622489764,
+      "bleu": 0.03144507877218286,
+      "bert_f1": 0.061393674463033676
+    },
+    {
+      "perspective": "SUGGESTION",
+      "generated": "It is suggested For dandruff, it is recommended to use effective shampoos such as Neutrogena T/Gel and Nizoral. Daily use is advised until dandruff is under control, typically within a week, and then reduce to once or twice per week for maintenance. Additionally, H.1: Guard shampoo is mentioned without specific details.",
+      "reference": "It is suggested For dandruff, it is recommended to use effective shampoos such as Neutrogena T/Gel and Nizoral. Daily use is advised until dandruff is under control, typically within a week, and then reduce to once or twice per week for maintenance. Additionally, H.1: Guard shampoo is mentioned without specific details.",
+      "adherence_score": 0.9935826659202576,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "perspective": "SUGGESTION",
+      "generated": "It is suggested to consume citrus foods in the morning to increase the rate of metabolism. Aerobic exercising, eating a balanced diet and high intensity interval training is suggested as means to achieve high metabolism rate for burning fat.",
+      "reference": "It is suggested to consume citrus foods in the morning to increase the rate of metabolism. Aerobic exercising, eating a balanced diet and high intensity interval training is suggested as means to achieve high metabolism rate for burning fat.",
+      "adherence_score": 0.9886007905006409,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "perspective": "EXPERIENCE",
+      "generated": "In user's experience Last January one user injured their hamstring which took 6 to 8 months to heal. Later, they discovered this user had a herniated disc that is now pressing on a nerve.In user's experience Last January one user injured their hamstring which took 6 to 8 months to heal. Later, they discovered this user had a herniated disc that is now pressing on a nerve.",
+      "reference": "In user's experience Last January one user injured their hamstring which took 6 to 8 months to heal. Later, they discovered this user had a herniated disc that is now pressing on a nerve.",
+      "adherence_score": 0.9969162940979004,
+      "rouge_l": 0.999999995,
+      "bleu": 0.49596167155872595,
+      "bert_f1": 0.776012659072876
+    },
+    {
+      "perspective": "INFORMATION",
+      "generated": "For information purposes, gout typically causes severe pain, but there is mention of a rare complication involving necrotizing fasciitis, an infection that can lead to skin cell death. In such cases, emergency amputation may be required to prevent the spread of the skin infection throughout the body. The mention of black cherries as a remedy for gout and the availability of medication and dietary guidelines to reduce gout attacks are also noted. The information reflects both the painful nature of gout and potential complications, along with suggested treatments.",
+      "reference": "For information purposes, gout typically causes severe pain, but there is mention of a rare complication involving necrotizing fasciitis, an infection that can lead to skin cell death. In such cases, emergency amputation may be required to prevent the spread of the skin infection throughout the body. The mention of black cherries as a remedy for gout and the availability of medication and dietary guidelines to reduce gout attacks are also noted. The information reflects both the painful nature of gout and potential complications, along with suggested treatments.",
+      "adherence_score": 0.9980332255363464,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "perspective": "EXPERIENCE",
+      "generated": "In user's experience In users expereince, one individual's breasts increased after taking birth control.",
+      "reference": "In user's experience In users expereince, one individual's breasts increased after taking birth control.",
+      "adherence_score": 0.9976175427436829,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "perspective": "SUGGESTION",
+      "generated": "It is suggested to take vitamin E or Esperulina herbal tablets daily. Use Noxzema pads for skincare. Prioritize overall hygiene: change clothes regularly, wash with a non-abrasive sponge and mild soap, avoid harsh perfumes. Change underwear frequently. Use body-friendly creams, avoiding bleaching creams.",
+      "reference": "It is suggested to take vitamin E or Esperulina herbal tablets daily. Use Noxzema pads for skincare. Prioritize overall hygiene: change clothes regularly, wash with a non-abrasive sponge and mild soap, avoid harsh perfumes. Change underwear frequently. Use body-friendly creams, avoiding bleaching creams.",
+      "adherence_score": 0.994746744632721,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "perspective": "INFORMATION",
+      "generated": "<|system|>\nYou are an AI assistant specialized in healthcare summarization. Your task is to summarize medical information from a specific perspective while maintaining accuracy.\n<|user|>\nI need you to summarize the following medical content from the INFORMATION perspective.\nINFORMATION Definition: Defined as knowledge about diseases, disorders, and health-related facts, providing insights into symptoms and diagnosis.\nBegin Summary with: For information purposes\nTone of summary: Informative, Educational\nContent to summarize:\nTry reading a really boring book, like Joyce's Ulysses warm milk Try autogenics. (first link)Its a meditative, disciplined method that teaches you to relax your muscles.  It may not get you to sleep immediately but it will help you to relax enough for your body to get sufficient rest.Also, you can try some kind of meditation techniques like yoga.  This will help you clear your mind as well as relax you.   Insomnia sometimes is a symptom of stress due to change. Changing your diet and exercise can help. Also changing your sleeping environment. Link is below if you'd care to read more on this. stay up really late and watch an old boring movie it always works for me Masterbait, have sex, or be masturbated. I find that clearing all my thoughts helped me sleep Go to bed at the same time every night and get up in the morning at the same time. Try to get some bright light in your eyes in the morning to help set your circadian rhythm.Try to set up a bedtime routine, even something simple like brushing your teeth, getting dressed for bed, locking the doors.  Enough things so your mind gets trained, like Pavlov's dog, to expect bedtime and sleepiness to come when you start it.  Add some quiet music before bed, or play a relaxation tape when you go to bed.Try to breathe deeply and slowly, concentrating on the exhale part of your breath as that is the most relaxing part.Consciously try to relax each part of your body, starting from the toes and working your way up.  I seldom get past my knees before I'm snoozing.From someone who had such awful sleep problems some years ago that I was actually diagnosed with narcolepsy. Here is something to try:1. Don't spend anymore time lying around in bed not being able to sleep.  You should only be in bed when you are tired and ready for sleep.2. Don't read in bed, watch TV in bed, stay up late talking in bed, or read on your computer in bed.  You will just get tired before you go to sleep.  And reading doesn't help your sleep any more than lying around does.3. If you have some time before bed, try to relax. If you don't, do the best you can.4. Take a warm bath, take a warm shower, or use a warm washcloth.4. Use earplugs and ear masks to keep out noise and light.",
+      "reference": "For information purposes Incorporate yoga into your routine will enhance your sleep. This practice can clear your mind and induce relaxation, potentially alleviating insomnia related to stress or change. Additionally, consider adjusting your diet and engaging in regular exercise to positively impact your sleep. Evaluate and make changes to your sleeping environment for further improvement in sleep quality.",
+      "adherence_score": 0.48082467913627625,
+      "rouge_l": 0.14420062449111157,
+      "bleu": 0.006055103893275096,
+      "bert_f1": -0.05850587040185928
+    },
+    {
+      "perspective": "QUESTION",
+      "generated": "It is inquired what the game was.",
+      "reference": "It is inquired what the game was.",
+      "adherence_score": 0.9963233470916748,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "perspective": "INFORMATION",
+      "generated": "For information purposes, the statement refers to the symptoms of herpes, particularly cold sores either in the mouth or on the outside of the mouth. Additionally, it suggests that the symptoms experienced by one person are likely similar to those of another person, involving the appearance of bumps.",
+      "reference": "For information purposes, the statement refers to the symptoms of herpes, particularly cold sores either in the mouth or on the outside of the mouth. Additionally, it suggests that the symptoms experienced by one person are likely similar to those of another person, involving the appearance of bumps.",
+      "adherence_score": 0.997735857963562,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 0.9999996423721313
+    },
+    {
+      "perspective": "SUGGESTION",
+      "generated": "It is suggested to explore the potential benefits of Echinacea for relief; however, if you are taking any prescription medication, it's essential to consult with your doctor first. Another avenue is to contact a health food store, where many now have Healthcare Professionals available to answer questions, assess your situation, and recommend an appropriate course of treatment. As an additional remedy, consider gargling with salt water. An unconventional approach involves choosing between snorting, spitting, belching, or vomiting, depending on personal preference, for potential relief.",
+      "reference": "It is suggested to explore the potential benefits of Echinacea for relief; however, if you are taking any prescription medication, it's essential to consult with your doctor first. Another avenue is to contact a health food store, where many now have Healthcare Professionals available to answer questions, assess your situation, and recommend an appropriate course of treatment. As an additional remedy, consider gargling with salt water. An unconventional approach involves choosing between snorting, spitting, belching, or vomiting, depending on personal preference, for potential relief.",
+      "adherence_score": 0.9956339001655579,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 0.9999996423721313
+    },
+    {
+      "perspective": "EXPERIENCE",
+      "generated": "In user's experience A person in contact with multiple people suffering from scleroderma on email group shared that a many of them used methotrexate for their symptoms. However, they agreed found that this drug wasn't referenced often in the literature.",
+      "reference": "In user's experience A person in contact with multiple people suffering from scleroderma on email group shared that a many of them used methotrexate for their symptoms. However, they agreed found that this drug wasn't referenced often in the literature.",
+      "adherence_score": 0.9976279139518738,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "perspective": "EXPERIENCE",
+      "generated": "In user's experience A person found that eating excessive cheese can cause constipation.",
+      "reference": "In user's experience A person found that eating excessive cheese can cause constipation.",
+      "adherence_score": 0.9975086450576782,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "perspective": "SUGGESTION",
+      "generated": "<|system|>\nYou are an AI assistant specialized in healthcare summarization. Your task is to summarize medical information from a specific perspective while maintaining accuracy.\n<|user|>\nI need you to summarize the following medical content from the SUGGESTION perspective.\nSUGGESTION Definition: Defined as advice or recommendations to assist users in making informed medical decisions, solving problems, or improving health issues.\nBegin Summary with: It is suggested\nTone of summary: Advisory, Recommending\nContent to summarize:\nPlease listen to me as I am only here to help. You have to do exactly as I say. Go to the website and look up CESIUM CHLORIDE AND OXYGEN DROPS. The other ones could be green algae and paw paw, etc etc. These medicines are known in the medical field, but they dont talk about it. Because these are natural remedies with no toxic chemicals in it. So, thats why they cant profit from it. If they cant profit, they dont sell. I mean, some are even made of mushrooms that you can grow anywhere. Why would they promote this? These doctors will never make money. So, the FDA has put a restriction on these remedies. They cannot say anything about cancer on their labels. They have to be sold as vitamins or health products. But, the website can tell you how to use it, and what cancers it can cure. See how they are suppressing the world? In fact these treatments can cure up to 90% of patients that doctors have already given up on. Chemo therapy is not a therapy. I would rather die then go through with that. They try to kill your cancer with chemicals and radiation. If they kill all your cancer before they kill all your body cells, then they consider you cured. But, what about after that? Your body is damaged and your health deteriorated. There is almost no recovery to this. How many people you know live past 5 years after chemo therapy? Not much if any at all. And compared to the masses, its almost nothing. What do you have to live with after chemo? Your body is not sunburned, its practically microwaved. CESIUM CHLORIDE can be taken with OXYGEN DROPS. Go to the websites. You can go to these websites and they will give a whole package for you to buy. You can take these medicines over the course of 3 months, a year, or whatever they prescribe. After your treatment you can start your natural treatment program.",
+      "reference": "It is suggested For cancer, it is recommended to visit a specific website and explore the use of cesium chloride and oxygen drops. These websites offer comprehensive packages for purchase, and the suggested treatment duration may vary, lasting for three months, a year, or as prescribed. Following the treatment regimen for about two months or more is emphasized for potential effectiveness. Enhancing the immune system and improving blood circulation in the capillaries are highlighted as crucial aspects of the treatment. Additionally, the advice includes drinking a combination of 2/3 pomegranate juice (preferably fresh or frozen), 1/3 orange juice, and a small amount of Persian lime juice (Mexican lime). Following the instructions and continuing the treatment until advised to stop is emphasized for potential positive outcomes.",
+      "adherence_score": 0.009158311411738396,
+      "rouge_l": 0.13580246520747613,
+      "bleu": 0.014479117606422504,
+      "bert_f1": -0.1480928212404251
+    },
+    {
+      "perspective": "EXPERIENCE",
+      "generated": "In user's experience In users expereince, one user recommends using Airborne for colds, having experienced positive results personally and among their family members. They also supplement with 1000 mg of Vitamin C in the morning and another dose 12 hours later.",
+      "reference": "In user's experience In users expereince, one user recommends using Airborne for colds, having experienced positive results personally and among their family members. They also supplement with 1000 mg of Vitamin C in the morning and another dose 12 hours later.",
+      "adherence_score": 0.9976108074188232,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "perspective": "SUGGESTION",
+      "generated": "It is suggested It is recommended to reduce stress with meditation and yoga.",
+      "reference": "It is suggested It is recommended to reduce stress with meditation and yoga.",
+      "adherence_score": 0.9962523579597473,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "perspective": "INFORMATION",
+      "generated": "For information purposes No, hypertension (high blood pressure) does not directly cause diabetes. Both conditions often coexist in the same individuals, but one does not lead to the other. While they may be related and commonly occur together due to shared risk factors such as genetics and family history, hypertension itself does not cause diabetes. Instead, Type 2 diabetes typically develops due to insulin resistance or inadequate insulin production in the body. However, if both conditions are present, hypertension can worsen due to complications from diabetes.",
+      "reference": "For information purposes No, hypertension (high blood pressure) does not directly cause diabetes. Both conditions often coexist in the same individuals, but one does not lead to the other. While they may be related and commonly occur together due to shared risk factors such as genetics and family history, hypertension itself does not cause diabetes. Instead, Type 2 diabetes typically develops due to insulin resistance or inadequate insulin production in the body. However, if both conditions are present, hypertension can worsen due to complications from diabetes.",
+      "adherence_score": 0.9979490637779236,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "perspective": "SUGGESTION",
+      "generated": "<|system|>\nYou are an AI assistant specialized in healthcare summarization. Your task is to summarize medical information from a specific perspective while maintaining accuracy.\n<|user|>\nI need you to summarize the following medical content from the SUGGESTION perspective.\nSUGGESTION Definition: Defined as advice or recommendations to assist users in making informed medical decisions, solving problems, or improving health issues.\nBegin Summary with: It is suggested\nTone of summary: Advisory, Recommending\nContent to summarize:\nWatch for early signs of dehydration and drink extra fluids, especially water. Adults should drink at least 10 glasses of liquid a day to replenish lost fluids. Children between the ages of 4 and 10 should drink at least 6 to 10 glasses. You may feel better if you eat light, easily digested foods, such as soup. Many people find that taking a lukewarm [80\u00b0 (26.7\u00b0) to 90\u00b0 (32.2\u00b0)] shower or bath makes them feel better when they have a fever. Do not try to take a shower if you are dizzy or unsteady on your feet. Increase the water temperature if you start to shiver. Shivering is a sign that your body is trying to raise its temperature. Do not use rubbing alcohol, ice, or cold water to cool your body. Dress lightly when you have a fever. This will help your body cool down. Wear light pajamas or a light undershirt. Do not wear very warm clothing or use heavy bed covers. Keep room temperature at 70\u00b0 (21.1\u00b0) or lower. Take a nonprescription medication to help relieve your fever- Acetaminophen, such as Tylenol or Panadol, Nonsteroidal anti-inflammatory drugs (NSAIDs): Ibuprofen, such as Advil or Motrin Naproxen, such as Aleve or Naprosyn,Ketoprofen, such as Actron or Orudis,Aspirin (also a nonsteroidal anti-inflammatory drug) Be sure to check your temperature every 2 to 4 hours to make sure home treatment is working. If fever does not subside or your temp increases, see a doctor. Just don't get too hot or cold, cuz I know when you have a fever you feel really hot and then really cold, so don't overheat yourself Taking aspirin as directed works A fever is the body's defence against germs.  When there's to many germs, the body will raise its temperature. The fever goes away once the germs are gone. So, use this temperature as a defense mechanism.",
+      "reference": "It is suggested monitoring for signs of dehydration and drinking extra fluids when experiencing a fever. It recommends eating easily digestible foods, taking a lukewarm shower if not dizzy, dressing lightly, and maintaining a cooler room temperature. Over-the-counter medications like acetaminophen or NSAIDs can help reduce fever, but if it persists or worsens, seeking medical attention is advised. The last line appears to contain an inappropriate statement and should be disregarded.",
+      "adherence_score": 0.052286360412836075,
+      "rouge_l": 0.1907894703984159,
+      "bleu": 0.01568634152000475,
+      "bert_f1": -0.021412210538983345
+    },
+    {
+      "perspective": "INFORMATION",
+      "generated": "For information purposes While there is no vaccine or cure for HIV/AIDS, medical advancements have significantly improved the treatment and management of the disease. Unlike two decades ago, it is no longer an absolute death sentence. Protease inhibitors and potent antibiotics for opportunistic infections have transformed the way the disease is handled in patients. Regarding blood donation, individuals must be at no risk of having the disease and undergo testing to ensure the absence of bloodborne infections. Healthcare professionals, exposed to potential HIV transmission during patient care, follow a protocol involving immediate medication after possible exposure for up to six months to minimize the risk of acquiring the disease. Unfortunately, it is impossible to create a treatment that is effective against every viral mutation. In addition, the virus hides within the individual's white blood cells.",
+      "reference": "For information purposes While there is no vaccine or cure for HIV/AIDS, medical advancements have significantly improved the treatment and management of the disease. Unlike two decades ago, it is no longer an absolute death sentence. Protease inhibitors and potent antibiotics for opportunistic infections have transformed the way the disease is handled in patients. Regarding blood donation, individuals must be at no risk of having the disease and undergo testing to ensure the absence of bloodborne infections. Healthcare professionals, exposed to potential HIV transmission during patient care, follow a protocol involving immediate medication after possible exposure for up to six months, which may prevent the disease. Due to the virus's constant mutation, designing a universal drug effective against all variants is challenging. Additionally, the virus can \"hide\" within the body's white blood cells, complicating treatment efforts.",
+      "adherence_score": 0.9980363249778748,
+      "rouge_l": 0.8235294067690313,
+      "bleu": 0.7678019601024687,
+      "bert_f1": 0.8643102049827576
+    },
+    {
+      "perspective": "CAUSE",
+      "generated": "<|system|>\nYou are an AI assistant specialized in healthcare summarization. Your task is to summarize medical information from a specific perspective while maintaining accuracy.\n<|user|>\nI need you to summarize the following medical content from the CAUSE perspective.\nCAUSE Definition: Defined as reasons responsible for the occurrence of a particular medical condition, symptom, or disease\nBegin Summary with: Some of the causes\nTone of summary: Explanatory, Causal\nContent to summarize:\nAddison's disease (also known as chronic adrenal insufficiency, or hypocortisolism) is a rare endocrine disorder, first described by British physician Thomas Addison.It is estimated that it affects about 1 to 2 in 100,000 people.It occurs when the adrenal glands, seated above the kidneys, fail to produce enough of the hormone cortisol and, sometimes, the hormone aldosterone.Addison's disease refers specifically to primary adrenal insufficiency, in which the adrenal glands themselves malfunction; secondary adrenal insufficiency occurs when the pituitary gland does not produce enough adrenocorticotropic hormone (ACTH) to adequately stimulate the adrenal glands. Addison's Disease is a disease caused by partial or total failure of adrenocortical function, which is characterized by a bronzelike pigmentation of the skin and mucous membranes, anemia, weakness, and low blood pressure. Addison's disease is an endocrine or hormonal disorder that occurs in all age groups and afflicts men and women equally. The disease is characterized by weight loss, muscle weakness, fatigue, low blood pressure, and sometimes darkening of the skin in both exposed and nonexposed parts of the body.Addison's disease occurs when the adrenal glands do not produce enough of the hormone cortisol and, in some cases, the hormone aldosterone. The disease is also called adrenal insufficiency, or hypocortisolism. check out this link for more information - http://health.yahoo.com/ency/healthwise/hw65865 It is a dysfunction of the adrenal gland that results in inadequate secretion of steroids the body needs to function (glucocorticoids and mineralocorticoids).  The most common cause is autoimmune (the body's own defense system attacking the adrenal gland).  Treatment requires replacement of these steroids with medication (like hydrocortisone tablets or fludrocortisone).  See the links below for more information.\nAssociated medical question: Does anyone know what Addison's disease is?\nPlease provide a concise, accurate summary for the CAUSE perspective.",
+      "reference": "Some of the causes Addision disease occurs when the adrenal glands fail to produce enough of the hormone cortisol and, sometimes, the hormone aldosterone. Addison's Disease is a disease caused by partial or total failure of adrenocortical function. The most common cause is autoimmune i.e., the body's own defense system attacking the adrenal gland.",
+      "adherence_score": 0.0015849199844524264,
+      "rouge_l": 0.31538461252218936,
+      "bleu": 0.10994270989239881,
+      "bert_f1": 0.15594078600406647
+    },
+    {
+      "perspective": "QUESTION",
+      "generated": "It is inquired if the inquirer has considered trying 'Dr. George's Dental White for an affordable option to achieve whiter teeth. Further, it is queried whether the inquirer has contemplated consulting a dentist for potential discounts or specialized guidance. Regular brushing is also recommended.",
+      "reference": "It is inquired if the inquirer has considered trying 'Dr. George's Dental White for an affordable option to achieve whiter teeth. Further, it is queried whether the inquirer has contemplated consulting a dentist for potential discounts or specialized guidance. Regular brushing is also recommended.",
+      "adherence_score": 0.9904531240463257,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "perspective": "SUGGESTION",
+      "generated": "<|system|>\nYou are an AI assistant specialized in healthcare summarization. Your task is to summarize medical information from a specific perspective while maintaining accuracy.\n<|user|>\nI need you to summarize the following medical content from the SUGGESTION perspective.\nSUGGESTION Definition: Defined as advice or recommendations to assist users in making informed medical decisions, solving problems, or improving health issues.\nBegin Summary with: It is suggested\nTone of summary: Advisory, Recommending\nContent to summarize:\nIf the augmentation was done to correct a defect or to enable you to lead a normal life, then I think it's a good thing. Personally, I'm not a boob-guy but I find fake tits, well, fake! Its not really a turn on for me. You should definately NOT get yr boobs done just cuz some guy (or yr guy) asks you to get them done. Cuz if he actually did that, well then you know that love isn't on his mind... just your boobs. You should use your own judgement. Hope you sort things out! Honestly some do, but personally I find them disapointing. EVery breast that I have ever seen has been a wonderfully beautiful thing. Unique and lovely as the woman who had them. The desire to change them perplexes and upsets me as a man. There is nothing wrong with you, so don't do it. it a bad thing,  i like breast that is on the girl.  We can't tell if they are fake or real if they stab then we know they r fake I like real breast :-) There are fake breast that look nice, but there has been some that look really fake.I think it depends on where you would go to have it done. Look at some pics that they should have.See how they look do they look fake or real. If they don't look good go some where else.Don't just run into it and have it done. Having your breast augmented would make it impossible to breast feed if that is something you want to do in the future. No. Look the things you see on tv that people do are crazy don't go messin with your chest love your self the way you are and if somebody don't like the breast that the good Lord has givin you then politly extend your left arm lift your fingers and wave good-bye and say nice knowing ya! the real peoples like real natural things.\nAssociated medical question: Would getting breast augumentation be a good idea for my body?",
+      "reference": "It is suggested It is strongly advised not to undergo breast augmentation solely based on someone else's request, as it may indicate a lack of genuine love. Use personal judgment and appreciate yourself as you are. Before deciding, examine pictures of augmented breasts, considering whether they appear natural. Rushing into the procedure is discouraged. It's important to note that breast augmentation can impact breastfeeding in the future. Be cautious about media portrayals and embrace self-love. If someone disapproves of your natural breasts, prioritize self-worth and bid them farewell politely.",
+      "adherence_score": 0.04690741375088692,
+      "rouge_l": 0.1758957618134941,
+      "bleu": 0.00542932774760258,
+      "bert_f1": -0.0737084373831749
+    },
+    {
+      "perspective": "INFORMATION",
+      "generated": "For information purposes, stings, poison oak or ivy, dry skin, a wound healing, allergic reaction, and bites may all cause itch.",
+      "reference": "For information purposes, stings, poison oak or ivy, dry skin, a wound healing, allergic reaction, and bites may all cause itch.",
+      "adherence_score": 0.9976879358291626,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "perspective": "CAUSE",
+      "generated": "Some of the causes Tussive syncope is  caused due to uncontrolled coughing triggers a reflex. which makes blood pressure drop,",
+      "reference": "Some of the causes Tussive syncope is  caused due to uncontrolled coughing triggers a reflex. which makes blood pressure drop,",
+      "adherence_score": 0.9912917017936707,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "perspective": "INFORMATION",
+      "generated": "For information purposes, the time frame for the appearance of symptoms after exposure to a sexually transmitted disease (STD) varies depending on the specific disease. For example, symptoms of Gonorrhea may appear in 1-4 days for men, while Chlamydia symptoms in women may take around 10 to 21 days. Syphilis symptoms can manifest within 10 to 21 days, and for HIV, it may take up to three months. It's important to note that some STDs, including HIV, can remain asymptomatic for an extended period, and regular testing is essential for accurate diagnosis and timely treatment. Always prioritize safe practices and consult healthcare professionals for personalized advice.",
+      "reference": "For information purposes, the time frame for the appearance of symptoms after exposure to a sexually transmitted disease (STD) varies depending on the specific disease. For example, symptoms of Gonorrhea may appear in 1-4 days for men, while Chlamydia symptoms in women may take around 10 to 21 days. Syphilis symptoms can manifest within 10 to 21 days, and for HIV, it may take up to three months. It's important to note that some STDs, including HIV, can remain asymptomatic for an extended period, and regular testing is essential for accurate diagnosis and timely treatment. Always prioritize safe practices and consult healthcare professionals for personalized advice.",
+      "adherence_score": 0.9980878233909607,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "perspective": "SUGGESTION",
+      "generated": "It is suggested to consider different sleeping positions throughout pregnancy. In the early stages, comfort is key. However, avoid sleeping on the stomach from 4-5 months onwards. As pregnancy progresses, side sleeping is recommended, possibly with the aid of pregnancy pillows, to enhance comfort and avoid any breathing difficulties or dizziness",
+      "reference": "It is suggested to consider different sleeping positions throughout pregnancy. In the early stages, comfort is key. However, avoid sleeping on the stomach from 4-5 months onwards. As pregnancy progresses, side sleeping is recommended, possibly with the aid of pregnancy pillows, to enhance comfort and avoid any breathing difficulties or dizziness",
+      "adherence_score": 0.9929110407829285,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 0.9999996423721313
+    },
+    {
+      "perspective": "INFORMATION",
+      "generated": "<|system|>\nYou are an AI assistant specialized in healthcare summarization. Your task is to summarize medical information from a specific perspective while maintaining accuracy.\n<|user|>\nI need you to summarize the following medical content from the INFORMATION perspective.\nINFORMATION Definition: Defined as knowledge about diseases, disorders, and health-related facts, providing insights into symptoms and diagnosis.\nBegin Summary with: For information purposes\nTone of summary: Informative, Educational\nContent to summarize:\nThere's not really a clear cut answer to that. While it would be great to know about a person's sexual health (which the consenting people could agree to be checked), you have to consider other other factors. There are enough people scared and uneducated about HIV/AIDS to make life miserable for those affected if there was a listing. The time between HIV infection and developement of AIDS varies with individuals.  About 50% develop Aids within10 years of infection.  but he number long term is increrasing.Progression of Aids is aslo affected by age at HIV infection mode of transmission and by genetic factors.  So in almost all case the person does not know that he is infected by HIV for years he might not experience symptoms for many years. Dont be stupid!! NO! You shouldn't have to show it every where you go! Only in situations where it would have an effect on other people. IE: sports, injuries, sexual activity, Med field when dealing directly with patients in settings such as a sergeon operating,.In many fields you wouldn't have to know a persons status cause you'd probably act ignorant if you did. Yeah! it's natural for us to be afraid but we cant just go around descriminating can we? Some things are just bigger than us. That is a NO!! Would you like to know if people have herpes, TB, siphilis, ghonorrea etc.... There are children and families living with this illness, and there are very ignorant people everywhere, this would make a living hell for people with hiv.... THERE ARE WAYS TO PROSECUTE PEOPLE THAT INFECT OTHERS WITH HIV ON PURPOSE. So please be reasoneble and dont propose stupid things. People like that is exactly why the logical answer is \"YES\" I understand some people whave gotten the disease through no fault of their own and are very honest, careing ect..., but still \"YES\" I think it should be a law, the problem is, how do you enforce it?  For the people who are infected without any knowledge of the fact, or the people who are infected but don't tell anyone, then \"YES\"  They have to be educated, and educated people would never spread the disease, just common sense.  And if you would spread the disease then you should tell people so you can work out how to deal with it and not go around and infect more people.",
+      "reference": "For information purposes, the question of disclosing one's HIV status is complex and varies based on different factors. While knowing about a person's sexual health might be desirable in certain situations, privacy and potential discrimination against those with HIV/AIDS are significant concerns. The progression of HIV to AIDS varies among individuals, with some not experiencing symptoms for many years. In specific contexts like sports, injuries, and healthcare settings, there might be a need to know a person's HIV status, but overall, mandatory disclosure could lead to discrimination and stigmatization. Laws are in place to prosecute individuals who intentionally infect others with HIV, but enforcing mandatory disclosure presents challenges. Balancing public health considerations with privacy rights is crucial in addressing this issue.",
+      "adherence_score": 0.9886296987533569,
+      "rouge_l": 0.22933332960341338,
+      "bleu": 0.023896788917704685,
+      "bert_f1": -0.005945481825619936
+    },
+    {
+      "perspective": "SUGGESTION",
+      "generated": "It is suggested Try Airborne for prevention and get plenty of rest. Stay hydrated with water, orange juice, or honey-lemon tea. Take a steamy bath with peppermint tea bags for congestion relief. Include garlic, ginger, clear soups, and spicy foods in your diet. Apply Vick's Vaporub on your back before bed for easier breathing.",
+      "reference": "It is suggested Try Airborne for prevention and get plenty of rest. Stay hydrated with water, orange juice, or honey-lemon tea. Take a steamy bath with peppermint tea bags for congestion relief. Include garlic, ginger, clear soups, and spicy foods in your diet. Apply Vick's Vaporub on your back before bed for easier breathing.",
+      "adherence_score": 0.9946946501731873,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "perspective": "INFORMATION",
+      "generated": "For information purposes Because the position of the body part's blood circulation cut off, it will go numb.",
+      "reference": "For information purposes Because the position of the body part's blood circulation cut off, it will go numb.",
+      "adherence_score": 0.9978896975517273,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "perspective": "QUESTION",
+      "generated": "It is inquired if they had meant canker.",
+      "reference": "It is inquired if they had meant canker.",
+      "adherence_score": 0.9965413212776184,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0000007152557373
+    },
+    {
+      "perspective": "EXPERIENCE",
+      "generated": "In user's experience In users expereince, one individual was in labor at 34 weeks and at 35 weeks their baby was healthy.",
+      "reference": "In user's experience In users expereince, one individual was in labor at 34 weeks and at 35 weeks their baby was healthy.",
+      "adherence_score": 0.997724711894989,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "perspective": "INFORMATION",
+      "generated": "For information purposes If you are inquiring about the appropriate time to start birth control, It is suggested to begin as soon as your period becomes regular again or when the bleeding from the injection ceases. However, for accurate information tailored to your specific situation, consulting with a doctor is essential. They can provide personalized guidance on the optimal timing to initiate birth control based on your individual health and circumstances.",
+      "reference": "For information purposes If you are inquiring about the appropriate time to start birth control, It is suggested to begin as soon as your period becomes regular again or when the bleeding from the injection ceases. However, for accurate information tailored to your specific situation, consulting with a doctor is essential. They can provide personalized guidance on the optimal timing to initiate birth control based on your individual health and circumstances.",
+      "adherence_score": 0.9968446493148804,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "perspective": "SUGGESTION",
+      "generated": "<|system|>\nYou are an AI assistant specialized in healthcare summarization. Your task is to summarize medical information from a specific perspective while maintaining accuracy.\n<|user|>\nI need you to summarize the following medical content from the SUGGESTION perspective.\nSUGGESTION Definition: Defined as advice or recommendations to assist users in making informed medical decisions, solving problems, or improving health issues.\nBegin Summary with: It is suggested\nTone of summary: Advisory, Recommending\nContent to summarize:\nYou can help prevent snoring by:Losing weight (if necessary). Going to bed at the same time every night and getting plenty of sleep. Sleeping on your side, not on your back. Try sewing a pocket in the middle of the back of your pajama top, putting a tennis ball into the pocket, and stitching it closed. This will help keep you from sleeping on your back. Avoiding the use of alcohol and sedatives before bed. Quitting smoking. Raising the head of your bed 4 in. (10 cm) to 6 in. (15 cm) by putting bricks under the legs of the bed (using pillows to raise your head and upper body will not work). Promptly treating breathing problems, such as a stuffy nose caused by a cold or allergies. Using nasal strips, which widen the nostrils and improve airflow. The following are questions most often asked of doctors about snoring and snoring treatment. Easy, sleep on your belly They sell these little tape things that fit over your nose.  They really work and are not uncomfortable.www.breatheright.com/index.asp Tickle their mustache!Actually, those little breathing strips really do work. I had a BAD problem with snoring and tried everything.A mouthpiece -- no goNasal Strips -- not a chanceSprays -- hah don't even try that snake oilWhat did work was something that my wife suggested and I have yet to snore since.Before going to bed, put a piece of candy or cough drop between your cheek and gum in the back of your mouth (sugarless so not to rot your teeth)The muscles in the face holding the candy in place will not allow you to snore. Try it when you are awake and you will see you cannot make a snoring sound.The only downside is once or twice a month I do have it fall out and when it lands in the wrong place (on the pillow and then roll over on it having it stuck to my cheek) it can be a pain. You must remember to put it on each night before you go to bed. It does not go on when you wake up in the morning. So it has been a challenge to keep them in place while sleeping. When you wake up, just pull it out from under your cheek and put it on again before you get out of bed. You won't have to do this if you go to bed at the same time every night and get plenty of sleep, as the muscles in your face",
+      "reference": "It is suggested To prevent or reduce snoring, several strategies can be effective. These include sleeping on your belly, losing weight if necessary, maintaining a consistent bedtime for adequate sleep, and sleeping on your side rather than your back. An inventive solution involves sewing a pocket in the back of your pajama top, inserting a tennis ball, and stitching it closed to discourage sleeping on your back. Avoiding alcohol and sedatives before bed, quitting smoking, and elevating the head of your bed by 4 to 6 inches can also be helpful. Promptly addressing breathing problems, using nasal strips to widen nostrils, and trying unconventional methods like tickling the mustache or placing a sugarless candy or cough drop between the cheek and gum are suggested. While the candy method may occasionally pose challenges, these diverse approaches aim to tackle snoring from various angles, offering options for individuals seeking relief.",
+      "adherence_score": 0.10448622703552246,
+      "rouge_l": 0.26943004765121215,
+      "bleu": 0.06283028750674165,
+      "bert_f1": 0.13205678761005402
+    },
+    {
+      "perspective": "INFORMATION",
+      "generated": "For information purposes Yes, the taste of semen can be influenced by dietary choices. Adopting an all-vegetarian diet is suggested as a way to consistently make semen sweeter. Foods rich in fructose sugars can also contribute to a sweeter taste, but their effectiveness may vary due to potential interactions with other dietary elements. A diet high in protein may result in a stronger taste, akin to burnt leather. Increasing water intake can lead to a higher volume of semen, though it may be less thick. The thickness of semen is associated with calcium, but it is unclear whether dietary changes can significantly impact this aspect. Conversely, consuming a lot of coffee may make it bitter. Anecdotal evidence suggests that pineapple juice can contribute to a sweeter taste. Overall, controlling the taste of semen through dietary choices can be challenging, with varying effects depending on individual factors and interactions with other foods.",
+      "reference": "For information purposes Yes, the taste of semen can be influenced by dietary choices. Adopting an all-vegetarian diet is suggested as a way to consistently make semen sweeter. Foods rich in fructose sugars can also contribute to a sweeter taste, but their effectiveness may vary due to potential interactions with other dietary elements. A diet high in protein may result in a stronger taste, akin to burnt leather. Increasing water intake can lead to a higher volume of semen, though it may be less thick. The thickness of semen is associated with calcium, but it is unclear whether dietary changes can significantly impact this aspect. Conversely, consuming a lot of coffee may make it bitter. Anecdotal evidence suggests that pineapple juice can contribute to a sweeter taste. Overall, controlling the taste of semen through dietary choices can be challenging, with varying effects depending on individual factors and interactions with other foods.",
+      "adherence_score": 0.9980182647705078,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 0.9999996423721313
+    },
+    {
+      "perspective": "SUGGESTION",
+      "generated": "It is suggested When seeking medical advice, it is recommended to find a specialist you trust and be open with them, asking questions as needed. It is crucial to see a reputable gastroenterologist specialist for gastrointestinal issues. Keeping an open mind to potential underlying causes, such as stress, is advised. If dissatisfaction arises, consider seeking a second opinion from a different doctor. Additionally, making dietary changes, such as avoiding spicy foods, and maintaining a healthy lifestyle are important considerations.",
+      "reference": "It is suggested When seeking medical advice, it is recommended to find a specialist you trust and be open with them, asking questions as needed. It is crucial to see a reputable gastroenterologist specialist for gastrointestinal issues. Keeping an open mind to potential underlying causes, such as stress, is advised. If dissatisfaction arises, consider seeking a second opinion from a different doctor. Additionally, making dietary changes, such as avoiding spicy foods, and maintaining a healthy lifestyle are important considerations.",
+      "adherence_score": 0.995992124080658,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 0.9999996423721313
+    },
+    {
+      "perspective": "SUGGESTION",
+      "generated": "It is suggested that for a bone bruise, one can exercise as much as possible. After exercising, it is recommended to apply ice on and off for 20 minutes within the first hour. This advice comes from an Assistant Athletic Trainer at a school.",
+      "reference": "It is suggested that for a bone bruise, one can exercise as much as possible. After exercising, it is recommended to apply ice on and off for 20 minutes within the first hour. This advice comes from an Assistant Athletic Trainer at a school.",
+      "adherence_score": 0.994915246963501,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "perspective": "INFORMATION",
+      "generated": "For information purposes, clear urine can be a positive sign of good health. While clear urine is not necessarily an indicator of good health, having dark yellow urine signals Insufficient water intake. Also, some medications may cause discoloration. Slightly yellow to medium yellow urine is considered normal. Insufficient water consumption could affect organ flushing, impacting their self-flushing processes.",
+      "reference": "For information purposes, clear urine can be a positive sign of good health. While clear urine is not necessarily an indicator of good health, having dark yellow urine signals Insufficient water intake. Also, some medications may cause discoloration. Slightly yellow to medium yellow urine is considered normal. Insufficient water consumption could affect organ flushing, impacting their self-flushing processes.",
+      "adherence_score": 0.9979653358459473,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "perspective": "INFORMATION",
+      "generated": "<|system|>\nYou are an AI assistant specialized in healthcare summarization. Your task is to summarize medical information from a specific perspective while maintaining accuracy.\n<|user|>\nI need you to summarize the following medical content from the INFORMATION perspective.\nINFORMATION Definition: Defined as knowledge about diseases, disorders, and health-related facts, providing insights into symptoms and diagnosis.\nBegin Summary with: For information purposes\nTone of summary: Informative, Educational\nContent to summarize:\nIt is a infectious disease-mostly kids get--with a rash on feet, hands and mouth--it goes away in about 14 days--no big deal What is \"fifth disease?\"Fifth disease is a mild rash illness that occurs most commonly in children. The ill child typically has a \"slapped-cheek\" rash on the face and a lacy red rash on the trunk and limbs. Occasionally, the rash may itch. An ill child may have a low-grade fever, malaise, or a \"cold\" a few days before the rash breaks out. The child is usually not very ill, and the rash resolves in 7 to 10 days.What causes fifth disease?Fifth disease is caused by infection with human parvovirus B19. This virus infects only humans. Pet dogs or cats may be immunized against \"parvovirus,\" but these are animal parvoviruses that do not infect humans. Therefore, a child cannot \"catch\" parvovirus from a pet dog or cat, and a pet cat or dog cannot catch human parvovirus B19 from an ill child.Can adults get fifth disease?Yes, they can. An adult who is not immune can be infected with parvovirus B19 and either have no symptoms or develop the typical rash of fifth disease, joint pain or swelling, or both. Usually, joints on both sides of the body are affected. The joints most frequently affected are the hands, wrists, and knees. The joint pain and swelling usually resolve in a week or two, but they may last several months. About 50% of adults, however, have been previously infected with parvovirus B19, have developed immunity to the virus, and cannot get fifth disease.Is fifth disease contagious?Yes. A person infected with parvovirus B19 is contagious during the early part of the illness, before the rash appears. By the time a child has the characteristic \"slapped cheek\" rash of fifth disease, for example, he or she is no longer contagious. Can adults contract the illness by having contact with a person with the disease? Yes. For adults, the risk is much higher. When an adult has contact with a child who is infected with human parvovirus B19 and has an open wound, such as a cut, the virus enters the wound and infects the adult. This is called a \"cutaneous\" or \"cutaneous transmission.\" It is the most common mode of transmission for adults.",
+      "reference": "For information purposes \"Fifth disease\" is a mild rash illness that commonly occurs in children. It is characterized by a \"slapped-cheek\" rash on the face and a lacy red rash on the trunk and limbs. The illness is caused by infection with human parvovirus B19. Adults can also get fifth disease, experiencing symptoms such as joint pain or swelling. The virus is contagious during the early part of the illness, and transmission is likely through respiratory secretions. A person usually becomes ill 4 to 14 days after being infected, and lasting immunity develops after infection. Diagnosis can be made through a physical examination and confirmed with a blood test for antibodies to parvovirus B19. Fifth disease is generally a mild illness that resolves on its own, with joint pain and swelling in adults usually resolving without long-term disability.",
+      "adherence_score": 0.9959393739700317,
+      "rouge_l": 0.3431952622051049,
+      "bleu": 0.10485769634161088,
+      "bert_f1": 0.18753041326999664
+    },
+    {
+      "perspective": "INFORMATION",
+      "generated": "For information purposes, the perception of swollen glands varies among individuals, and the sensation might be more noticeable when drinking if one has a cold or virus. Additionally, a tip is provided that in cases of Hodgkin's lymphoma, alcohol consumption can lead to pain in the affected glands.",
+      "reference": "For information purposes, the perception of swollen glands varies among individuals, and the sensation might be more noticeable when drinking if one has a cold or virus. Additionally, a tip is provided that in cases of Hodgkin's lymphoma, alcohol consumption can lead to pain in the affected glands.",
+      "adherence_score": 0.9978107810020447,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "perspective": "INFORMATION",
+      "generated": "For information purposes If you take Tylenol every day, your body might get used to it, and it might not work as well. Also, you could become addicted to it, like with other drugs.",
+      "reference": "For information purposes If you take Tylenol every day, your body might get used to it, and it might not work as well. Also, you could become addicted to it, like with other drugs.",
+      "adherence_score": 0.997929573059082,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "perspective": "QUESTION",
+      "generated": "<|system|>\nYou are an AI assistant specialized in healthcare summarization. Your task is to summarize medical information from a specific perspective while maintaining accuracy.\n<|user|>\nI need you to summarize the following medical content from the QUESTION perspective.\nQUESTION Definition: Defined as inquiry made for deeper understanding.\nBegin Summary with: It is inquired\nTone of summary: Seeking Understanding\nContent to summarize:\nMenstrual problem? Come on, too young to be stressed out? Never to young take my word on that one. Unfortunately I know from experience. You say you are young and that your family mocks you when you mention it, have you talked with any professionals..If you don't feel good yes be concerned, it is your life and you have every right to feel good. I am uncertain of your age, how about a guidance counselor at school, pastor at church, for starters. Family doctor.... Medicine may not be the best choice, maybe just a few talk sessions to sort out issues that you may be facing. You need to start somewhere and the sooner you start the sooner you will feel like you want to. Family can be hard to deal with at times like this.... bet you here things like \" what have you got to be upset about\" \"you have everything going for you\" sound familiar at all.... doesn't matter. Talk with someone, if you don't feel right then it is up to you to make certain that you do.... Good Luck and I will stay with you in thought Depression is very real.  There's some discussion over whether it's learned or a physiological problem, but it does exist.Your family is probably mocking you because to admit that your depression is valid they would have to admit that they have problems and they would have to face them.  And they might have to admit that they have contributed to your depression.  Start with a book called \"Feeling Good : The New Mood Therapy\" by David D. Burns.  This is the best book available for depression.Try to get therapy if you can.  If you can't afford it, there may be resources available to help you.  If live in Canada or the U.S. call your local United Way for more information. Or talk to your doctor.If things get too much for you, please remember that most places have suicide hotlines.  Please talk to someone if you start thinking about killing yourself.  Please? There are millions and millions of people on this world of ours that feel the exact same way you do... they need a friend.",
+      "reference": "It is inquired if they had menstraul problems.",
+      "adherence_score": 0.0067878724075853825,
+      "rouge_l": 0.04687499939453125,
+      "bleu": 0.0023501843762768378,
+      "bert_f1": -0.20667532086372375
+    },
+    {
+      "perspective": "SUGGESTION",
+      "generated": "It is suggested For treating pimples, over-the-counter options like Proactiv can be effective. However, consulting a dermatologist for stronger prescription medications, such as metrogel, is advisable for more personalized and potent solutions. It's crucial to seek professional advice to determine the most suitable treatment for individual skin conditions.",
+      "reference": "It is suggested For treating pimples, over-the-counter options like Proactiv can be effective. However, consulting a dermatologist for stronger prescription medications, such as metrogel, is advisable for more personalized and potent solutions. It's crucial to seek professional advice to determine the most suitable treatment for individual skin conditions.",
+      "adherence_score": 0.9950843453407288,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "perspective": "CAUSE",
+      "generated": "Some of the causes user said HIV testing may cause the development of AIDS.",
+      "reference": "Some of the causes user said HIV testing may cause the development of AIDS.",
+      "adherence_score": 0.7665359973907471,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "perspective": "INFORMATION",
+      "generated": "For information purposes, Epstein Barr is synonymous with mono, or infectious mononucleosis. Antibodies, produced by the body to combat infections, typically become dormant after the virus is no longer present.",
+      "reference": "For information purposes, Epstein Barr is synonymous with mono, or infectious mononucleosis. Antibodies, produced by the body to combat infections, typically become dormant after the virus is no longer present.",
+      "adherence_score": 0.99790358543396,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 0.9999996423721313
+    },
+    {
+      "perspective": "EXPERIENCE",
+      "generated": "<|system|>\nYou are an AI assistant specialized in healthcare summarization. Your task is to summarize medical information from a specific perspective while maintaining accuracy.\n<|user|>\nI need you to summarize the following medical content from the EXPERIENCE perspective.\nEXPERIENCE Definition: Defined as individual experiences, anecdotes, or firsthand insights related to health, medical treatments, medication usage, and coping strategies\nBegin Summary with: In user's experience\nTone of summary: Personal, Narrative\nContent to summarize:\nAccording to the \"health gurus\", the biggest single thing you can do is start putting ground cinnamon into your food--the more, the merrier. When your blood sugar is high, and you are not taking any insulin (which is I assume is what you are doing), and then you exercise, you are actually making things much worse. Excercising while your sugar is high causes your body to produce ketones. Since you don't have any insulin on board, then your body begins to starve and breakdown fat for energy. The result is ketosis which can be fatal. You need to have some insulin in you, or all the exercise in the world won't help a bit! Observe how much meat you are eating.  Around 45% of protein eaten will be converted to glucose when digested. Eat smaller meal portions. The best way is 3 meals a day within your calorie limits,as well time your meals for the same time every day eg.breakfast 8-30am                lunch  12-30pm                 dinner  5-30pmor whatever works for you.That is the schedule that I have.Exercise with me walking my dog seems to help me.Since Christmas my sugars went from the 20's down to 8 and 10.The moral to my story is get a puppy and start walking your sugars will go down.Hope this helped you a little.Good luck Hi, I'm your man for natural health solutions. Unfortunately, I don't really know the effect on diabetes, so check with a nutritionist.There are some things you can try. Eat a ripe papaya every morning on an empty stomach and don't eat anything for 2 hours after that. Do this for 30 days.Alternatively, research has shown that you can cure high blood pressure by eating the kernel out of the seeds of a watermelon. Eat half a teaspoon of the kernel every morning.Hope this helps. I am 65 and diabetic for the past 16 years. I have tried all of the treatments (insulin shots, oral meds) and still get the runs every night.  My doctor has just learned that I have diabetes. My only problem is that I can't stand insulin shots. So I have taken a sugar-free diet and started exercising. I have already lost 45 pounds. I have also tried a fasting diet. The more I fast, the better I feel. I am going to try fasting for 24 hours a day. I am using the fasting",
+      "reference": "In user's experience In users expereince, one individual, a 65-year-old diabetic for 16 years, shares their experience of overcoming misinformation and finding better control. They incorporated Gymnema Sylvestre, taking around 10 tablets daily with meals, starting with one tablet per meal. Noting significant improvements, they switched from whole wheat to white flour and adjusted their diet. Personal experimentation involved testing blood sugar before and after various foods, revealing insights like sugar from whole wheat lingering for 6 to 14 days. Another person mentions using Byetta to lose weight and control blood sugar effectively. These experiences highlight the importance of personal exploration and tailored approaches to manage diabetes.",
+      "adherence_score": 0.04034118354320526,
+      "rouge_l": 0.13043477902705586,
+      "bleu": 0.004146499411827078,
+      "bert_f1": -0.17565888166427612
+    },
+    {
+      "perspective": "QUESTION",
+      "generated": "It is inquired about the color of discharge from their breasts and whether it occurs in both",
+      "reference": "It is inquired about the color of discharge from their breasts and whether it occurs in both",
+      "adherence_score": 0.9963523149490356,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "perspective": "INFORMATION",
+      "generated": "For information purposes stretch marks fade with time",
+      "reference": "For information purposes stretch marks fade with time",
+      "adherence_score": 0.9977951049804688,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "perspective": "CAUSE",
+      "generated": "Some of the causes of lupus can be multiple, including genetic defects, chemical exposures, some medications etc.",
+      "reference": "Some of the causes of lupus can be multiple, including genetic defects, chemical exposures, some medications etc.",
+      "adherence_score": 0.9898414015769958,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "perspective": "INFORMATION",
+      "generated": "For information purposes When individuals stop using marijuana, they may experience withdrawal symptoms, although they are generally milder compared to substances such as alcohol or opioids. These symptoms can include irritability, loss of appetite, headache, restlessness, insomnia, anxiety, and depression. While physical symptoms such as reduced hunger or a feeling of relaxation or a reduction in thirst and hunger may be present in the case of marijuana withdrawal, it is unlikely to be a severe, life threatening symptom.",
+      "reference": "For information purposes When individuals stop using marijuana, they may experience withdrawal symptoms, although they are generally milder compared to substances like alcohol or opioids. Physiological symptoms may include a reduction in appetite, mild headaches, and, in some cases, insomnia. The more noticeable effects are often psychological, such as irritability, social difficulties, and changes in personality. It's important to note that marijuana is not considered physically addictive in the same way as some other substances. The withdrawal symptoms are more associated with behavioral and psychological aspects of use. Seeking support, both from friends and professionals, can be beneficial for those trying to quit. Professional help, including counseling and medication, may be considered depending on the individual's needs and the severity of symptoms.",
+      "adherence_score": 0.9979128241539001,
+      "rouge_l": 0.4713375748387359,
+      "bleu": 0.19675352581589656,
+      "bert_f1": 0.4678502678871155
+    },
+    {
+      "perspective": "SUGGESTION",
+      "generated": "It is suggested to go to a hospital.",
+      "reference": "It is suggested to go to a hospital.",
+      "adherence_score": 0.9962616562843323,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "perspective": "INFORMATION",
+      "generated": "<|system|>\nYou are an AI assistant specialized in healthcare summarization. Your task is to summarize medical information from a specific perspective while maintaining accuracy.\n<|user|>\nI need you to summarize the following medical content from the INFORMATION perspective.\nINFORMATION Definition: Defined as knowledge about diseases, disorders, and health-related facts, providing insights into symptoms and diagnosis.\nBegin Summary with: For information purposes\nTone of summary: Informative, Educational\nContent to summarize:\nNot dry kissing but wet kissing. NO!  HIV is not transferable through saliva.  HIV is only transferable through blood and sexual intercourse. no Nope, only exchange in blood and/or semen. Not unless your mate has it. But it starts out with AIDS wich is bad but not so bad and then turns into HIV which is terrible. Theoretically yes. The probability of it happening through this method are very low, but still plausible nonetheless. I tend to believe the Centers for Disease Control. It is this and other public misconceptions of the HIV virus that seems to be allowing it to propagate rapidly throughout the world. We need to educate ourselves on this epidemic before it is too late. Only if you have open sores in or around your mouth will you be subject to the virus, but no you can't contract the HIV virus from saliva. absolutely not I know several people who are HIV+, and the odds in catching HIV from kissing are far the than winning the lottery--when you actually need the money. the most likely way for you to catch it by kissing is if both people have cuts in their mouths. even still, with combination therapy (that is, if they are on [or have taken] meds), this occurence most likely WILL NOT HAPPEN.  however, if it goes past making out, then you gotta be careful. One more thing, while kissing an HIV+ person may be safe, you may want to watch out for anyone who may have MONO or HERPES. Causes of HIV/AIDS Cause of HIV/AIDS: AIDS is caused by the human immunodeficiency virus (HIV). By killing or damaging cells of the body's immune system, HIV progressively destroys the body's ability to fight infections and certain cancers. People diagnosed with AIDS may get life-threatening diseases called opportunistic infections, which are caused by microbes such as viruses or bacteria that usually do not make healthy people sick. 1 Cause statistics for HIV/AIDS: The following are statistics from various sources about the causes of HIV/AIDS: 57.5%  36.7%  7.8%  3.7% 3.7%",
+      "reference": "For information purposes HIV is not transmitted through saliva. Transmission occurs through blood and sexual intercourse. The main causes of HIV/AIDS include sex with other men (57.5% for adult males), injecting drugs (24% for adult males, 38% for adult females), and heterosexual contact (9.5% for adult males, 59% for adult females). HIV disease weakens the immune system by destroying CD4+ T cells, making individuals susceptible to infections and cancers. AIDS, the end stage of HIV, is characterized by severe health complications such as respiratory, gastrointestinal, neurological issues, and specific cancers like Kaposi's sarcoma. HIV likely induces AIDS by directly harming CD4+ T cells, disrupting immune response signaling, and damaging lymph nodes and immune organs.",
+      "adherence_score": 0.9929152727127075,
+      "rouge_l": 0.19298245234687603,
+      "bleu": 0.02165133086592261,
+      "bert_f1": -0.14486563205718994
+    },
+    {
+      "perspective": "INFORMATION",
+      "generated": "For information purposes, diabetes manifests differently in Type I and Type II cases. Type I diabetes tends to onset suddenly and severely, with symptoms including excessive thirst, dry mouth, frequent urination, unexplained weight loss despite increased appetite, weakness, fatigue, and blurry vision. In contrast, Type II diabetes may have a gradual or an asymptomatic onset, with symptoms that include slow-healing cuts or sores, itchy skin and yeast infections, increased thirst, dry mouth, frequent urination, leg pain, and the presence of dark skin patches on knees and elbows known as diabetic dermopathy. Other common symptoms encompassing both types include night urination (nocturia), fatigue, genital itching in females (pruritus vulvae) or balanitis in males, leg cramps, recurrent boils and impotency.",
+      "reference": "For information purposes, diabetes manifests differently in Type I and Type II cases. Type I diabetes tends to onset suddenly and severely, with symptoms including excessive thirst, dry mouth, frequent urination, unexplained weight loss despite increased appetite, weakness, fatigue, and blurry vision. In contrast, Type II diabetes may have a gradual or an asymptomatic onset, with symptoms that include slow-healing cuts or sores, itchy skin and yeast infections, increased thirst, dry mouth, frequent urination, leg pain, and the presence of dark skin patches on knees and elbows known as diabetic dermopathy. Other common symptoms encompassing both types include night urination (nocturia), fatigue, genital itching in females (pruritus vulvae) or balanitis in males, leg cramps, recurrent boils and impotency.",
+      "adherence_score": 0.9978973865509033,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "perspective": "EXPERIENCE",
+      "generated": "In user's experience A former high school wrestler stated that losing water weight is the fastest and the most popular way to lose 5-10 pounds in a week.",
+      "reference": "In user's experience A former high school wrestler stated that losing water weight is the fastest and the most popular way to lose 5-10 pounds in a week.",
+      "adherence_score": 0.9976297616958618,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "perspective": "SUGGESTION",
+      "generated": "It is suggested For bronchitis relief, over-the-counter options like Vicks 44 can be effective, but consulting with a doctor for prescription cough medicine may provide more potent relief, especially for severe coughing. Alongside cough drops, nonprescription cough suppressants can help halt coughing, while expectorants may facilitate easier mucus expulsion. Seeking medical advice allows for a tailored approach, and a doctor may prescribe medication to address bronchitis symptoms more comprehensively.",
+      "reference": "It is suggested For bronchitis relief, over-the-counter options like Vicks 44 can be effective, but consulting with a doctor for prescription cough medicine may provide more potent relief, especially for severe coughing. Alongside cough drops, nonprescription cough suppressants can help halt coughing, while expectorants may facilitate easier mucus expulsion. Seeking medical advice allows for a tailored approach, and a doctor may prescribe medication to address bronchitis symptoms more comprehensively.",
+      "adherence_score": 0.9899952411651611,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0000007152557373
+    },
+    {
+      "perspective": "SUGGESTION",
+      "generated": "It is suggested Red wine can exacerbate gout due to its high purine content. However, cherry fruit extract is beneficial for combating gout symptoms.",
+      "reference": "It is suggested Red wine can exacerbate gout due to its high purine content. However, cherry fruit extract is beneficial for combating gout symptoms.",
+      "adherence_score": 0.9788106679916382,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "perspective": "EXPERIENCE",
+      "generated": "In user's experience In users expereince, one individual shares that they have fibroids, and at times, the pain can be severe. They describe the sensation as if every nerve in their breast is tingling.",
+      "reference": "In user's experience In users expereince, one individual shares that they have fibroids, and at times, the pain can be severe. They describe the sensation as if every nerve in their breast is tingling.",
+      "adherence_score": 0.9977114200592041,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "perspective": "INFORMATION",
+      "generated": "For information purposes, the first statement expresses uncertainty about the canal's ability to lengthen but mentions that there are positions that vary in depth. The second statement disagrees, stating that the vagina is like a muscle that can stretch, although it won't permanently stay in an extended position. It is mentioned that the vaginal canal is typically around 4 inches long and does not permanently change in length. The comment concludes by noting that aspects of the vagina are part of one's DNA.",
+      "reference": "For information purposes, the first statement expresses uncertainty about the canal's ability to lengthen but mentions that there are positions that vary in depth. The second statement disagrees, stating that the vagina is like a muscle that can stretch, although it won't permanently stay in an extended position. It is mentioned that the vaginal canal is typically around 4 inches long and does not permanently change in length. The comment concludes by noting that aspects of the vagina are part of one's DNA.",
+      "adherence_score": 0.9978622794151306,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 0.9999992847442627
+    },
+    {
+      "perspective": "SUGGESTION",
+      "generated": "It is suggested It is inquired if the woman in question was on the pill.",
+      "reference": "It is suggested It is inquired if the woman in question was on the pill.",
+      "adherence_score": 0.00406614551320672,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "perspective": "SUGGESTION",
+      "generated": "It is suggested to use peroxide to kill germs and prevent infection, potentially causing scarring based on severity. If the wound appears red with pus, this indicates infection, which can be treated with Betadine followed by Neosporin after cleaning.",
+      "reference": "It is suggested to use peroxide to kill germs and prevent infection, potentially causing scarring based on severity. If the wound appears red with pus, this indicates infection, which can be treated with Betadine followed by Neosporin after cleaning.",
+      "adherence_score": 0.9550788998603821,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "perspective": "INFORMATION",
+      "generated": "For information purposes Both steroid and thyroid hormone families of receptors can be used to regulate proteins",
+      "reference": "For information purposes Both steroid and thyroid hormone families of receptors can be used to regulate proteins",
+      "adherence_score": 0.9977365732192993,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "perspective": "INFORMATION",
+      "generated": "For information purposes Fibromyalgia is a real condition affecting both men and women, with several people the individual knows, including themselves, experiencing its painful symptoms. They express frustration over the perceived lack of serious research into this debilitating disease.",
+      "reference": "For information purposes Fibromyalgia is a real condition affecting both men and women, with several people the individual knows, including themselves, experiencing its painful symptoms. They express frustration over the perceived lack of serious research into this debilitating disease.",
+      "adherence_score": 0.9941589832305908,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "perspective": "SUGGESTION",
+      "generated": "It is suggested It is advises to try avoiding de-caf and try green tea that is naturally de-caffed.",
+      "reference": "It is suggested It is advises to try avoiding de-caf and try green tea that is naturally de-caffed.",
+      "adherence_score": 0.9962586164474487,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "perspective": "SUGGESTION",
+      "generated": "It is suggested Prenatal vitamins are suggested and you do not have to get a prescription for them.  If you have trouble taking tablets because of stomach upset, you may want to try one of the many liquid multivitamins available.  The best multivitamins are in liquid form, and they are easily absorbed. The best liquid multivitamins are in a form that is easily absorbed in the body, so you may want to try a liquid multivitamin.",
+      "reference": "It is suggested Prenatal vitamins are suggested and you do not have to get a prescription for them.",
+      "adherence_score": 0.9901549816131592,
+      "rouge_l": 0.5396825357420005,
+      "bleu": 0.22099162132929537,
+      "bert_f1": 0.46173277497291565
+    }
+  ]
+}

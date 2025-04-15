@@ -1,182 +1,114 @@
-# Healthcare Summarization Project
+<p>This repository implements perspective-specific summarization for healthcare Q&A platforms, creating targeted summaries for distinct perspectives (suggestion, information, cause, experience, question) while preserving original intent.</p>
 
-## Project Overview
-This project focuses on generating multi-perspective summaries from medical-related user questions and answers using state-of-the-art language models.
+<h2>Project Overview</h2>
 
-## Configuration
+<p>Healthcare Q&A platforms (e.g., Yahoo! Answers, Reddit) contain mixed content types, making it challenging to extract concise, perspective-specific summaries. Our NLP system generates targeted summaries that classify and condense information according to five distinct perspectives while preserving the author's original intent.</p>
 
-### Configuration File (`config.yaml`)
-The configuration file contains key settings for the project:
+<h2>Models and Approaches</h2>
 
-```yaml
-# Healthcare Summarization Configuration
+<p>We explored three innovative approaches to perspective-aware summarization:</p>
 
-# Data Settings
-data_path: "./data"
-output_path: "./results"
-datasets:
- - "test.json"
- - "valid.json"
-max_samples: null # Set to a number for testing or null to process all samples
+<h3>1. Tiny LLaMA 3.2B-Instruct with Custom Energy-Based Loss</h3>
 
-# Model Settings
-model_size: "8B" # Options: "8B" or "70B"
-device: "cuda" # Options: "cuda" or "cpu"
-quantization: null # Options: null, "8bit", "4bit"
-model_name: "meta-llama/Llama-3.2-3B-Instruct"
+<p>This architecture integrates a RoBERTa-based classifier and custom energy-based loss function with three components:</p>
+<ul>
+    <li><strong>E<sub>p</sub></strong> (Perspective Confidence): Uses classifier confidence to guide generation</li>
+    <li><strong>E<sub>s</sub></strong> (Lead Phrase Alignment): Measures alignment with perspective-specific phrases</li>
+    <li><strong>E<sub>t</sub></strong> (Semantic Similarity): Captures semantic relevance via BERT embeddings</li>
+</ul>
 
-# Generation Settings
-max_new_tokens: 50000
-temperature: 0.1
-do_sample: true
+<p><a href="https://drive.google.com/drive/folders/1UknRONU4x4oi7zSOgEvTxO4xh5f3MjCq?usp=sharing">Model Codebase</a> | <a href="https://drive.google.com/drive/folders/1Ats3koAJmDejcj40p_vLkqagCHVgb6et?usp=sharing">Checkpoints</a></p>
 
-# System Settings
-batch_processing: false # Future feature for batch processing
-cache_dir: null # Optional custom cache directory for models
-```
+<h3>2. Two-Stage Adapter Tuning with Classifier-Guided Loss</h3>
 
-### Running the Project
-To run the main script:
-```bash
-python main.py --config ./config.yaml
-```
+<p>A two-stage fine-tuning pipeline on LLaMA 3.2B-Instruct:</p>
+<ul>
+    <li>First stage: Train a <strong>medical adapter</strong> on domain-specific dataset</li>
+    <li>Second stage: Train a <strong>perspective adapter</strong> using structured prompts and summaries guided by RoBERTa classifier</li>
+    <li>Uses energy-based loss to encourage perspective alignment</li>
+</ul>
 
-## Project Structure
-```
-project_root/
-│
-├── data/
-│   ├── train.json
-│   ├── test.json
-│   └── valid.json
-│
-├── results/
-│   ├── run_config.yaml
-│   ├── summary_report.csv
-│   ├── test_metrics.json
-│   ├── test_results.json
-│   ├── valid_metrics.json
-│   └── valid_results.json
-│
-├── main.py
-├── config.yaml
-└── requirements.txt
-```
+<p><a href="https://drive.google.com/drive/folders/1EQ7ywKsDVpsP4keDbSUqqRTKP1j1Lk2l">RoBERTa Classifier</a> | <a href="https://drive.google.com/drive/folders/1rAMX6HIV0KuIojrynFLn9sPG2GirQK1f">Medical Adapter</a> | <a href="https://drive.google.com/drive/folders/1I-aShHCAlNOCbyooiixOG6xH0Fwd49rn">Perspective Adapter</a></p>
 
-## Data Format
+<h3>3. Perspective-Specific LLaMA 3.2B Adapters</h3>
 
-### Input Data (JSON)
-Each JSON file contains a list of dictionaries with the following structure:
-```json
-[
-  {
-    "uri": "unique_identifier",
-    "question": "Medical question",
-    "context": "Additional context",
-    "answers": ["answer1", "answer2", ...],
-    "labelled_answer_spans": {
-      "EXPERIENCE": [...],
-      "CAUSE": [...],
-      "INFORMATION": [...]
-    }
-  }
-]
-```
+<p>Creates separate adapters for each perspective category using LLaMA 3.2B model:</p>
+<ul>
+    <li>Individual adapters help identify perspectives with greater accuracy</li>
+    <li>Uses Cross Entropy Loss during training</li>
+    <li>LoRA-based PEFT on 4-bit quantized model</li>
+</ul>
 
-## Results Format
+<p><a href="https://drive.google.com/drive/folders/1_7VS6Y1daxTzGE6VK64cM-WYFj83Jmq7?usp=sharing">RoBERTa Classifier</a> | <a href="https://drive.google.com/drive/folders/1HF8Nx4Cb0RZTVt1t7ySzMFaO-iYl8fe4?usp=sharing">Perspective-Specific Adapters</a></p>
 
-### Metrics Files (`*_metrics.json`)
-```json
-{
-  "dataset": "test.json",
-  "model": "meta-llama/Llama-3.2-3B-Instruct",
-  "samples": 640,
-  "INFORMATION_BLEU_AVG": 0.0031927,
-  "INFORMATION_BERT_AVG": 0.8827259,
-  "CAUSE_BLEU_AVG": 0.0030258,
-  "CAUSE_BERT_AVG": 0.8883831,
-  "SUGGESTION_BLEU_AVG": 0.0036648,
-  "SUGGESTION_BERT_AVG": 0.8797409,
-  "EXPERIENCE_BLEU_AVG": 0.0032600,
-  "EXPERIENCE_BERT_AVG": 0.8584677,
-  "OVERALL_BLEU_AVG": 0.0034157,
-  "OVERALL_BERT_AVG": 0.8781039
-}
-```
+<h2>Comparative Results</h2>
 
-### Results Files (`*_results.json`)
-```json
-[
-  {
-    "uri": "unique_identifier",
-    "question": "Medical question",
-    "context": "Additional context",
-    "INFORMATION_REFERENCE": "Reference summary",
-    "INFORMATION_GENERATED": "Model-generated summary",
-    "INFORMATION_BLEU": 0.002660,
-    "INFORMATION_BERT": 0.882331,
-    "AVG_BLEU": 0.002660,
-    "AVG_BERT": 0.882331
-  }
-]
-```
+<p>The table below presents a direct comparison of performance metrics across all models:</p>
 
-## Key Components
+<table>
+    <tr>
+        <th>Metric</th>
+        <th>Model 2<br>(Baseline)</th>
+        <th>Model 3</th>
+        <th>Model 4</th>
+        <th>Model 5</th>
+    </tr>
+    <tr>
+        <td>ROUGE-1</td>
+        <td>3.23</td>
+        <td>10.17</td>
+        <td>0.8372</td>
+        <td>0.8082</td>
+    </tr>
+    <tr>
+        <td>ROUGE-2</td>
+        <td>0.10</td>
+        <td>0.44</td>
+        <td>0.8047</td>
+        <td>0.7702</td>
+    </tr>
+    <tr>
+        <td>ROUGE-L</td>
+        <td>3.02</td>
+        <td>9.46</td>
+        <td>0.8348</td>
+        <td>0.8051</td>
+    </tr>
+    <tr>
+        <td>BLEU</td>
+        <td>0.0136</td>
+        <td>0.0689</td>
+        <td>0.7875</td>
+        <td>0.7549</td>
+    </tr>
+    <tr>
+        <td>BERTScore</td>
+        <td>0.7866</td>
+        <td>0.8104</td>
+        <td>0.7995</td>
+        <td>0.7633</td>
+    </tr>
+</table>
 
-### Input Formatting
-The project uses a custom input formatting function:
-```python
-def format_input(question, context, answers, perspective, excerpt):
-    # Formats input for the language model
-    # Includes question, context, perspective, and answer excerpts
-```
+<h2>Analysis</h2>
 
-### Function Definitions
-Four key summary generation functions are defined:
-1. `generate_information_summary`
-2. `generate_cause_summary`
-3. `generate_suggestion_summary`
-4. `generate_experience_summary`
+<p>The evaluation results reveal interesting patterns across models:</p>
 
-### System Prompt
-A detailed system prompt guides the language model in generating summaries across different perspectives.
+<ul>
+    <li><strong>Model 3 (Tiny LLaMA 3.2B-Instruct)</strong> demonstrates the highest performance across most metrics, particularly in ROUGE scores and BERTScore, indicating strong lexical and semantic alignment with reference summaries.</li>
+    
+    <li><strong>Model 2 (Baseline)</strong> shows moderate performance with room for improvement, particularly in capturing n-gram overlap.</li>
+    
+    <li><strong>Models 4 and 5</strong> show lower ROUGE scores but relatively strong BLEU scores, suggesting they may generate summaries that are less lexically aligned with references but maintain semantic coherence.</li>
+    
+    <li>The BERTScore comparison reveals smaller variance across models than other metrics, indicating all approaches maintain semantic relevance to a reasonable degree.</li>
+</ul>
 
-## Evaluation Metrics
-- BLEU Score: Measures the precision of generated summaries
-- BERT Score: Assesses semantic similarity between generated and reference summaries
+<h2>Conclusion</h2>
 
-## Model
-- Model: Llama 3.2 3B Instruct
-- Evaluated on validation and test datasets
+<p>Among the models evaluated, the Tiny LLaMA 3.2B-Instruct architecture with classifier-guided energy-based training demonstrated the best balance between lexical accuracy and semantic coherence. The two innovative extensions—two-stage adapter tuning and perspective-specific adapters—highlighted promising directions for fine-grained control in medical text summarization.</p>
 
-## Requirements
-- Python 3.12+
-- PyTorch 2.6.0+
-- Transformers 4.50.0+
-- Bert Score 0.3.13+
-- Numpy 2.2.4+
-- Pandas 2.2.3+
-- NLTK 3.9.1+
+<p>Our work underscores the importance of integrating perspective-awareness in medical NLP tasks, offering better contextualization for users seeking specific types of health information.</p>
 
-## Installation
-```bash
-pip install -r requirements.txt
-```
-
-## Contributors
-
-### Core Development Team
-- **Shashank Sharma** 
-  - GitHub: [@shashank23088](https://github.com/shashank23088)
-  - Email: shashank23088@iiitd.ac.in
-  - Roll No: MT23088
-
-- **Shreyas Gupta**
-  - GitHub: [@Shreyas-Gupta-IIITD](https://github.com/Shreyas-Gupta-IIITD)
-  - Email: shreyas23221@iiitd.ac.in
-  - Roll No: MT23221
- 
-- **Sajid Javid**
-  - GitHub: [@sajidjavid222](https://github.com/sajidjavid222)
-  - Email: sajidj@iiitd.ac.in
-  - Roll No: PhD24002
+<h2>Team</h2>
+<p>Group 11: Sajid Javid, Shashank Sharma, Shreyas Gupta</p>

@@ -1,0 +1,7 @@
+{
+  "CAUSE": "checkpoints/perspective/cause/adapter_best",
+  "INFORMATION": "checkpoints/perspective/information/adapter_best",
+  "QUESTION": "checkpoints/perspective/question/adapter_best",
+  "EXPERIENCE": "checkpoints/perspective/experience/adapter_best",
+  "SUGGESTION": "checkpoints/perspective/suggestion/adapter_best"
+}

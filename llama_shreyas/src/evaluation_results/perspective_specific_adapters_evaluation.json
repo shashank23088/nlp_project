@@ -1,0 +1,926 @@
+{
+  "overall_metrics": {
+    "rouge_1": 0.8082805323624932,
+    "rouge_2": 0.7702164698657867,
+    "rouge_l": 0.8051363067890103,
+    "bleu": 0.7549205550558323,
+    "bert_f1": 0.7633500368736241,
+    "perspective_adherence": 0.8439020124367542
+  },
+  "perspective_distribution": {
+    "CAUSE": 102,
+    "INFORMATION": 486,
+    "QUESTION": 64,
+    "EXPERIENCE": 206,
+    "SUGGESTION": 394
+  },
+  "perspective_metrics": {
+    "CAUSE": {
+      "avg_rouge_1": 0.9089014401040102,
+      "avg_rouge_2": 0.8951739873273787,
+      "avg_rouge_l": 0.9083851778427814,
+      "avg_bleu": 0.877376927859001,
+      "avg_bert_f1": 0.8979378750977608,
+      "avg_adherence": 0.8012662049239645,
+      "count": 26
+    },
+    "INFORMATION": {
+      "avg_rouge_1": 0.8276719254995655,
+      "avg_rouge_2": 0.7874092872799039,
+      "avg_rouge_l": 0.8240012724806253,
+      "avg_bleu": 0.7686679549605063,
+      "avg_bert_f1": 0.7954793063182706,
+      "avg_adherence": 0.965012472183978,
+      "count": 122
+    },
+    "QUESTION": {
+      "avg_rouge_1": 0.7673612390267263,
+      "avg_rouge_2": 0.7541035290575219,
+      "avg_rouge_l": 0.7669016802031968,
+      "avg_bleu": 0.7508280007018548,
+      "avg_bert_f1": 0.7136293058283627,
+      "avg_adherence": 0.7349993058596738,
+      "count": 16
+    },
+    "EXPERIENCE": {
+      "avg_rouge_1": 0.8063462321490752,
+      "avg_rouge_2": 0.7736107762096334,
+      "avg_rouge_l": 0.803806293130875,
+      "avg_bleu": 0.7610505502156956,
+      "avg_bert_f1": 0.763944733923731,
+      "avg_adherence": 0.8107070140898801,
+      "count": 52
+    },
+    "SUGGESTION": {
+      "avg_rouge_1": 0.7655875903470157,
+      "avg_rouge_2": 0.7170334794064787,
+      "avg_rouge_l": 0.7616506327872016,
+      "avg_bleu": 0.703260682733591,
+      "avg_bert_f1": 0.6961333983286162,
+      "avg_adherence": 0.7408882561280872,
+      "count": 99
+    }
+  },
+  "examples": [
+    {
+      "Perspective": "CAUSE",
+      "generated": "Some of the causes Low energy and weight gain may be due to hypothyroidism, depression, or lack of minerals and vitamins.",
+      "reference": "Some of the causes Low energy and weight gain may be due to hypothyroidism, depression, or lack of minerals and vitamins.",
+      "adapter_used": "checkpoints/perspective/cause/adapter_best",
+      "adherence_score": 0.9396823048591614,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "Perspective": "CAUSE",
+      "generated": "Some of the causes It can be bad chess that causes your stomach to not feel good instead of you being allergic. I think you should go to an allergist to see if you are allergic.",
+      "reference": "Some of the causes It can be bad chess that causes your stomach to not feel good instead of you being allergic.",
+      "adapter_used": "checkpoints/perspective/cause/adapter_best",
+      "adherence_score": 0.5622118711471558,
+      "rouge_l": 0.8163265257809247,
+      "bleu": 0.5936295926310302,
+      "bert_f1": 0.8053441643714905
+    },
+    {
+      "Perspective": "CAUSE",
+      "generated": "Some of the causes The black color is caused by a fungus.",
+      "reference": "Some of the causes The black color is caused by a fungus.",
+      "adapter_used": "checkpoints/perspective/cause/adapter_best",
+      "adherence_score": 0.9354893565177917,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "Perspective": "CAUSE",
+      "generated": "Some of the causes of mucus, blood, and clots in stools include Irritable Bowel Syndrome (IBS) and Crohn's disease. Both conditions can disrupt normal digestive processes, leading to these symptoms.",
+      "reference": "Some of the causes of mucus, blood, and clots in stools include Irritable Bowel Syndrome (IBS) and Crohn's disease. Both conditions can disrupt normal digestive processes, leading to these symptoms.",
+      "adapter_used": "checkpoints/perspective/cause/adapter_best",
+      "adherence_score": 0.8570466637611389,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "Perspective": "CAUSE",
+      "generated": "Some of the causes By consuming very few fruits and vegetables and maintaining an acidic pH balance in your body, you may increase susceptibility to various diseases over time like scurvy.",
+      "reference": "Some of the causes By consuming very few fruits and vegetables and maintaining an acidic pH balance in your body, you may increase susceptibility to various diseases over time like scurvy.",
+      "adapter_used": "checkpoints/perspective/cause/adapter_best",
+      "adherence_score": 0.8916135430335999,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "Perspective": "CAUSE",
+      "generated": "Some of the causes AIDS (Acquired Immunodeficiency Syndrome) is a chronic immune system disease caused by the human immunodeficiency virus (HIV) that is characterized by reduced immunity and the consequent complications emerging from it.",
+      "reference": "Some of the causes AIDS (Acquired Immunodeficiency Syndrome) is a chronic immune system disease caused by the human immunodeficiency virus (HIV) that is characterized by reduced immunity and the consequent complications emerging from it.",
+      "adapter_used": "checkpoints/perspective/cause/adapter_best",
+      "adherence_score": 0.8800016045570374,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 0.9999996423721313
+    },
+    {
+      "Perspective": "CAUSE",
+      "generated": "Some of the causes Itchness may be due to a serious conditions like exema.",
+      "reference": "Some of the causes Itchness may be due to a serious conditions like exema.",
+      "adapter_used": "checkpoints/perspective/cause/adapter_best",
+      "adherence_score": 0.9462676644325256,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 0.9999996423721313
+    },
+    {
+      "Perspective": "CAUSE",
+      "generated": "Some of the causes for the yellow tint of the urine results from the oxidants leftover in the body by the digestive system and the overall metabolization process. The darker yellow colour could be due to drinking insufficient amount of water.",
+      "reference": "Some of the causes for the yellow tint of the urine results from the oxidants leftover in the body by the digestive system and the overall metabolization process. The darker yellow colour could be due to drinking insufficient amount of water.",
+      "adapter_used": "checkpoints/perspective/cause/adapter_best",
+      "adherence_score": 0.9365602135658264,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "Perspective": "CAUSE",
+      "generated": "<|system|>\nYou are an AI assistant specialized in healthcare summarization. Your task is to summarize medical information from a specific perspective while maintaining accuracy.\n<|user|>\nI need you to summarize the following medical content from the CAUSE perspective.\nCAUSE Definition: Defined as reasons responsible for the occurrence of a particular medical condition, symptom, or disease\nBegin Summary with: Some of the causes\nTone of summary: Explanatory, Causal\nContent to summarize:\nThere are certain food that leads to constipation like apples, bananas...let him stay away from thoseOther foods do the opposite like orange, grapes..let him eat more of those, should also drink milk that should help. There are also herbs that can help which will be mainly composed of: Senna, Liquorice, Chamomile, Fennel, Dill, Coriander and Anise. Probiotics are ESSENTIAL... he probably has an imbalance of intestinal flora that is causing this problem.  Also look into taking senna ( but it can be addictive - meaning the body may rely on it with prolonged use ).  Check out Geneflora by Cycles of Life. pooping problems can have many causes.an enlarged prostate might cause defecation problems.eating food without fiber might also cause this problem.If he has an underlying medical problem (crohns disease or ulcerative colitis, etc might cause some of his problemsHe should see his medical doctorDo not use laxatives unless you are sure that he does not have underlying medical problems. Ok...wanna hear my secret? CHEERIOS! Fiber is the ket to not having that kind of trouble. Your BF should drink lots of water, eat lots of fiber rich foods like apples, grains, watermelon, whole grain cereals and fiber rich veggies. Also, prune juice is good, mix it with cranberry or grape juice to knock off the nasty taste. Good luck! GET HIM A DIAPER Tell him to try squating in front of the toilet when he gets the urge. The push, but sit on the toilet before anything comes out of course. Also tell him to eat lots of fiberous foods. Fibercon tablets work very well also. stay away from the laxatives... He could have a condition which i have had most of my life which is IBS= Iregular Bowell Syndrome. The most likely cause is his diet. Certain foods cause constipation in some people.  Dehydration can also contribute, and is a common cause of IBS. Some people might not digest food properly, which can also lead to constipation. There are many other causes but he may be eating some foods that he should avoid and eating foods that are high in fiber and water content. There are some foods that are more likely to cause constipation in some people such as: *apples, *bananas, *grapes, *mangoes, *pineapple, *peaches, *plums *also some foods",
+      "reference": "Some of the causes The individual may be experiencing constipation due to a potential imbalance of intestinal flora. Dietary factors, such as certain foods, and dehydration are identified as likely causes for this problem. Addressing the diet and ensuring adequate hydration may help alleviate the issue.",
+      "adapter_used": "checkpoints/perspective/cause/adapter_best",
+      "adherence_score": 0.009725113399326801,
+      "rouge_l": 0.14765100443651188,
+      "bleu": 0.010930772956576044,
+      "bert_f1": -0.07765501737594604
+    },
+    {
+      "Perspective": "CAUSE",
+      "generated": "Some of the causes Boxers are healthier to wear compared to briefs or other skin-tight undergarments. Briefs can limit sperm quantity and quality due to increased temperature in the scrotum. Additionally, briefs can trap sweat and bacteria close to the body, leading to chafing, infections, and jock itch. Boxers offer more breathing room and a larger area to prevent the binding of sweat and bacteria, making them a healthier choice.",
+      "reference": "Some of the causes Boxers are healthier to wear compared to briefs or other skin-tight undergarments. Briefs can limit sperm quantity and quality due to increased temperature in the scrotum. Additionally, briefs can trap sweat and bacteria close to the body, leading to chafing, infections, and jock itch. Boxers offer more breathing room and a larger area to prevent the binding of sweat and bacteria, making them a healthier choice.",
+      "adapter_used": "checkpoints/perspective/cause/adapter_best",
+      "adherence_score": 0.5504707098007202,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 0.9999996423721313
+    },
+    {
+      "Perspective": "INFORMATION",
+      "generated": "For information purposes, an orgasm is a pleasurable response to sexual stimulation, involving physical, emotional, and sometimes spiritual reactions. Both genders can experience it, but the specific response varies. It's the third stage in the human sexual response cycle, influenced by physical touch, emotional connection, mental intimacy, and complete involvement in the moment. Various factors like thoughts of procreation, power dynamics, and genuine love can contribute to the experience. While having orgasms with someone you love can be great, it doesn't guarantee the long-term sustainability of the relationship.",
+      "reference": "For information purposes, an orgasm is a pleasurable response to sexual stimulation, involving physical, emotional, and sometimes spiritual reactions. Both genders can experience it, but the specific response varies. It's the third stage in the human sexual response cycle, influenced by physical touch, emotional connection, mental intimacy, and complete involvement in the moment. Various factors like thoughts of procreation, power dynamics, and genuine love can contribute to the experience. While having orgasms with someone you love can be great, it doesn't guarantee the long-term success of a relationship.",
+      "adapter_used": "checkpoints/perspective/information/adapter_best",
+      "adherence_score": 0.9859153032302856,
+      "rouge_l": 0.9857142807142858,
+      "bleu": 0.9593763941974978,
+      "bert_f1": 0.9724660515785217
+    },
+    {
+      "Perspective": "INFORMATION",
+      "generated": "For information purposes, sciatica can be addressed through manual treatments, such as physical therapy, specific stretching and strengthening exercises, and manual manipulation like osteopathic or chiropractic manipulation, aimed at alleviating pressure on the nerve root causing the pain. Medical treatments involve medications like non-steroidal anti-inflammatory drugs (NSAIDs), oral steroids, or epidural steroid injections to reduce inflammation, a common component of sciatic pain. In cases where conservative approaches fail, surgical options like microdiscectomy or lumbar laminectomy and discectomy may be considered to remove the part of the disc irritating the nerve root, providing relief from both pressure and inflammation. Early diagnosis and assessment, potentially involving chiropractors who can analyze X-rays and provide treatment, are recommended as the first step. Massage therapy is also beneficial for sciatica, offering therapeutic exercises to manage pain. Furthermore, lifestyle adjustments can be guided, including postural recommendations, footwear choices, and sleeping positions.",
+      "reference": "For information purposes, sciatica can be addressed through manual treatments, such as physical therapy, specific stretching and strengthening exercises, and manual manipulation like osteopathic or chiropractic manipulation, aimed at alleviating pressure on the nerve root causing the pain. Medical treatments involve medications like non-steroidal anti-inflammatory drugs (NSAIDs), oral steroids, or epidural steroid injections to reduce inflammation, a common component of sciatic pain. In cases where conservative approaches fail, surgical options like microdiscectomy or lumbar laminectomy and discectomy may be considered to remove the disc portion irritating the nerve root, relieving both pressure and inflammation. However, surgery and medication are generally considered last resorts, and initial steps involve determining the cause and exploring non-invasive treatments such as chiropractic care and massage therapy. Lifestyle changes, including adjustments to sleeping position, footwear, and posture, can also contribute to managing sciatic pain.",
+      "adapter_used": "checkpoints/perspective/information/adapter_best",
+      "adherence_score": 0.9843547344207764,
+      "rouge_l": 0.711711706726321,
+      "bleu": 0.6260576142628597,
+      "bert_f1": 0.7650741934776306
+    },
+    {
+      "Perspective": "INFORMATION",
+      "generated": "For information purposes, gel-Kam is a fluoride gel that doesn't restore enamel but aids in strengthening it by delivering fluoride to areas that are affected or weakened.",
+      "reference": "For information purposes, gel-Kam is a fluoride gel that doesn't restore enamel but aids in strengthening it by delivering fluoride to areas that are affected or weakened.",
+      "adapter_used": "checkpoints/perspective/information/adapter_best",
+      "adherence_score": 0.9864497780799866,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "Perspective": "INFORMATION",
+      "generated": "For information purposes, Antipsychotics (major tranquilizers), are  medications used to treat psychotic illnesses like schizophrenia, bipolar mania, aggression, and certain behavioral issues associated with Alzheimer's disease. They are categorized as neuroleptics and have historically included drugs like haloperidol and chlorpromazine. Recently, a newer class known as Atypical Antipsychotics has been developed, featuring drugs such as clozapine, olanzapine, risperidone, and quetiapine. Atypical antipsychotics are favored for their reduced side effects compared to earlier medications in this class. One could refer to the Wikipedia page on Antipsychotics: http://en.wikipedia.org/wiki/Antipsychotic.",
+      "reference": "For information purposes, Antipsychotics (major tranquilizers), are  medications used to treat psychotic illnesses like schizophrenia, bipolar mania, aggression, and certain behavioral issues associated with Alzheimer's disease. They are categorized as neuroleptics and have historically included drugs like haloperidol and chlorpromazine. Recently, a newer class known as Atypical Antipsychotics has been developed, featuring drugs such as clozapine, olanzapine, risperidone, and quetiapine. Atypical antipsychotics are favored for their reduced side effects compared to earlier medications in this class. One could refer to the Wikipedia page on Antipsychotics: http://en.wikipedia.org/wiki/Antipsychotic.",
+      "adapter_used": "checkpoints/perspective/information/adapter_best",
+      "adherence_score": 0.9866662621498108,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "Perspective": "INFORMATION",
+      "generated": "<|system|>\nYou are an AI assistant specialized in healthcare summarization. Your task is to summarize medical information from a specific perspective while maintaining accuracy.\n<|user|>\nI need you to summarize the following medical content from the INFORMATION perspective.\nINFORMATION Definition: Defined as knowledge about diseases, disorders, and health-related facts, providing insights into symptoms and diagnosis.\nBegin Summary with: For information purposes\nTone of summary: Informative, Educational\nContent to summarize:\nI have suffered from acute asthma since I was a Home remedy for asthmaYou should use this infusion when you have an asthma attack or as a prevention measure. Composition and preparation 10 grams Marjoram flower tips10 grams Minth flower tips10 grams Pouliot plant20 grams Bouillon blanc20 grams Capillaire20 grams Poppy flower20 grams Eucalyptus leaves20 grams Hyssop flower tips20 grams Grey lichen20 grams Ground Ivy20 grams Pine buds20 grams Pulmonaire20 grams Thyme leaves\u00a4 Put four tablespoon of the above mix in a non-metallic, heat-resistant pot.\u00a4 Pour four glasses of water on top.\u00a4 Bring to boil and simmer for three minutes.\u00a4 Cover and rest.\u00a4 Let infuse for fifteen minutes.\u00a4 Filter and drink two glasses during the day or more in case of an attack.The quantity prepared of this Home remedy for asthma is enough for two daysAnd stay CALM! Asthma Asthma [Respiratory] is a natural homeopathic medicine for control of the symptoms of asthma and bronchitis, including difficulty in breathing, shortness of breath, tightness of chest, wheezing or coughing. Contains 20 percent USP Alcohol.CAUTION: For asthma sufferers only. Seek medical assistance immediately if symptoms do not improve within 1 hour or become worse. Do not use this product unless you have been diagnosed by a doctor as having asthma. If you have ever been hospitalized for asthma, or if you currently take any prescription drugs for asthma, use only when directed by a doctor.Take 10\u201315 drops under the tongue every 10\u201315 minutes or as needed until symptoms improve; then decrease to every one or two hours, then to four times daily until symptoms are relieved. For children under 12, consult your health care professional.4 Kids Too! Purchase Information ASTHMA (1 FL OZ)  Stock No.:8704-4 QV: 9.85 Member Cost: $9.85Non-Member Cost: $14.99 Product Information Product Name: Asthma (1 FL OZ) Product Type: Homeopathic. Product Label: Contains 20 percent USP alcohol. Product Description: Provides relief from asthma and bronchitis symptoms. Product Benefits: Fast relief, natural ingredients, and easy-to-use format. Product Specifications: 1 fluid ounce, 60ml, 20% USP alcohol. For kids, 1/4 teaspoon of the mixture in a non-metallic, heat-resistant pot,",
+      "reference": "For information purposes, there exists a homeopathic alternative remedy for the symptoms of asthma and bronchitis called Asthma Asthma. It helps with breathing difficulties, tightness of chest, wheezing and coughing.",
+      "adapter_used": "checkpoints/perspective/information/adapter_best",
+      "adherence_score": 0.8786714673042297,
+      "rouge_l": 0.11525423562516521,
+      "bleu": 0.018449456271571036,
+      "bert_f1": -0.054994381964206696
+    },
+    {
+      "Perspective": "INFORMATION",
+      "generated": "For information purposes, aDHD is a childhood condition characterized by difficulty controlling behavior and attention. It affects 3-5% of children in the United States, approximately 2 million kids, making it likely that at least one child in a classroom of 25-30 has ADHD.",
+      "reference": "For information purposes, aDHD is a childhood condition characterized by difficulty controlling behavior and attention. It affects 3-5% of children in the United States, approximately 2 million kids, making it likely that at least one child in a classroom of 25-30 has ADHD.",
+      "adapter_used": "checkpoints/perspective/information/adapter_best",
+      "adherence_score": 0.9851660132408142,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 0.9999996423721313
+    },
+    {
+      "Perspective": "INFORMATION",
+      "generated": "For information purposes Night blindness is often caused by retinitis pigmentosa, a condition that results in the deterioration of light-sensitive cells in the retina, particularly the rods responsible for night vision. Additionally, a deficiency in Vitamin A can contribute to night blindness, as this nutrient is crucial for maintaining the health of the eye's retina",
+      "reference": "For information purposes Night blindness is often caused by retinitis pigmentosa, a condition that results in the deterioration of light-sensitive cells in the retina, particularly the rods responsible for night vision. Additionally, a deficiency in Vitamin A can contribute to night blindness, as this nutrient is crucial for maintaining the health of the eye's retina",
+      "adapter_used": "checkpoints/perspective/information/adapter_best",
+      "adherence_score": 0.9821798801422119,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "Perspective": "INFORMATION",
+      "generated": "<|system|>\nYou are an AI assistant specialized in healthcare summarization. Your task is to summarize medical information from a specific perspective while maintaining accuracy.\n<|user|>\nI need you to summarize the following medical content from the INFORMATION perspective.\nINFORMATION Definition: Defined as knowledge about diseases, disorders, and health-related facts, providing insights into symptoms and diagnosis.\nBegin Summary with: For information purposes\nTone of summary: Informative, Educational\nContent to summarize:\nTry reading a really boring book, like Joyce's Ulysses warm milk Try autogenics. (first link)Its a meditative, disciplined method that teaches you to relax your muscles.  It may not get you to sleep immediately but it will help you to relax enough for your body to get sufficient rest.Also, you can try some kind of meditation techniques like yoga.  This will help you clear your mind as well as relax you.   Insomnia sometimes is a symptom of stress due to change. Changing your diet and exercise can help. Also changing your sleeping environment. Link is below if you'd care to read more on this. stay up really late and watch an old boring movie it always works for me Masterbait, have sex, or be masturbated. I find that clearing all my thoughts helped me sleep Go to bed at the same time every night and get up in the morning at the same time. Try to get some bright light in your eyes in the morning to help set your circadian rhythm.Try to set up a bedtime routine, even something simple like brushing your teeth, getting dressed for bed, locking the doors.  Enough things so your mind gets trained, like Pavlov's dog, to expect bedtime and sleepiness to come when you start it.  Add some quiet music before bed, or play a relaxation tape when you go to bed.Try to breathe deeply and slowly, concentrating on the exhale part of your breath as that is the most relaxing part.Consciously try to relax each part of your body, starting from the toes and working your way up.  I seldom get past my knees before I'm snoozing.From someone who had such awful sleep problems some years ago that I was actually diagnosed with narcolepsy. Here is something to try:1. Don't spend anymore time lying around in bed not being able to sleep.  You should only be in bed when you are tired and ready for sleep.2. Don't read in bed, watch TV in bed, stay up late talking in bed. 3. If you are in bed but not asleep, don't do anything else in bed. 4. If you are in bed but not asleep, stay very still and quiet. 5. In a sleepless night, stay quiet and still and focus on your breath.  Focus on exhaling as much as you can.  This can help you relax and clear your mind. This is a very simple but effective way to train your mind to associate sleep with rest and relaxation",
+      "reference": "For information purposes Incorporate yoga into your routine will enhance your sleep. This practice can clear your mind and induce relaxation, potentially alleviating insomnia related to stress or change. Additionally, consider adjusting your diet and engaging in regular exercise to positively impact your sleep. Evaluate and make changes to your sleeping environment for further improvement in sleep quality.",
+      "adapter_used": "checkpoints/perspective/information/adapter_best",
+      "adherence_score": 0.7123427987098694,
+      "rouge_l": 0.14649681278591428,
+      "bleu": 0.005909485797080208,
+      "bert_f1": -0.05850587040185928
+    },
+    {
+      "Perspective": "INFORMATION",
+      "generated": "For information purposes Heat treatments  are effective against Fatigued and aching muscles.",
+      "reference": "For information purposes Heat treatments  are effective against Fatigued and aching muscles.",
+      "adapter_used": "checkpoints/perspective/information/adapter_best",
+      "adherence_score": 0.9853507280349731,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "Perspective": "INFORMATION",
+      "generated": "For information purposes Cheese and other milk products are thick binding agents which is harder for the body to digest. Lactose intolerance developed in adulthood, eating cheese in excessive quantities or a diet without sufficient fibers can make food move slowly through the intestinal tract leading to consipation.",
+      "reference": "For information purposes Cheese and other milk products are thick binding agents which is harder for the body to digest. Lactose intolerance developed in adulthood, eating cheese in excessive quantities or a diet without sufficient fibers can make food move slowly through the intestinal tract leading to consipation.",
+      "adapter_used": "checkpoints/perspective/information/adapter_best",
+      "adherence_score": 0.9836347103118896,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "Perspective": "INFORMATION",
+      "generated": "For information purposes, a new natural product called AIRBORNE, created by a second-grade teacher, has emerged in the market. It's suggested to use it at the onset of symptoms. If you're taking thyroid medication and have a cold, consider asking a healthcare professional for safe options suitable for your condition.",
+      "reference": "For information purposes, a new natural product called AIRBORNE, created by a second-grade teacher, has emerged in the market. It's suggested to use it at the onset of symptoms. If you're taking thyroid medication and have a cold, consider asking a healthcare professional for safe options suitable for your condition.",
+      "adapter_used": "checkpoints/perspective/information/adapter_best",
+      "adherence_score": 0.9736483097076416,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "Perspective": "INFORMATION",
+      "generated": "For information purposes suggesting a modest to average range of sizes. A potential average size of 6.5 inches. Average 4.5 inches for Asians and around 6 inches for those from Western countries.",
+      "reference": "For information purposes suggesting a modest to average range of sizes. A potential average size of 6.5 inches. Average 4.5 inches for Asians and around 6 inches for those from Western countries.",
+      "adapter_used": "checkpoints/perspective/information/adapter_best",
+      "adherence_score": 0.9819167256355286,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "Perspective": "INFORMATION",
+      "generated": "For information purposes, the absence of glucose has not been proven to be a direct cause of dementia. However, deficiencies in specific nutrients, particularly B vitamins, have been identified as potential contributors to dementia if left unaddressed. It's crucial to note that dementia is a neurological disorder, and it is unrelated to the functioning of the pancreatic system, which is responsible for glucose regulation. The statement emphasizes the importance of addressing nutritional deficiencies in understanding and managing certain cases of dementia.",
+      "reference": "For information purposes, the absence of glucose has not been proven to be a direct cause of dementia. However, deficiencies in specific nutrients, particularly B vitamins, have been identified as potential contributors to dementia if left unaddressed. It's crucial to note that dementia is a neurological disorder, and it is unrelated to the functioning of the pancreatic system, which is responsible for glucose regulation. The statement emphasizes the importance of addressing nutritional deficiencies in understanding and managing certain cases of dementia.",
+      "adapter_used": "checkpoints/perspective/information/adapter_best",
+      "adherence_score": 0.9828395247459412,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0000007152557373
+    },
+    {
+      "Perspective": "INFORMATION",
+      "generated": "<|system|>\nYou are an AI assistant specialized in healthcare summarization. Your task is to summarize medical information from a specific perspective while maintaining accuracy.\n<|user|>\nI need you to summarize the following medical content from the INFORMATION perspective.\nINFORMATION Definition: Defined as knowledge about diseases, disorders, and health-related facts, providing insights into symptoms and diagnosis.\nBegin Summary with: For information purposes\nTone of summary: Informative, Educational\nContent to summarize:\nno there are multitudes of solutions from pharmisudics to health and diet... genetics and thyroid treatmens are a safer and more effective medical type treatment, however more costly and less accepted by insurace, try a healthy sport or active type lifestyle  alternative first not only is it cheaper but developes a sense of accopmlishment that lives on past the weight loss making it easier to retain your chosen weight rather then regaining it, definately stray away from weight loss drinks without active workouts as the weight reforms after giving it up \"remember that the fatty cells you deplete of water must be burned as well otherwise they retain water again rappidly after dieting making a month of work reappear three days after dropping the diet....     Look at pictures of gbypass procedures months after the treatment, the fat vanishes leaving massive ammounts of skin that can only be delt with by plastic surgery, again expensive and hard to get coverage for....  exercise releaves some of this problem as the skin is not retained quite as abundently...   most of all GOOD LUCK and dont give up, YOU CAN DO IT... i second syburry The good ol' tried and true healthy diet and exercise is still a good alternative.  The results take more time...but it's not as invasive as surgery.  Also, with diet and exercise, you make behavior modifications as you lose the weight, learning what works for you, and what doesn't. With the surgery, you immediately have to change your entire lifestyle.  Just some thoughts... Surgery is the last solution for obese people when everything else has failed. Making small changes in your diet and lifestyle alond with physical activity will give you the results you are wanting. It takes time but it is worth it. noooooooooooooo A hour a day of exercise, little diet change, because people tend to go back to thier old eating habits. If u move your body and continue to eat what u normally do you will still lose the weight, my son followed my theory, he lost 10 pounds in a week.\"",
+      "reference": "For information purposes Effective weight loss solutions range from pharmaceuticals to health and diet changes, with genetic and thyroid treatments being safer but more costly. These medical approaches may face insurance challenges. It's crucial to note that depleting fatty cells of water without burning them results in rapid water retention after a diet. Surgical options like gastric bypass can lead to massive skin issues requiring expensive plastic surgery, often not covered by insurance. Exercise helps mitigate skin problems, making the tried-and-true combination of a healthy diet and exercise a valuable alternative. Although results take time, lifestyle changes occur gradually, while surgery demands an immediate shift. Surgery is a last resort when other methods fail. Our bodies are designed for whole foods, not chemical-based ones. Additionally, staying hydrated with water aids in toxin removal during weight loss and benefits the skin.",
+      "adapter_used": "checkpoints/perspective/information/adapter_best",
+      "adherence_score": 0.824600100517273,
+      "rouge_l": 0.2590673532882762,
+      "bleu": 0.019785433818686155,
+      "bert_f1": 0.010280191898345947
+    },
+    {
+      "Perspective": "INFORMATION",
+      "generated": "For information purposes Nose hairs serve as a defense mechanism by filtering out harmful particles from the air we breathe, preventing them from entering our bodies. \"Buggers,\" or mucus, trap these particles, including dust, and are expelled to maintain respiratory health.",
+      "reference": "For information purposes Nose hairs serve as a defense mechanism by filtering out harmful particles from the air we breathe, preventing them from entering our bodies. \"Buggers,\" or mucus, trap these particles, including dust, and are expelled to maintain respiratory health.",
+      "adapter_used": "checkpoints/perspective/information/adapter_best",
+      "adherence_score": 0.9850906133651733,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "Perspective": "INFORMATION",
+      "generated": "For information purposes Regular exercise can help release endorphins, which can contribute to staying awake and alert rather than aiding sleep.",
+      "reference": "For information purposes Regular exercise can help release endorphins, which can contribute to staying awake and alert rather than aiding sleep.",
+      "adapter_used": "checkpoints/perspective/information/adapter_best",
+      "adherence_score": 0.9845655560493469,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "Perspective": "INFORMATION",
+      "generated": "<|system|>\nYou are an AI assistant specialized in healthcare summarization. Your task is to summarize medical information from a specific perspective while maintaining accuracy.\n<|user|>\nI need you to summarize the following medical content from the INFORMATION perspective.\nINFORMATION Definition: Defined as knowledge about diseases, disorders, and health-related facts, providing insights into symptoms and diagnosis.\nBegin Summary with: For information purposes\nTone of summary: Informative, Educational\nContent to summarize:\nDandruff is thought to be caused by a form of a skin condition called eczema, which causes increased shedding of normal scalp skin cells. Hormonal or seasonal changes may make dandruff worse.Here are some tips.Learn to manage stress. Stress affects your overall health, making you susceptible to a number of conditions and diseases. It can even help trigger dandruff or exacerbate existing symptoms. Shampoo often. If you tend to have an oily scalp, daily shampooing to remove the excess oil may help prevent dandruff. Cut back on styling products. Hair sprays, styling gels, mousses and hair waxes can all build up on your hair and scalp, making them oilier. Some people may even develop allergies to various hair-care products. Eat a healthy diet. For overall good health, include plenty of fresh fruits and vegetables, whole grains, and small amounts of lean protein in your diet. Get a little sun. Sunlight may be good for dandruff. But because exposure to ultraviolet light damages your skin and increases your risk of skin cancer, don't sunbathe. Instead, just spend a little time outdoors. But wear sunscreen on your face and body. I know for my daughter, we use the Paul Mitchell Tea Tree shampoo. I hope it helps Talk to your doctor about things in your diet... Have you tried DERMAREST?  There is a shampoo and a lotion.  Use it for every other shampoo for the first week.  About once a week after.  White box w/dark red writing.  Ask the pharmacy staff if you can't find it.  It seem to work.  The lotion is great for elbows and feet if you have thickened skin in those spots. try washing your hair everyday maybe it will go awayi had dandruff and it worked. i'm female and have untamable long hair and always play with the guys, my mom gets angry because i'm soo filthy and get dandruff\nAssociated medical question: Why are people (specifically females) prone to developing dandruff?",
+      "reference": "For information purposes, dandruff is often associated with a skin condition called eczema, leading to increased shedding of normal scalp skin cells, with hormonal or seasonal changes potentially worsening symptoms. Managing stress is crucial, as it can trigger or exacerbate dandruff. Shampooing frequently, especially for those with oily scalps, helps remove excess oil and prevent dandruff. Limiting the use of styling products is advised to avoid buildup on the hair and scalp. A healthy diet rich in fruits, vegetables, whole grains, and lean protein contributes to overall well-being. Limited sun exposure may be beneficial, but precautions, like sunscreen, should be taken to avoid skin damage. DERMAREST, available as a shampoo and lotion, is recommended for dandruff management. Using it every other shampoo for the first week, then weekly, has proven effective, and the lotion is also useful for thickened skin on elbows and feet.",
+      "adapter_used": "checkpoints/perspective/information/adapter_best",
+      "adherence_score": 0.8517071604728699,
+      "rouge_l": 0.32972972559590946,
+      "bleu": 0.06258435483714946,
+      "bert_f1": 0.1765802800655365
+    },
+    {
+      "Perspective": "INFORMATION",
+      "generated": "For information purposes Common symptoms of testicular cancer include swelling and/or a lump in one or both testes, a sensation of heaviness in the scrotum, and dull pain in the lower abdominal area, groin, or lower back. While pain in the testes or scrotum may or may not be present, it's crucial to be aware of any unusual bumps on the testicles. Testicular cancer is more prevalent in young men between the ages of 15 and 35, but it can occur in other age groups as well. Early detection is key to treating testicular cancer, as this form of cancer is almost always curable if found early. If a lump is detected, seek medical attention promptly to ensure proper diagnosis and treatment.",
+      "reference": "For information purposes Common symptoms of testicular cancer include swelling and/or a lump in one or both testes, a sensation of heaviness in the scrotum, and dull pain in the lower abdominal area, groin, or lower back. While pain in the testes or scrotum may or may not be present, it's crucial to be aware of any unusual bumps on the testicles. Testicular cancer is more prevalent in young men aged 15 to 35 but can occur in other age groups, necessitating awareness of its symptoms by all men. Although relatively rare, testicular cancer is highly curable if detected early. Men often discover it themselves through the identification of painless lumps, changes in testicle size, or testicular pain. Individuals born with an undescended testicle face an increased risk of testicular cancer, emphasizing the importance of corrective surgery to preserve fertility. The elevated cancer risk is attributed to the underlying cause of the undescended testicle, not solely its undescended state.",
+      "adapter_used": "checkpoints/perspective/information/adapter_best",
+      "adherence_score": 0.9832382202148438,
+      "rouge_l": 0.629441619422299,
+      "bleu": 0.46753054851551057,
+      "bert_f1": 0.6758958697319031
+    },
+    {
+      "Perspective": "INFORMATION",
+      "generated": "For information purposes, clear urine can be a positive sign of good health. While clear urine is not necessarily an indicator of good health, having dark yellow urine signals Insufficient water intake. Also, some medications may cause discoloration. Slightly yellow to medium yellow urine is considered normal. Insufficient water consumption could affect organ flushing, impacting their self-flushing processes.",
+      "reference": "For information purposes, clear urine can be a positive sign of good health. While clear urine is not necessarily an indicator of good health, having dark yellow urine signals Insufficient water intake. Also, some medications may cause discoloration. Slightly yellow to medium yellow urine is considered normal. Insufficient water consumption could affect organ flushing, impacting their self-flushing processes.",
+      "adapter_used": "checkpoints/perspective/information/adapter_best",
+      "adherence_score": 0.9863125681877136,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "Perspective": "INFORMATION",
+      "generated": "For information purposes In Canada, clothing sizes typically range from 0 to 32, with a thin girl falling within the 4-8 range, average being around 10-14, and larger sizes starting at 16. Plus size in Canada is generally considered anything over a size 10. In the United States, however, the average size is around 16, and plus sizes start at size 16, usually. It is essential to note that height plays a significant role in determining clothing sizes for women.",
+      "reference": "For information purposes In Canada, clothing sizes typically range from 0 to 32, with a thin girl falling within the 4-8 range, average being around 10-14, and larger sizes starting at 16. Plus size in Canada is generally considered anything over a size 10. In the United States, however, the average size is around 16, and plus size usually starts at size 16. Different size categories exist for various types of clothing, and women's pants, for example, can range from size 0 to 14, with a slim woman likely wearing a size 6 and an overweight woman seeking sizes from 14 to 20 or beyond. The availability of small, medium, large, and extra-large sizes, as well as petite sizes, adds to the diversity of options. Clothing sizes in department stores typically span from 0 to 24, acknowledging the variety of body shapes and sizes. The average American woman is noted to be a size 12.",
+      "adapter_used": "checkpoints/perspective/information/adapter_best",
+      "adherence_score": 0.985081672668457,
+      "rouge_l": 0.5822784763331198,
+      "bleu": 0.2884477341685628,
+      "bert_f1": 0.6383070349693298
+    },
+    {
+      "Perspective": "INFORMATION",
+      "generated": "<|system|>\nYou are an AI assistant specialized in healthcare summarization. Your task is to summarize medical information from a specific perspective while maintaining accuracy.\n<|user|>\nI need you to summarize the following medical content from the INFORMATION perspective.\nINFORMATION Definition: Defined as knowledge about diseases, disorders, and health-related facts, providing insights into symptoms and diagnosis.\nBegin Summary with: For information purposes\nTone of summary: Informative, Educational\nContent to summarize:\ntake green tea, and my trainor said to mix up ur work out one day lift maybe 5 pd barbell in one hand and 10 in the other, if u can lift more great!then the next day switch them, so ur body is always tearing and guessing never have a routine work out, do green tea because it helps ur immune system and replenishes ur body, but try useing different amounts of weight like everyother time good luck! do you know your body type, it can realy help you not to work against your self, try to search in wikipedia ''body type'' Workout 24 hours a day. working out anything past 45 min is a waste of time because you end up destroy your own current muscles for energy, and also leads to overtraining which will also waste your muscle and prevent them from recovering thus will not build you any new muscle. So working out 24 hours a day as stated above is pure stupidity.also 3X 20 sets is another stupid answer which will lead to what i already stated above.now here is the way to build muscle properly and increase the speed in which you will gain them:the secret to gaining muscle is to shock your muscles every work out. this can be done in the following ways:-changing the order of the exercise each work out- changing the speed at which you lift the weights, slow or faster-super sets which means doing two or more opposite or same body part exercises- giant sets which means no rest between all sets performed for a specific body part- negatives which means lowering the weight very slowly after one rep- stripping which means lifting the heaviest weight you can to muscle failure (when you can lift it anymore) for no more than 6-8 repetitions and then going to a slightly lower weight + repeatthat's only a few ways to shock your muscles into growing. Muscles have a memory so you must vary and change your routine and shocking methods constantly.also there is the diet component:proteins: make sure you eat a palm size protein portion for every 3 hours of rest between meals, aiming for 1.5 pounds of protein per day. this is for general protein requirements. this amount is for general protein requirements and you can adjust according to your needs, but general guidelines for women, children, and pregnant women are different. This protein is needed for muscle growth, repair and maintenance. it can also be achieved through other means like plant based proteins, for example legumes, whole grains, nuts, seeds, fish, eggs,",
+      "reference": "For information purposes Knowing your body type can help build muscle.",
+      "adapter_used": "checkpoints/perspective/information/adapter_best",
+      "adherence_score": 0.8731312155723572,
+      "rouge_l": 0.05940593989434587,
+      "bleu": 0.0025662947553101024,
+      "bert_f1": -0.07294277846813202
+    },
+    {
+      "Perspective": "INFORMATION",
+      "generated": "For information purposes, the human body, comprising 70% water, contains Riboflavin (B2) which gives urine it's yellow color.  The body eliminates excess vitamins, including B2, through urine.",
+      "reference": "For information purposes, the human body, comprising 70% water, contains Riboflavin (B2) which gives urine it's yellow color.  The body eliminates excess vitamins, including B2, through urine.",
+      "adapter_used": "checkpoints/perspective/information/adapter_best",
+      "adherence_score": 0.9849438071250916,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "Perspective": "INFORMATION",
+      "generated": "For information purposes, the Achilles tendon is the longest.",
+      "reference": "For information purposes, the Achilles tendon is the longest.",
+      "adapter_used": "checkpoints/perspective/information/adapter_best",
+      "adherence_score": 0.9856200218200684,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 0.9999996423721313
+    },
+    {
+      "Perspective": "INFORMATION",
+      "generated": "For information purposes, the impact of drug withdrawal varies based on the individual, the specific drug, and its dosage. Psychological dependence can occur even with mild drugs, while others may quit potent drugs abruptly with minimal effect. Overall, there tends to be a period of adjustment in brain chemistry during withdrawal. This principle extends beyond prescription drugs to include alcohol, non-prescription drugs, and certain foods, where there will generally be withdrawal symptoms.",
+      "reference": "For information purposes, the impact of drug withdrawal varies based on the individual, the specific drug, and its dosage. Psychological dependence can occur even with mild drugs, while others may quit potent drugs abruptly with minimal effect. Overall, there tends to be a period of adjustment in brain chemistry during withdrawal. This principle extends beyond prescription drugs to include alcohol, non-prescription drugs, and certain foods, emphasizing the individualized nature of withdrawal experiences.",
+      "adapter_used": "checkpoints/perspective/information/adapter_best",
+      "adherence_score": 0.9853105545043945,
+      "rouge_l": 0.9333333283333335,
+      "bleu": 0.9041272172267688,
+      "bert_f1": 0.923710286617279
+    },
+    {
+      "Perspective": "INFORMATION",
+      "generated": "For information purposes, approximately 5lbs of our weight is due to the water in the body. That weight can be lost to achieve radpid weight loss. This technique is used by wrestlers to lost 5-10 lbs in a week to get into a desired category. Water pills are used to reduce water content in the body.",
+      "reference": "For information purposes, approximately 5lbs of our weight is due to the water in the body. That weight can be lost to achieve radpid weight loss. This technique is used by wrestlers to lost 5-10 lbs in a week to get into a desired category. Water pills are used to reduce water content in the body.",
+      "adapter_used": "checkpoints/perspective/information/adapter_best",
+      "adherence_score": 0.9848544597625732,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 0.9999996423721313
+    },
+    {
+      "Perspective": "INFORMATION",
+      "generated": "For information purposes, a urologist, specializing in the urinary tract for both men and women, is not exclusively for men's reproductive issues. Unlike women who have gynecologists, men lack a specific equivalent. Men generally don't experience urinary tract or yeast infections unless there are severe hygiene issues.",
+      "reference": "For information purposes, a urologist, specializing in the urinary tract for both men and women, is not exclusively for men's reproductive issues. Unlike women who have gynecologists, men lack a specific equivalent. Men generally don't experience urinary tract or yeast infections unless there are severe hygiene issues.",
+      "adapter_used": "checkpoints/perspective/information/adapter_best",
+      "adherence_score": 0.985186755657196,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "Perspective": "INFORMATION",
+      "generated": "For information purposes Many plastic surgeons offer payment plan options, although the associated interest rates tend to be relatively high. Additionally, there are companies that specialize in financing surgeries, and one can easily find them through an online search or inquire with their surgeon for recommendations.",
+      "reference": "For information purposes Many plastic surgeons offer payment plan options, although the associated interest rates tend to be relatively high. Additionally, there are companies that specialize in financing surgeries, and one can easily find them through an online search or inquire with their surgeon for recommendations.",
+      "adapter_used": "checkpoints/perspective/information/adapter_best",
+      "adherence_score": 0.98406583070755,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "Perspective": "INFORMATION",
+      "generated": "For information purposes, the experience of recognizing pregnancy varies among individuals. Some may claim to sense it early on, while others may not be aware for several months. Morning sickness typically begins around the sixth week, and fluttering sensations in the abdomen may be felt between the 16th and 20th weeks. Lack of early symptoms and absence of a visible tummy bulge might delay awareness, and for some, it could take up to 4.5 months to feel the baby moving. Some women may experience irregular periods during pregnancy, leading to delayed recognition. While everyone's experience is unique, it is generally recommended to start feeling like one is pregnant around the sixth week of pregnancy.",
+      "reference": "For information purposes, the experience of recognizing pregnancy varies among individuals. Some may claim to sense it early on, while others may not be aware for several months. Morning sickness typically begins around the sixth week, and fluttering sensations in the abdomen may be felt between the 16th and 20th weeks. Lack of early symptoms and absence of a visible tummy bulge might delay awareness, and for some, it may take up to 4 1/2 months when the baby's movements become noticeable. Additionally, some individuals may continue to have periods during pregnancy, further delaying the realization.",
+      "adapter_used": "checkpoints/perspective/information/adapter_best",
+      "adherence_score": 0.9821200966835022,
+      "rouge_l": 0.7770700587106983,
+      "bleu": 0.636169440750498,
+      "bert_f1": 0.8159362077713013
+    },
+    {
+      "Perspective": "INFORMATION",
+      "generated": "For information purposes Eating a healthy diet can provide all the necessary vitamins and minerals. Prenatal vitamins are recommended for females as they are formulated not to upset stomachs and provide 100% of the essential nutrients. While the effectiveness of absorption is not well-documented, it is suggested that liquid vitamins are better absorbed and get into the system faster. A client's experience, where thousands of multi-vitamins remained undissolved in a toilet tank, highlights the potential waste of money in tablets.",
+      "reference": "For information purposes Eating a healthy diet can provide all the necessary vitamins and minerals. Prenatal vitamins are recommended for females as they are formulated not to upset the stomach and provide 100% of essential nutrients. Centrum and GNC's Mega Man/Woman Series are well-absorbed. Liquid form vitamins are considered the best for easy absorption and quick assimilation into the system. While a proper diet can fulfill nutritional needs, time constraints may lead people to opt for supplements. Contacting customer service for dissolution tests can verify absorption rates.",
+      "adapter_used": "checkpoints/perspective/information/adapter_best",
+      "adherence_score": 0.979178786277771,
+      "rouge_l": 0.5312499950048829,
+      "bleu": 0.3742813008306418,
+      "bert_f1": 0.5102918744087219
+    },
+    {
+      "Perspective": "QUESTION",
+      "generated": "It is inquired Follow up questions were asked if the inquirer is eating and drinking water.",
+      "reference": "It is inquired Follow up questions were asked if the inquirer is eating and drinking water.",
+      "adapter_used": "checkpoints/perspective/question/adapter_best",
+      "adherence_score": 0.9778226017951965,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "Perspective": "QUESTION",
+      "generated": "<|system|>\nYou are an AI assistant specialized in healthcare summarization. Your task is to summarize medical information from a specific perspective while maintaining accuracy.\n<|user|>\nI need you to summarize the following medical content from the QUESTION perspective.\nQUESTION Definition: Defined as inquiry made for deeper understanding.\nBegin Summary with: It is inquired\nTone of summary: Seeking Understanding\nContent to summarize:\nMost gallstones are made of pure cholesterol.  You might try a diet with low fat and very low saturated fats.  Reducing the saturated fats will lower blood cholesterol and may (I'm not promising anything!) make the stones smaller.Lowering your total fat intake may also help reduce or prevent pain.  Gallstones hurt because when you eat fat, the stomach senses it and tells the gallbladder to release some of the gall into the intestines to help digest the fat.  If you have stones, that squeezing is about like squeezing a handfull of pointy rocks.However...   I've had the surgery and it really isn't a big deal.  There is minimal scarring and the incisions aren't that much bigger than a bug bite or a medium sized zit.  If you leave the gallstones there, they can get large enough to damage the gallbladder, with the result of a bad infection and that can cause death, which is a very Bad Thing! They now have a way of zapping them with sound that caused them to shatter instead of operating.  I don't know the details though. If you really want to seek other alternatives I would look into finding a holistic store near you and maybe call and ask if they have any organic remedies.... usually a reg. doc. wont tell you those type of remedies because its not considered western medicine.... good luck Have you seen a gastroenterologist?  They can do a minimally invasive procedure called an ERCP (Endoscopic Retrograde Cholangiopancreatography - try saying that 3 times fast!).  An ERCP won't get rid of the stones that are in the gallbladder...just the stones that are stuck in the duct leading from the GB to the small intestine.  They can make a tiny cut in the duct and pull gallstones out with a small balloon.  If the stone is too large, they have equipment that will crush the stone so it will pass freely.  I had the surgery myself about 10 years ago.  It's not as bad as you'd imagine, and you don't have to worry about it causing bad infection if it's properly done.  I would have been happy to describe it to you... but I was a bit of a goofball and you might not have liked my description.  If you haven't had the surgery yet, you have two options: 1) Get ERCP or 2) Wait for your gallstones to become large enough to cause a problem.  Good luck with your decision.\n\nThis summary will focus on the question perspective",
+      "reference": "It is inquired if the person has seen a gastroenterologist",
+      "adapter_used": "checkpoints/perspective/question/adapter_best",
+      "adherence_score": 0.005158453248441219,
+      "rouge_l": 0.04895104827619934,
+      "bleu": 0.0025263476541249105,
+      "bert_f1": -0.15985523164272308
+    },
+    {
+      "Perspective": "QUESTION",
+      "generated": "It is inquired if they have ever been diagnosed with Diabetes.",
+      "reference": "It is inquired if they have ever been diagnosed with Diabetes.",
+      "adapter_used": "checkpoints/perspective/question/adapter_best",
+      "adherence_score": 0.9816985130310059,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "Perspective": "QUESTION",
+      "generated": "It is inquired if they were sure that nothing else was getting clipped.",
+      "reference": "It is inquired if they were sure that nothing else was getting clipped.",
+      "adapter_used": "checkpoints/perspective/question/adapter_best",
+      "adherence_score": 0.9796664118766785,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "Perspective": "QUESTION",
+      "generated": "It is inquired if the inquirer has considered trying 'Dr. George's Dental White for an affordable option to achieve whiter teeth. Further, it is queried whether the inquirer has contemplated consulting a dentist for potential discounts or specialized guidance. Regular brushing is also recommended.",
+      "reference": "It is inquired if the inquirer has considered trying 'Dr. George's Dental White for an affordable option to achieve whiter teeth. Further, it is queried whether the inquirer has contemplated consulting a dentist for potential discounts or specialized guidance. Regular brushing is also recommended.",
+      "adapter_used": "checkpoints/perspective/question/adapter_best",
+      "adherence_score": 0.9692726731300354,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "Perspective": "QUESTION",
+      "generated": "<|system|>\nYou are an AI assistant specialized in healthcare summarization. Your task is to summarize medical information from a specific perspective while maintaining accuracy.\n<|user|>\nI need you to summarize the following medical content from the QUESTION perspective.\nQUESTION Definition: Defined as inquiry made for deeper understanding.\nBegin Summary with: It is inquired\nTone of summary: Seeking Understanding\nContent to summarize:\nExperts say writing down your eating habits will keep your diet on track -- even when you slip up and eat a few things you wish you hadn't.Food journals can help keep portions under control. For example, don't just write that you ate chicken for dinner. Write down how many ounces that piece of chicken was. And how many pieces you consumed. Information on gauging portions can be found on the Internet. If you are not seeing a dietician, you can cross-check your daily food intake with the USFDA food guide pyramid. The Food and Nutrition Information Center Web site provides a USFDA food guide pyramid at www.nalusda.gov/fnic/index.html. The Web site includes USFDA food pyramids for ethnic foods as well.Wondering if you've eat enough servings of fruit and vegetables? A food journal can help you figure it out. While it's not helpful to everyone, many people report food journal success.No matter what you're weight loss or eating goal, scribbling your snacking habits down is a good idea, experts say. Then when you see the pounds sliding off -- or piling on -- you can look back through your journal and find out why. I have to keep a food diary because of my daughters feeding tube. It really opens your eyes at what is going on. You should do it. Don't fabricate portions be truthful. You will look at it and realize what you are eating and think to yourself omg you have to be kidding me I need to straighten up my act. I think it will help. yup Yeah it does..but 30 pounds!? That's rediculious. You may lose 5 pounds.A few things you can do to lose pounds is:Exercise, eat healtheir, run..and tons of those stuff. Here's soemthign that works.A person eats 3 meals a day fully. And lets pretend each meal is 1 pound (not necessarily.)Something that may work using the one pound ratio is instead of have three 1 pound meals every day, which equal up to three pounds of food every day. Instead of eating three meals a day it may be better to eat two meals a spaced 6 hours apart, rather than three meals a day. Eating two meals a day can reduce the overall calorie intake. I have a cousin who has been on this diet and she has lost 10 pounds in a month. It's a lot better than other diets I've seen. The two-meals-a-day diet is also better for people with diabetes. Many people with diabetes have a harder time eating three meals a",
+      "reference": "It is inquired if they eat an enough serving of fruit and vegetables.",
+      "adapter_used": "checkpoints/perspective/question/adapter_best",
+      "adherence_score": 0.0069303666241467,
+      "rouge_l": 0.06849314983416213,
+      "bleu": 0.003478381234493142,
+      "bert_f1": -0.09866992384195328
+    },
+    {
+      "Perspective": "QUESTION",
+      "generated": "It is inquired if the person is diabetic and overweight",
+      "reference": "It is inquired if the person is diabetic and overweight",
+      "adapter_used": "checkpoints/perspective/question/adapter_best",
+      "adherence_score": 0.9801042079925537,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "Perspective": "QUESTION",
+      "generated": "It is inquired if the person is stressed.",
+      "reference": "It is inquired if the person is stressed.",
+      "adapter_used": "checkpoints/perspective/question/adapter_best",
+      "adherence_score": 0.980268657207489,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 0.9999996423721313
+    },
+    {
+      "Perspective": "EXPERIENCE",
+      "generated": "In user's experience In users expereince, one user plans to pop a blister using a sterilized needle and this user previously used silver nitrate to address a skin issue successfully.",
+      "reference": "In user's experience In users expereince, one user plans to pop a blister using a sterilized needle and this user previously used silver nitrate to address a skin issue successfully.",
+      "adapter_used": "checkpoints/perspective/experience/adapter_best",
+      "adherence_score": 0.9905188679695129,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "Perspective": "EXPERIENCE",
+      "generated": "In user's experience In users expereince, one individual successfully went from a size 10 to a size 5 by incorporating apple cider vinegar into their routine. They also adopted healthy habits such as drinking lots of water, exercising, and eliminating red meat from their diet. To maintain their ideal weight, the person continues to take 2 tablespoons of apple cider vinegar daily and supplements with \"diet smart,\" a multivitamin and dietary supplement.",
+      "reference": "In user's experience In users expereince, one individual successfully went from a size 10 to a size 5 by incorporating apple cider vinegar into their routine. They also adopted healthy habits such as drinking lots of water, exercising, and eliminating red meat from their diet. To maintain their ideal weight, the person continues to take 2 tablespoons of apple cider vinegar daily and supplements with \"diet smart,\" a multivitamin and dietary supplement.",
+      "adapter_used": "checkpoints/perspective/experience/adapter_best",
+      "adherence_score": 0.9904712438583374,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "Perspective": "EXPERIENCE",
+      "generated": "In user's experience In users experience, an individual shares a personal experience regarding the timing of taking birth control. While the usual routine is in the morning, occasional forgetfulness has led to taking it after work. The person notes that this schedule variation has not posed any issues for them with regard to birth control effectiveness.",
+      "reference": "In user's experience In users experience, an individual shares a personal experience regarding the timing of taking birth control. While the usual routine is in the morning, occasional forgetfulness has led to taking it after work. The person notes that this schedule variation has not posed any issues for them with regard to birth control effectiveness.",
+      "adapter_used": "checkpoints/perspective/experience/adapter_best",
+      "adherence_score": 0.9899118542671204,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "Perspective": "EXPERIENCE",
+      "generated": "<|system|>\nYou are an AI assistant specialized in healthcare summarization. Your task is to summarize medical information from a specific perspective while maintaining accuracy.\n<|user|>\nI need you to summarize the following medical content from the EXPERIENCE perspective.\nEXPERIENCE Definition: Defined as individual experiences, anecdotes, or firsthand insights related to health, medical treatments, medication usage, and coping strategies\nBegin Summary with: In user's experience\nTone of summary: Personal, Narrative\nContent to summarize:\nDISCLAIMER: Before using any medicines, you should consult a registered physiscian. This is only for information.Acne Treatment|Self-Care at Home|    * Wash once or twice daily with soap and water to remove excess oil from the skin. An acne cleanser purchased over-the-counter in any drug store can also be helpful. Avoid scrubbing too abrasively because this can actually irritate the skin and cause acne to worsen.    * Over-the-counter acne medications can be used either at bedtime or during the day. Always follow the directions on any acne product.    * Many cover-up products are available without a prescription to improve the appearance of blemishes while they have a chance to heal. Most work well and should not worsen acne.    * Some cosmetics and other skin care products, however, can cause acne to worsen. Look for make-up, cosmetics, and skin care products labeled with the word noncomedogenic. This means that it does not cause or worsen acne.|Medical Treatment|Many treatment options are available to treat all forms of acne. Medications are the main treatment for acne and usually work well. Several preparations are available over-the-counter, while others require a prescription from a doctor.    * Over-the-counter medications: Nonprescription or over-the-counter medications for acne are plentiful and can be effective for milder forms of acne. They come in the form of soaps, washes, and cleansers.          o Many contain benzoyl peroxide, which does two things. First, benzoyl peroxide kills the acne-causing bacteria, which are thought to play a role in acne. Second, benzoyl peroxide can cause drying and flaking off of skin, which can help prevent the pores from becoming plugged. Plugged pores can develop into acne blemishes.          o Scrubbing excessively with any over-the-counter preparation can actually cause acne to worsen by additionally irritating the hair follicles.    * Prescription medications: Doctors can prescribe medications when over-the-counter treatments are insufficient. The prescription medications for acne work by different mechanisms to kill the acne-causing bacteria and reducing inflammation, the body's natural response to injury. There are two main types of prescription medications:    * Oral antibiotics: These medications kill the acne-causing bacteria by disrupting their growth. The antibiotic erythromycin is commonly used for mild to moderate acne. The antibiotic doxycycline is used for severe acne.    * Topical retinoids: These medications",
+      "reference": "In user's experience In users expereince, one individual shared a personal experience of successfully treating acne that persisted for 12 years by addressing a potential underlying issue of candida. The individual implemented a treatment plan that included herbal antifungals, lactobacillus acidophilus, and followed an anti-candida diet. This approach resulted in the resolution of the acne problem.",
+      "adapter_used": "checkpoints/perspective/experience/adapter_best",
+      "adherence_score": 0.026211833581328392,
+      "rouge_l": 0.11371237197838956,
+      "bleu": 0.0036793216741174747,
+      "bert_f1": -0.17376486957073212
+    },
+    {
+      "Perspective": "EXPERIENCE",
+      "generated": "In user's experience In users expereince, one individual expressed concerns about cracking their neck, having heard that excessive cracking can lead to arthritis. They also mentioned the fear of breaking the neck if the popping is done too forcefully. Another person admitted to having a habit of cracking various joints, including the neck, back, toes, and knuckles, and expressed efforts to stop this habit.",
+      "reference": "In user's experience In users expereince, one individual expressed concerns about cracking their neck, having heard that excessive cracking can lead to arthritis. They also mentioned the fear of breaking the neck if the popping is done too forcefully. Another person admitted to having a habit of cracking various joints, including the neck, back, toes, and knuckles, and expressed efforts to stop this habit.",
+      "adapter_used": "checkpoints/perspective/experience/adapter_best",
+      "adherence_score": 0.9898697733879089,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "Perspective": "EXPERIENCE",
+      "generated": "<|system|>\nYou are an AI assistant specialized in healthcare summarization. Your task is to summarize medical information from a specific perspective while maintaining accuracy.\n<|user|>\nI need you to summarize the following medical content from the EXPERIENCE perspective.\nEXPERIENCE Definition: Defined as individual experiences, anecdotes, or firsthand insights related to health, medical treatments, medication usage, and coping strategies\nBegin Summary with: In user's experience\nTone of summary: Personal, Narrative\nContent to summarize:\nYou are gonna get a lot of answers saying to hold your breath, but that only works sometimes and not with every person. Try holding an ice cube to your throat for about 20 to 30 seconds. Also try holding your nose while you take big gulps of water. What I have done for hiccups all my life is swallow saliva immediately after receiving the first hiccup and it goes away. I've done it forever and it works, try it next you get it. And don't over eat it sometimes causes hiccups. Hold your breath. Take a deep breath. Hold your breath under water for 10 minutes. Get a friend to help. Set a glass of water on a table with a straw in it and plug your ears and nose while drinking from the straw, I swear it works. The spoon full of sugar works too, but it's hard to swallow, you'll have to drink water anyway. Holding your breath doesn't really work. Burping does. There are two steps for a hiccup.. let's say you go hic (when you inhale) and then cup (when you exhale) Instead of exhaling the cup, burp it out. Hic, hold the air bubble in your throat and try to make it travel up, and burp it out. If you don't know how to make yourself burp (like myself), get yourself some coke or 7up or sprite, anything gassy to make you burp faster :o) eat one teaspoon of sugar, will provide instant relief! Eat a spoonful of sugar quickly. Your senses will overload with the response from the receptors that the sugar triggered off, and you won't hiccup anymore. focus on your middle name for 5-10 seconds then say it OUT LOUD. if that doesn't work, use brother/sisters middle name. 2 methods, both work, but one is a bit difficult1. Bite down on the middle part of a straw or pen or pencil in your mouth. Bite down, like, hard on the middle part of the straw or pen/pencil. Hold onto that for 5-10 seconds, and then release. When you are not biting down on anything hard at the moment, bite down hard on a straw or pen/pencil in your mouth. If you're unable to do this, you have no idea, then get your brother/sister to bite down on something for you. Get a friend to bite down on a straw or pen/pencil",
+      "reference": "In user's experience In users expereince, one individual says that they cure their hiccups by swallowing saliva immediately after receiving the first hiccup.",
+      "adapter_used": "checkpoints/perspective/experience/adapter_best",
+      "adherence_score": 0.05638382211327553,
+      "rouge_l": 0.09420289708359589,
+      "bleu": 0.0129188769370427,
+      "bert_f1": -0.05607328936457634
+    },
+    {
+      "Perspective": "EXPERIENCE",
+      "generated": "In user's experience A user says even his eyes hurt when reading",
+      "reference": "In user's experience A user says even his eyes hurt when reading",
+      "adapter_used": "checkpoints/perspective/experience/adapter_best",
+      "adherence_score": 0.9866247177124023,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "Perspective": "EXPERIENCE",
+      "generated": "In user's experience In users experience, an individual's father had thyroid cancer for a month before noticing.",
+      "reference": "In user's experience In users experience, an individual's father had thyroid cancer for a month before noticing.",
+      "adapter_used": "checkpoints/perspective/experience/adapter_best",
+      "adherence_score": 0.9896309971809387,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "Perspective": "EXPERIENCE",
+      "generated": "<|system|>\nYou are an AI assistant specialized in healthcare summarization. Your task is to summarize medical information from a specific perspective while maintaining accuracy.\n<|user|>\nI need you to summarize the following medical content from the EXPERIENCE perspective.\nEXPERIENCE Definition: Defined as individual experiences, anecdotes, or firsthand insights related to health, medical treatments, medication usage, and coping strategies\nBegin Summary with: In user's experience\nTone of summary: Personal, Narrative\nContent to summarize:\nTry the Mary Kay skin care line with customized skin care products for acne. The best thing to with your skin is always to keep it clean as well as treating the breakouts. This helps prevent breakouts. There are five steps to basic skin care not including the acne treatment gel I would have you try. 1. Cleanse2. Exfoliate3. Tone/Freshen4. Moisturize5. ProtectThe Mary Kay 3 in 1 cleanser can do the first three steps in one. The fifth step is protect. You want to use an oil free foundation. When your skin is protected with foundation you can wash off the impurities that your skin catches in the air. The foundation catches the irritants and impurities instead of them getting into your pores causing further breakouts. Mary Kay is satasfaction guaranteed. So if you try it and it doesnt work for you you can get different products or your money back. Also it is so important that when you are using skin care you use one line be it Mary Kay or Avon or a Walmart brand. They are formulated to work with one another. Mixing products not designed to work together can cause reactions in some people. ;) Hope this was helpful!!MeganHill@MaryKay.com if you need anything elsewww.MaryKay.com/MeganHill to check out the lineMegan I like Neutrogena which has a variety of washes to choose from--it's not overdrying. And actually, regardless of what regimen you choose--because I've actually been using the Mary Kay cleansing system for years and use Neutrogena as a back up when I run out, which is seldom--if you use it consistently and as directed, your acne should decrease significantly.  You may want/need to alter your diet as well as you may have reactions to certain foods. I used to have very bad acne. I now just use regular soap and a loufa (a good subsitute is the buf puf). I switched over to a different cleanser and my skin went from having acne to clear.  This is not only helpful for people with acne, but also for all of you with the most common skin problems such as aging and drying skin.  The best part is that Mary Kay offers an incredible array of skincare products that will help you achieve the best results.  This can range from a customized skin care system to other products that will help your skin stay healthy and happy.  As one of the",
+      "reference": "In user's experience In users expereince, one individual recommends Neutrogena for its variety of washes that are not overly drying. On the other hand, another individual manages acne by using regular soap along with a loofah (or a substitute like the Buf Puf). They find that the soap helps loosen the skin, while the loofah helps remove dead skin cells, resulting in improved skin appearance. Skincare routines often depend on individual skin types and preferences, so finding what works best for you is key.",
+      "adapter_used": "checkpoints/perspective/experience/adapter_best",
+      "adherence_score": 0.07976454496383667,
+      "rouge_l": 0.20121950887288076,
+      "bleu": 0.005639064174887251,
+      "bert_f1": -0.05850481241941452
+    },
+    {
+      "Perspective": "EXPERIENCE",
+      "generated": "In user's experience In users expereince, one individual quit smoking over a year ago, they described it as a constant struggle especially when they drank alcohol.",
+      "reference": "In user's experience In users expereince, one individual quit smoking over a year ago, they described it as a constant struggle especially when they drank alcohol.",
+      "adapter_used": "checkpoints/perspective/experience/adapter_best",
+      "adherence_score": 0.9894689321517944,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "Perspective": "EXPERIENCE",
+      "generated": "In user's experience In users experience, an individual explained that not eating carbs is the only way to Lose weight without having to be hungry,",
+      "reference": "In user's experience In users experience, an individual explained that not eating carbs is the only way to Lose weight without having to be hungry,",
+      "adapter_used": "checkpoints/perspective/experience/adapter_best",
+      "adherence_score": 0.9896326065063477,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "Perspective": "EXPERIENCE",
+      "generated": "<|system|>\nYou are an AI assistant specialized in healthcare summarization. Your task is to summarize medical information from a specific perspective while maintaining accuracy.\n<|user|>\nI need you to summarize the following medical content from the EXPERIENCE perspective.\nEXPERIENCE Definition: Defined as individual experiences, anecdotes, or firsthand insights related to health, medical treatments, medication usage, and coping strategies\nBegin Summary with: In user's experience\nTone of summary: Personal, Narrative\nContent to summarize:\nWell, situps are a waste of time.  Some people do like as much sit ups as they can to achieve that 6 pack.  And to be honest, some never get it.  Its cuz the muscles arent big enough to show a 6 pack.  There was never enough resistance to get it.  I dont recommend any type of sit ups.  I do a kung fu style push up that gives you the best results.  Imagine, everybody can do like 10 or 20, maybe 100 sit ups, but with this, some cannot even do one.  But, just because you cant do one doesnt mean you havent done any work.  Eventually, after trying every day, you will be able to do one.  And then 2, 3, and slowly you work your way to like 25.  You only need to do about 15 to 20 per day to keep that 6 pack after its there.  You lay flat on the floor on your stomach.  Then you prop your feet up in push up position.  Now you put your hands out there on the floor.  Now put them together so that they are just touching.  Now, try to do a push up.  Keep your back as straight as possible.  When you first do this, your back will have a tendency to bend because you are trying to do at least one.  Hehe.  Um, I used to be able to do 50 of these easy.  After I get it, it was a cinch.  It will take you like 1 to 2 minutes a day trying to do like 20.  Thats all it takes to keep your 6 pack.  I used to do crunches.  Elbows to knees.  They arent bad, but this is far better.  Because doing crunches, you might not be able to sit on the floor with your legs out, and lift your body with your legs.  You need to lift your body up like the push up.  I used to have to be like, 70 pounds, and lift my body like a car.  Because, you need to engage the core to lift that weight.  I would have to sit on the floor for like 20 minutes, or sit on the chair for like 30 minutes, but it was still the same.  Now that I can do push ups with my legs, I do them ",
+      "reference": "In user's experience In users expereince, one individual does kung fu style push ups gives them the best results.",
+      "adapter_used": "checkpoints/perspective/experience/adapter_best",
+      "adherence_score": 0.07348377257585526,
+      "rouge_l": 0.11111110978458051,
+      "bleu": 0.01016440485130408,
+      "bert_f1": -0.11995816975831985
+    },
+    {
+      "Perspective": "EXPERIENCE",
+      "generated": "<|system|>\nYou are an AI assistant specialized in healthcare summarization. Your task is to summarize medical information from a specific perspective while maintaining accuracy.\n<|user|>\nI need you to summarize the following medical content from the EXPERIENCE perspective.\nEXPERIENCE Definition: Defined as individual experiences, anecdotes, or firsthand insights related to health, medical treatments, medication usage, and coping strategies\nBegin Summary with: In user's experience\nTone of summary: Personal, Narrative\nContent to summarize:\nThe first step in preventing chapped lips is to stop licking. Constant wetting and drying sucks the moisture from lips' outer layer, causing them to feel dry, which prompts more licking, creating a vicious cycle. Dehydrated lips are also more susceptible to dry, windy conditions. -- A moisturizing lip balm, especially those containing dimethicone, will help retain natural moisture and protect dry, chapped lips. -- Drinking lots of water will help prevent dehydration, which may contribute to chapped lips and dry skin. -- Smoothing a generous coating of lip balm on lips before bed will help to moisturize lips while you sleep. -- The sun's UV rays are responsible for 90 percent of visible damage we commonly attribute to aging. A lip balm that contains a sun protection factor (SPF) of at least 15 will help prevent sunburn during outdoor activities, and may reduce the risks of skin aging, skin cancer, and other harmful effects of the sun. -- Regular lipstick products, especially some long-wearing varieties, may feel drying. A base coat of lip balm will add needed moisture during winter months. -- If lips become chapped, avoid wearing lipsticks while lips are recovering as drying products in color pigments may irritate chapped lips. Also keep acidic foods from touching delicate lips until they've healed. -- Lip exfoliators such as Softlips Nightly Care(TM) buff away dry, dead skin cells and stimulate growth of new, vibrant cells. The interactive Beta Hydroxy formula of Softlips Nightly Care(TM) conditions lips that may be sensitive to strong Alpha Hydroxy chemical peels, and the overnight system helps reduce concern about sun damage to freshly exfoliated skin. For more information and tips, see the website below! MEDICATED CHAPSTICK, I PERFER BEES WAX OR BLISTIC, U KNOW ANYTHING LIKE THAT. My 4 year old's daughter's lips are severly chapped, and we can't stop her from licking them, which is what makes them more chapped, or she gets dry mouth from this. -- I was having a chapped lip issue a year ago, I have an autoimmune condition and dry skin issues. I tried many lip balms before, and nothing helped, until I found an organic, non-toxic lip balm which helped me heal my chapped lips. In one of my last experiences, I developed lip cracks and dryness, due to the hot weather. I used some",
+      "reference": "In user's experience In users expereince, one user said they prefer bees wax or blistic. Another users 4-year-old daughter's has severly chapped lips they use a lot of Vaseline at night and heavy Carmex chapstick during the day. It helped them tremendously even though she can't stop licking her lips.",
+      "adapter_used": "checkpoints/perspective/experience/adapter_best",
+      "adherence_score": 0.05009409412741661,
+      "rouge_l": 0.12121211881285587,
+      "bleu": 0.003839102959306276,
+      "bert_f1": -0.1278262734413147
+    },
+    {
+      "Perspective": "EXPERIENCE",
+      "generated": "In user's experience In users expereince, one user recalls having a previous experience with mono during high school",
+      "reference": "In user's experience In users expereince, one user recalls having a previous experience with mono during high school",
+      "adapter_used": "checkpoints/perspective/experience/adapter_best",
+      "adherence_score": 0.9894373416900635,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "Perspective": "EXPERIENCE",
+      "generated": "In user's experience In users expereince, one individual has invisible \"train track ones\" (braces) and they do not care, they keep them clean and smile.",
+      "reference": "In user's experience In users expereince, one individual has invisible \"train track ones\" (braces) and they do not care, they keep them clean and smile.",
+      "adapter_used": "checkpoints/perspective/experience/adapter_best",
+      "adherence_score": 0.9895927906036377,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 0.9999996423721313
+    },
+    {
+      "Perspective": "SUGGESTION",
+      "generated": "It is suggested While being active is beneficial, it's advised to consult a doctor for personalized weight loss guidance. To enhance weight loss efforts, consider incorporating additional strategies, such as walking for 30 minutes before eating at home. Experimenting with food combinations and exercise routines can also contribute to a healthy weight. Additionally, it's suggested to prioritize proper sleep, stay happy, and enjoy life. To further support weight loss, a diet rich in fruits and veggies is recommended, with approximately 100 grams of lean protein daily and at least 1 gallon of water per day.",
+      "reference": "It is suggested While being active is beneficial, it's advised to consult a doctor for personalized weight loss guidance. To enhance weight loss efforts, consider incorporating additional strategies, such as walking for 30 minutes before evening meals, experimenting with food combinations, and trying various exercise routines. Balancing input and output is key, focusing on raw vegetables and fruits to feel full before enjoying other foods. Engaging in a sport or physical activity, even casually, contributes to overall well-being. Prioritize happiness, proper sleep, and enjoyment of life. Additionally, drinking lemon juice with honey tea is suggested, potentially offering additional health benefits. Overall, a multifaceted approach that includes both dietary and lifestyle adjustments can contribute to effective and sustainable weight management.",
+      "adapter_used": "checkpoints/perspective/suggestion/adapter_best",
+      "adherence_score": 0.9830728769302368,
+      "rouge_l": 0.49425286865834334,
+      "bleu": 0.32234901655166737,
+      "bert_f1": 0.5198173522949219
+    },
+    {
+      "Perspective": "SUGGESTION",
+      "generated": "It is suggested To address a yeast infection, the suggestions include reducing sugar intake, consuming yogurt with Lactobacillus acidophilus, opting for breathable clothing, and trying tea tree oil as a douche or topical application. Additionally, obtaining acidophilus from the Vitamin section of a store is recommended, as it not only helps with healing but also has potential preventive benefits when taken regularly.",
+      "reference": "It is suggested To address a yeast infection, the suggestions include reducing sugar intake, consuming yogurt with Lactobacillus acidophilus, opting for breathable clothing, and trying tea tree oil as a douche or topical application. Additionally, obtaining acidophilus from the Vitamin section of a store is recommended, as it not only helps with healing but also has potential preventive benefits when taken regularly.",
+      "adapter_used": "checkpoints/perspective/suggestion/adapter_best",
+      "adherence_score": 0.9837996959686279,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "Perspective": "SUGGESTION",
+      "generated": "It is suggested For dandruff, it is recommended to use effective shampoos such as Neutrogena T/Gel and Nizoral. Daily use is advised until dandruff is under control, typically within a week, and then reduce to once or twice per week for maintenance. Additionally, H.1: Guard shampoo is mentioned without specific details.",
+      "reference": "It is suggested For dandruff, it is recommended to use effective shampoos such as Neutrogena T/Gel and Nizoral. Daily use is advised until dandruff is under control, typically within a week, and then reduce to once or twice per week for maintenance. Additionally, H.1: Guard shampoo is mentioned without specific details.",
+      "adapter_used": "checkpoints/perspective/suggestion/adapter_best",
+      "adherence_score": 0.9775345325469971,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "Perspective": "SUGGESTION",
+      "generated": "It is suggested to go see a doctor if you suspect of bad kidneys.",
+      "reference": "It is suggested to go see a doctor if you suspect of bad kidneys.",
+      "adapter_used": "checkpoints/perspective/suggestion/adapter_best",
+      "adherence_score": 0.98603755235672,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "Perspective": "SUGGESTION",
+      "generated": "It is suggested Apply ice to the affected area for 10-15 minutes each day massage the area, and avoid activities that strain the affected tissue.",
+      "reference": "It is suggested Apply ice to the affected area for 10-15 minutes each day massage the area, and avoid activities that strain the affected tissue.",
+      "adapter_used": "checkpoints/perspective/suggestion/adapter_best",
+      "adherence_score": 0.9848942160606384,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 0.9999996423721313
+    },
+    {
+      "Perspective": "SUGGESTION",
+      "generated": "<|system|>\nYou are an AI assistant specialized in healthcare summarization. Your task is to summarize medical information from a specific perspective while maintaining accuracy.\n<|user|>\nI need you to summarize the following medical content from the SUGGESTION perspective.\nSUGGESTION Definition: Defined as advice or recommendations to assist users in making informed medical decisions, solving problems, or improving health issues.\nBegin Summary with: It is suggested\nTone of summary: Advisory, Recommending\nContent to summarize:\nhome made chicken soup Although it's a bit late now, the cheapest means of getting over a cold is a healthy diet, regular exercise, and a reduction of stress in your lifestyle. That's the best way to PREVENT the cold to begin with, making it the cheapest overall remedy.Here's something interesting: once you're showing the symptoms of a cold (sneezing, body aches, runny nose, etc.) you've already HAD the cold and your body is casting off the byproducts of the virus.And, because a cold is based in a virus, you don't really catch the same cold again. Your body adapts to that viral strain. If you catch another cold right after you just get over your last one, it's a new cold and you came down with it because your immune system was already depressed from the most recent one. Chicken soup and Advil cold&Sinus...works wonderful and just het some rest The least expensive is just plain rest and taking care of yourself.If you've been taking a lot of cold meds, they can mess with your system and cause you to not sleep well.  If it's the stuffiness that keeps you from sleeping try a vaporizer to help clear your sinuses. (A crock pot set on low makes a good vaporizer.  Just be careful where you place it.)For stuffiness and headaches, you can make a mixture of a couple tablespoons of olive oil and a few drops of lavender oil then massage around your eyes. (Don\u2019t get real close to your eye.)  Placing a warm moist cloth over your eyes after the massage will also help. Gargle with 3% H2O2 every hour until relieved. An excellent remedy is ginger tea.Add a small tsp each of ginger pwd, fennel seeds pwd,cinnamon pwd and a pinch of clove pwd to a cup of boiled water and let it sit covered for 10 mts.Strain and drink.You can have this tea a couple of times a cold, every day. Ginger tea is an excellent remedy for cold and flu. It has anti-inflammatory properties to help reduce inflammation.  It is also a natural expectorant to help relieve congestion and coughing. It is also a natural antiseptic to help protect the body from infection. Here are some additional tips for a cold, to help you feel better: Rest. Don't get too stressed, it makes things worse, and it can cause you to overuse your body. Over",
+      "reference": "It is suggested To alleviate a cold, prioritize a healthy lifestyle with a balanced diet, exercise, and stress reduction. Consider using Advil Cold & Sinus for symptom relief and ensure ample rest. For congestion, use a crockpot as a vaporizer, taking caution with placement. Address stuffiness and headaches by massaging a mixture of olive and lavender oil around the eyes, followed by a warm cloth. Gargle with 3% hydrogen peroxide hourly. Try ginger tea by infusing ginger, fennel seeds, cinnamon, and clove in boiled water; consume twice daily.",
+      "adapter_used": "checkpoints/perspective/suggestion/adapter_best",
+      "adherence_score": 0.11301146447658539,
+      "rouge_l": 0.17977527760573164,
+      "bleu": 0.007676245305088936,
+      "bert_f1": 0.015404924750328064
+    },
+    {
+      "Perspective": "SUGGESTION",
+      "generated": "<|system|>\nYou are an AI assistant specialized in healthcare summarization. Your task is to summarize medical information from a specific perspective while maintaining accuracy.\n<|user|>\nI need you to summarize the following medical content from the SUGGESTION perspective.\nSUGGESTION Definition: Defined as advice or recommendations to assist users in making informed medical decisions, solving problems, or improving health issues.\nBegin Summary with: It is suggested\nTone of summary: Advisory, Recommending\nContent to summarize:\nGive it time. With an ear infection you usually have some fluid build up behind the eardrum. Even if the fever is gone, the fluid (and the bacteria in it)can still be there. So the hearing should improve as the fluid goes away and make sure your daughter finishes the full course of the Amoxicillin, or the bacteria in the fluid can start multiplying again and she can end up even sicker than before. I learned this the hard way. If she has had alot of ear infections, i would ask your doc to send her to a specialist. That happened to me over time, and i knew that i couldn't hear well, and it turns out that i had a cyst in my ear canal, and the cyst had damaged my hearing, so they took out 2/3 bones because they weren't fixable.I am doing fine, but it should have been taken care of along time ago. Go and get checked. go see a doctor, by no means at all should you be asking for a diagnosis on Yahoo! answers. also make sure she finishes her meds...thats most important! Like anything else, nothing goes away overnight. Give it time. I've had an ear infection a few years ago and the doctor gave me amoxicillin. I had to take it for about a week to 10 days for it to fully go away.Call your doctor if you have more questions and/or concerns. I once had a ear infection in both ears and when it cleared up It felt like I had cotton in my ears and couldn't hear very well like i did before.  Being that I worked in the nursing filled I knew somehting was not right. I went back to the Doc and he gave me something to DRY it up. I forget the name of the Medicine but they also prescribe it for sinus problems. u do need to take her back to the Doc. That will not clear up on its on\nAssociated medical question: My 6-year-old daughter had an ear infection, and I am worried about her hearing after the infection. The SUGGESTION perspective focuses on providing recommendations and advice to help with hearing and managing the infection. The tone is advisory and recommending. The content emphasizes the importance of waiting and giving it time, finishing the full course of antibiotics, and ensuring proper medication adherence. It also cautions against seeking a diagnosis online and stresses the need to seek a doctor's advice.",
+      "reference": "It is suggested to give it time, otherwise call your doctor for concerns or get it checked out.",
+      "adapter_used": "checkpoints/perspective/suggestion/adapter_best",
+      "adherence_score": 0.1513669639825821,
+      "rouge_l": 0.0968858120415225,
+      "bleu": 0.0030300296534234174,
+      "bert_f1": -0.08900317549705505
+    },
+    {
+      "Perspective": "SUGGESTION",
+      "generated": "It is suggested to consider using decongestant Mucinex.",
+      "reference": "It is suggested to consider using decongestant Mucinex.",
+      "adapter_used": "checkpoints/perspective/suggestion/adapter_best",
+      "adherence_score": 0.9850992560386658,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 0.9999996423721313
+    },
+    {
+      "Perspective": "SUGGESTION",
+      "generated": "It is suggested to schedule an ultrasound to see if you have gallstones or a problem with your gallbladder itself.",
+      "reference": "It is suggested to schedule an ultrasound to see if you have gallstones or a problem with your gallbladder itself.",
+      "adapter_used": "checkpoints/perspective/suggestion/adapter_best",
+      "adherence_score": 0.9845185279846191,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "Perspective": "SUGGESTION",
+      "generated": "It is suggested To increase sperm count, a study suggests taking 5 mg of folic acid and 66 mg of zinc sulfate daily for 26 weeks, resulting in a 74% increase in total normal sperm count. Lifestyle recommendations include quitting smoking, reducing masturbation frequency, wearing boxers, and increasing protein intake. Additionally, a daily intake of 50 mg of zinc and staying hydrated by drinking more water are advised.",
+      "reference": "It is suggested To increase sperm count, a study suggests taking 5 mg of folic acid and 66 mg of zinc sulfate daily for 26 weeks, resulting in a 74% increase in total normal sperm count. Lifestyle recommendations include quitting smoking, reducing masturbation frequency, wearing boxers, and increasing protein intake. Additionally, a daily intake of 50 mg of zinc and staying hydrated by drinking more water are advised.",
+      "adapter_used": "checkpoints/perspective/suggestion/adapter_best",
+      "adherence_score": 0.9783310890197754,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "Perspective": "SUGGESTION",
+      "generated": "<|system|>\nYou are an AI assistant specialized in healthcare summarization. Your task is to summarize medical information from a specific perspective while maintaining accuracy.\n<|user|>\nI need you to summarize the following medical content from the SUGGESTION perspective.\nSUGGESTION Definition: Defined as advice or recommendations to assist users in making informed medical decisions, solving problems, or improving health issues.\nBegin Summary with: It is suggested\nTone of summary: Advisory, Recommending\nContent to summarize:\nHow long is a piece of string? Because that's what you're asking. Forget Jesus too. I mean faith has nothing to do with this. And why the heck do those trolls come here? Anyway, what it comes down to is what state your mental condition is in right now and how it impacts on your quality of life. Obviously it's not too bad at the moment because you've managed to cope with a big move, new city, and no friends around you. Doesn't sound like a person not in complete control of their life to me. Gee, can I ask what exactly you are depressed about?So, my point is that you can only be helped if you're willing to let others help you. This of course means taking advice from someone in a professional enough position to comment on your condition (e.g. how bad it is). Sure, you may need medication or you may not. Why do you refuse to take drugs anyway? You know eventually you may not even have a choice in taking some. Have you thought about that?Overall, my opinion is that I think the first thing you need to do is forget about 5 minute solutions. Depression doesn't work like that. And if you think it does, well, perhaps you need to seek a different diagnosis. A professional one perhaps? I mean Joe Public can only help so much. for me iam at my happiest when i play with video games. but mainly long walks-up to 6 miles 3-4 times a day. plus i get involve with yahoo answers and feel better too. yes i understand ur situation, i would suggest u to join Yoga classes, i bet it will help you. i personaly would suggest The Art of living organisation. check out the link u will findout more. Don't worry, be happey!! I also move to another county years ago and I know what you are talking about. just do not stay at home, go out.... force yourself to go out... go and do some volunteer job, there are plenty of options and you can earn some money while doing it. Get involved in some club. Do it for the experience and because it getting out there and interacting with people. I think you need to go for it and keep it going. I can also suggest you to get a pet. I had a dog, and I love my dog. Having a pet is a good way to feel good. However, get rid of the dog's mess, you don't want to be living",
+      "reference": "It is suggested To overcome depression, faith or religious beliefs may not be a direct solution. Trolls and distractions aside, the key is understanding your current mental state and its impact on your quality of life. Coping with significant changes like a move and lack of friends suggests a degree of control. Seeking help is crucial, and professional advice is essential to determine the severity and appropriate course of action, whether it involves medication or not. Quick fixes are unlikely in depression, and a long-term approach is recommended. Suggestions include joining yoga classes or finding inner sources of happiness. Emphasizing self-discovery, hobbies, and interests can contribute to overall well-being. Prioritizing good sleep and considering counseling to address underlying issues are also valuable steps in improving mood and mental health.",
+      "adapter_used": "checkpoints/perspective/suggestion/adapter_best",
+      "adherence_score": 0.10270571708679199,
+      "rouge_l": 0.17435897057080874,
+      "bleu": 0.016397032717437768,
+      "bert_f1": -0.09075803309679031
+    },
+    {
+      "Perspective": "SUGGESTION",
+      "generated": "It is suggested If you are going to a chiropractor, make sure they are board certified.",
+      "reference": "It is suggested If you are going to a chiropractor, make sure they are board certified.",
+      "adapter_used": "checkpoints/perspective/suggestion/adapter_best",
+      "adherence_score": 0.9863539338111877,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "Perspective": "SUGGESTION",
+      "generated": "It is suggested to consult your pharmacist or doctor for managing hypertension or diabetes. For a productive cough, consider using guaifenesin (e.g., plain Mucinex) to thin mucus, drink ample water, and avoid eating directly from the fridge. For a dry, disruptive cough, a DM product containing dextromethorphan and a teaspoon of honey can provide relief.",
+      "reference": "It is suggested to consult your pharmacist or doctor for managing hypertension or diabetes. For a productive cough, consider using guaifenesin (e.g., plain Mucinex) to thin mucus, drink ample water, and avoid eating directly from the fridge. For a dry, disruptive cough, a DM product containing dextromethorphan and a teaspoon of honey can provide relief.",
+      "adapter_used": "checkpoints/perspective/suggestion/adapter_best",
+      "adherence_score": 0.9805063009262085,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 0.9999992847442627
+    },
+    {
+      "Perspective": "SUGGESTION",
+      "generated": "<|system|>\nYou are an AI assistant specialized in healthcare summarization. Your task is to summarize medical information from a specific perspective while maintaining accuracy.\n<|user|>\nI need you to summarize the following medical content from the SUGGESTION perspective.\nSUGGESTION Definition: Defined as advice or recommendations to assist users in making informed medical decisions, solving problems, or improving health issues.\nBegin Summary with: It is suggested\nTone of summary: Advisory, Recommending\nContent to summarize:\nTry getting a good amount of fiber everyday.  Eat it or take it at the same time.  There are cereals with the daily dose you need also otc medicines you can use everyday.  If this doesn't work ask a doctor. Constipation, infrequent or irregular bowel movements, is no fun for anyone. It can be painful and uncomfortable. Constipation can be attributed to at least one of several factors: poor eating habits, lack of exercise, not eating enough fiber or drinking enough fluids, and even possibly serious illness.Fortunately, there are things one can do to prevent constipation.Since dehydration can lead to constipation, one should always drink at least eight eight-ounce glasses of water each day. It\u2019s best to avoid caffeine since it causes dehydration and can act as a diuretic. Those who do enjoy caffeinated beverages on a regular basis should do so in moderation.A healthy diet is key for preventing constipation. A high fiber diet rich in fruits, vegetables, beans and nuts ensures regularity. Consuming an apple every day, with its skin intact, is another sure way to prevent constipation. Guava is another helpful fruit, but it should be eaten with its seeds to ensure the full effect. Starchy foods should be avoided when one is constipated as this will only escalate the problem.Regular exercise will also assist in one\u2019s quest for regularity. Even if it\u2019s a daily stroll in the park, exercise is important.If you\u2019re feeling a little backed up, perhaps one or some of these remedies can help.Laxatives \u2013 There are many over the counter products to choose from in price ranges and formulas to suit everyone\u2019s personal preference. If you\u2019re not sure which product is right for you, check with your pharmacist or physician. Either is sure to recommend the product that is right for you. Lemon and Honey \u2013 Mix two tablespoons of lemon juice and one teaspoon of honey into a glass of warm water. Drink one glass in the morning and one in the evening to bring back regular bowel movements. Probiotics \u2013 Certain probiotics in the supplements that are available on the market are beneficial to bowel health. Probiotics are available for purchase at any health food store. A daily intake of probiotics can help to establish a regular bowel movement. Apple \u2013 A one-day apple a day keeps the constipation away. This is a simple method to maintain regular bowel movements and can be especially beneficial for individuals who are constipated. Guava \u2013 Eating a guava a day will keep",
+      "reference": "It is suggested Maintaining a proper diet, drinking water regularly, and exercising are crucial for managing constipation. If the condition persists for more than a week, consulting a physician is recommended. Eating fruits, whole-grain breads, and cereals, along with drinking plenty of water, should be attempted before seeking medical advice. In really unlikely scanrios when none of the medications intended for constipation work, it could be bowel constriction which would require immediate medical care and a surgical intervention. To alleviate constipation, one should incorporate a daily intake of fiber through food or supplements, including cereals with the recommended dose. Over-the-counter medicines like laxatives can also be considered. Preventive care measures include drinking at least eight glasses of water daily and minimizing caffeine intake. A healthy diet rich in fiber from fruits, vegetables, beans, and nuts is essential. Regular exercise, even a daily stroll, contributes to regularity. Some other natural remedies include consuming Tomatoes, Sauerkraut, and Carrot Juice,Castor Oil and Honey, Grapes, Licorice, Orange Juice and Olive Oil.",
+      "adapter_used": "checkpoints/perspective/suggestion/adapter_best",
+      "adherence_score": 0.1445227712392807,
+      "rouge_l": 0.26923076497041426,
+      "bleu": 0.011891425208236843,
+      "bert_f1": 0.014352502301335335
+    },
+    {
+      "Perspective": "SUGGESTION",
+      "generated": "It is suggested Regarding the suggestion of lorazepam, it's cautioned against unless experiencing panic attacks, as it's intended for as-needed use. For general anxiety, consulting a doctor about Paxil is recommended. The alternative advice emphasizes self-control, encouraging individuals to take charge of their minds. There's a note of caution about the dependency created by antidepressant drugs like Paxil and Prozac, and a preference is expressed for non-pharmacological approaches such as sports, music, walks, and dance. Additionally, the suggestion to discuss Lorazepam with a doctor is reiterated, while humorously including tequila shots as a less conventional but potentially effective remedy depending on the severity of the situation.",
+      "reference": "It is suggested Regarding the suggestion of lorazepam, it's cautioned against unless experiencing panic attacks, as it's intended for as-needed use. For general anxiety, consulting a doctor about Paxil is recommended. The alternative advice emphasizes self-control, encouraging individuals to take charge of their minds. There's a note of caution about the dependency created by antidepressant drugs like Paxil and Prozac, and a preference is expressed for non-pharmacological approaches such as sports, music, walks, and dance. Additionally, the suggestion to discuss Lorazepam with a doctor is reiterated, while humorously including tequila shots as a less conventional but potentially effective remedy depending on the severity of the situation.",
+      "adapter_used": "checkpoints/perspective/suggestion/adapter_best",
+      "adherence_score": 0.9807358980178833,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 0.9999996423721313
+    },
+    {
+      "Perspective": "SUGGESTION",
+      "generated": "It is suggested For relief, the suggestion is to try Pepto Bismol and suck on ice cubes, a remedy that has worked for the speaker in the past. However, if the individual feels genuinely unwell, it is strongly advised to go home to avoid spreading illness. The speaker emphasizes the importance of recognizing when one is not feeling 100% well, especially if it affects work performance. If things don't seem right or if the condition persists, the recommendation is to either rest or seek medical attention promptly.",
+      "reference": "It is suggested For relief, the suggestion is to try Pepto Bismol and suck on ice cubes, a remedy that has worked for the speaker in the past. However, if the individual feels genuinely unwell, it is strongly advised to go home to avoid spreading illness. The speaker emphasizes the importance of recognizing when one is not feeling 100% well, especially if it affects work performance. If things don't seem right or if the condition persists, the recommendation is to either rest or seek medical attention promptly.",
+      "adapter_used": "checkpoints/perspective/suggestion/adapter_best",
+      "adherence_score": 0.9809765219688416,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "Perspective": "SUGGESTION",
+      "generated": "It is suggested to call a doctor if you have a build under your arms.",
+      "reference": "It is suggested to call a doctor if you have a build under your arms.",
+      "adapter_used": "checkpoints/perspective/suggestion/adapter_best",
+      "adherence_score": 0.9866913557052612,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "Perspective": "SUGGESTION",
+      "generated": "<|system|>\nYou are an AI assistant specialized in healthcare summarization. Your task is to summarize medical information from a specific perspective while maintaining accuracy.\n<|user|>\nI need you to summarize the following medical content from the SUGGESTION perspective.\nSUGGESTION Definition: Defined as advice or recommendations to assist users in making informed medical decisions, solving problems, or improving health issues.\nBegin Summary with: It is suggested\nTone of summary: Advisory, Recommending\nContent to summarize:\nWell, situps are a waste of time.  Some people do like as much sit ups as they can to achieve that 6 pack.  And to be honest, some never get it.  Its cuz the muscles arent big enough to show a 6 pack.  There was never enough resistance to get it.  I dont recommend any type of sit ups.  I do a kung fu style push up that gives you the best results.  Imagine, everybody can do like 10 or 20, maybe 100 sit ups, but with this, some cannot even do one.  But, just because you cant do one doesnt mean you havent done any work.  Eventually, after trying every day, you will be able to do one.  And then 2, 3, and slowly you work your way to like 25.  You only need to do about 15 to 20 per day to keep that 6 pack after its there.  You lay flat on the floor on your stomach.  Then you prop your feet up in push up position.  Now you put your hands out there on the floor.  Now put them together so that they are just touching.  Now, try to do a push up.  Keep your back as straight as possible.  When you first do this, your back will have a tendency to bend because you are trying to do at least one.  Hehe.  Um, I used to be able to do 50 of these easy.  After I get it, it was a cinch.  It will take you like 1 to 2 minutes a day trying to do like 20.  Thats all it takes to keep your 6 pack.  I used to do crunches.  Elbows to knees.  They arent bad, but this is far better.  Because doing crunches, you might not be able to sit on the floor with your legs out, and lift your body.  You cant lift your body and prop up your feet.  You have to have a flat stomach.  With the kung fu push up, you can have a flat stomach and a 6 pack.  You should do it every day.  You will see it in a month.  You should do it daily.",
+      "reference": "It is suggested that incorporating a variety of exercises, particularly emphasizing crunches and oblique-focused movements, can be more effective in achieving a well-defined \"six-pack\" compared to traditional sit-ups. This approach recognizes the need for diverse and targeted abdominal workouts, suggesting that relying solely on sit-ups may not be as impactful for building core strength and definition. Individuals seeking abdominal development are encouraged to explore alternative exercises to better engage and challenge their muscles, potentially yielding more favorable results in sculpting the desired abdominal physique.",
+      "adapter_used": "checkpoints/perspective/suggestion/adapter_best",
+      "adherence_score": 0.048533715307712555,
+      "rouge_l": 0.12413792740808573,
+      "bleu": 0.003909686300166606,
+      "bert_f1": -0.160864919424057
+    },
+    {
+      "Perspective": "SUGGESTION",
+      "generated": "It is suggested Hyperhidrosis, characterized by excessive sweating, can be addressed through specific drugs, surgery limiting gland water secretion, and a French mineral-based antiperspirant. Botox is effective, and surgery is an option if needed. Consultation with a specialist is recommended for personalized guidance.",
+      "reference": "It is suggested Hyperhidrosis, characterized by excessive sweating, can be addressed through specific drugs, surgery limiting gland water secretion, and a French mineral-based antiperspirant. Botox is effective, and surgery is an option if needed. Consultation with a specialist is recommended for personalized guidance.",
+      "adapter_used": "checkpoints/perspective/suggestion/adapter_best",
+      "adherence_score": 0.9666801691055298,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "Perspective": "SUGGESTION",
+      "generated": "It is suggested To alleviate a cold, the recommended approach involves prioritizing fluids and rest, with the suggestion that a hot shower can provide some relief. Additionally, drinking tea, particularly herbal tea, is mentioned as a beneficial remedy.",
+      "reference": "It is suggested To alleviate a cold, the recommended approach involves prioritizing fluids and rest, with the suggestion that a hot shower can provide some relief. Additionally, drinking tea, particularly herbal tea, is mentioned as a beneficial remedy.",
+      "adapter_used": "checkpoints/perspective/suggestion/adapter_best",
+      "adherence_score": 0.9827536344528198,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "Perspective": "SUGGESTION",
+      "generated": "<|system|>\nYou are an AI assistant specialized in healthcare summarization. Your task is to summarize medical information from a specific perspective while maintaining accuracy.\n<|user|>\nI need you to summarize the following medical content from the SUGGESTION perspective.\nSUGGESTION Definition: Defined as advice or recommendations to assist users in making informed medical decisions, solving problems, or improving health issues.\nBegin Summary with: It is suggested\nTone of summary: Advisory, Recommending\nContent to summarize:\neat 4-6 small meals every day instead of 2 or 3 large ones - pay attention to portion sizes when you do this... eat a variety of proteins, carbs, fruits, and veggies, and drink tons of water! Dehydrated fat cells stick together causing them to stick to you! When you drink water, it hydrates the fat cells and makes them separate so they can be flushed out... If you do nothing else in the area of exercise - walk for 30 minutes a day. Even if you have to separate it into time blocks, every step you take is another step you hadn't taken before. *If you have a salty-tooth but don't want to eat anything really heavy - try popcorn with limited salt/butter.*For a sweet-tooth that can't be appeased by fruits, eat cotton candy... even though it's pure sugar, you have to eat a TON of it for the calories to really add up :) Google your ideal caloric intake based on your age, height, and weight. There are 3500 calories in a pound. And let's say for example you need 2000 calories per day. If you cut back to 1500, then you would lose 1lb per week. If you exercise, and burn an additional 300 calories per day, then you would lose almost 2lbs per week. Forget all the fad diets. This works! I promise! This may sound trite, but look at the Food Guide Pyramid.  Eat from all of the food groups listed, including the recommended daily allowance of each.  I think serving sizes is the key!  How many slices of  pizza constitutes a serving size?  Do we really only eat one cup of cereal in the morning?  How often do we really eat 5 or more servings of veggies every day?Calcium plays a big part in metabolism and weight loss, so drink your milk!  Also, be sure to drink the appropriate amount of water each day. Aim for at least 8 cups of water. And remember to eat something before going to bed, even if it's just an apple. It's a great way to keep you full until morning and reduce hunger in the suggestions provided.",
+      "reference": "It is suggested to adopt healthy dietary habits and exercise for effective weight management. The recommendation includes consuming 4-6 small meals daily, paying attention to portion sizes, and incorporating a diverse range of proteins, carbs, fruits, and vegetables while staying well-hydrated. Additionally, a daily 30-minute walk is suggested, along with alternatives for satisfying specific cravings, such as popcorn or cotton candy. The advice underscores the importance of understanding individual caloric needs and emphasizes balanced nutrition over fad diets. Following the Food Guide Pyramid, focusing on proper serving sizes, considering calcium for metabolism, and maintaining adequate water intake are crucial aspects. The guidance also suggests eating smaller portions, increasing physical activity, and combining proteins with vegetables while being mindful of certain carb combinations. Starting the day with energy-boosting foods, like fresh-squeezed fruits or vegetables, is recommended for overall well-being.",
+      "adapter_used": "checkpoints/perspective/suggestion/adapter_best",
+      "adherence_score": 0.14849956333637238,
+      "rouge_l": 0.2176165761486215,
+      "bleu": 0.02359128013543634,
+      "bert_f1": 0.008265402168035507
+    },
+    {
+      "Perspective": "SUGGESTION",
+      "generated": "It is suggested to start your hormonal brith control early to shorten your period or take a couple of aspirins to lighten it.",
+      "reference": "It is suggested to start your hormonal brith control early to shorten your period or take a couple of aspirins to lighten it.",
+      "adapter_used": "checkpoints/perspective/suggestion/adapter_best",
+      "adherence_score": 0.9856879711151123,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "Perspective": "SUGGESTION",
+      "generated": "It is suggested It is inquired if the woman in question was on the pill.",
+      "reference": "It is suggested It is inquired if the woman in question was on the pill.",
+      "adapter_used": "checkpoints/perspective/suggestion/adapter_best",
+      "adherence_score": 0.057613372802734375,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    },
+    {
+      "Perspective": "SUGGESTION",
+      "generated": "It is suggested To prevent boils, the individual suggests avoiding tight clothing. They recommend consulting a doctor if boils persist. Additionally, they propose avoiding acidic foods like citrus, tomatoes, and caffeine products, and trying to eliminate them for three weeks. If successful, the individual suggests continuing this dietary approach. They also recommend searching the internet for articles on acidity.",
+      "reference": "It is suggested To prevent boils, the individual suggests avoiding tight clothing. They recommend consulting a doctor if boils persist. Additionally, they propose avoiding acidic foods like citrus, tomatoes, and caffeine products, and trying to eliminate them for three weeks. If successful, the individual suggests continuing this dietary approach. They also recommend searching the internet for articles on acidity.",
+      "adapter_used": "checkpoints/perspective/suggestion/adapter_best",
+      "adherence_score": 0.9829459190368652,
+      "rouge_l": 0.999999995,
+      "bleu": 1.0,
+      "bert_f1": 1.0
+    }
+  ]
+}
