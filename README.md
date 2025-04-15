@@ -1,3 +1,5 @@
+# PERSPECTIVE-AWARE HEALTHCARE SUMMARIZATION
+
 <p>This repository implements perspective-specific summarization for healthcare Q&A platforms, creating targeted summaries for distinct perspectives (suggestion, information, cause, experience, question) while preserving original intent.</p>
 
 <h2>Project Overview</h2>
@@ -12,9 +14,9 @@
 
 <p>This architecture integrates a RoBERTa-based classifier and custom energy-based loss function with three components:</p>
 <ul>
-    <li><strong>E<sub>p</sub></strong> (Perspective Confidence): Uses classifier confidence to guide generation</li>
-    <li><strong>E<sub>s</sub></strong> (Lead Phrase Alignment): Measures alignment with perspective-specific phrases</li>
-    <li><strong>E<sub>t</sub></strong> (Semantic Similarity): Captures semantic relevance via BERT embeddings</li>
+   <li><strong>E<sub>p</sub></strong> (Perspective Confidence): Uses classifier confidence to guide generation</li>
+   <li><strong>E<sub>s</sub></strong> (Lead Phrase Alignment): Measures alignment with perspective-specific phrases</li>
+   <li><strong>E<sub>t</sub></strong> (Semantic Similarity): Captures semantic relevance via BERT embeddings</li>
 </ul>
 
 <p><a href="https://drive.google.com/drive/folders/1UknRONU4x4oi7zSOgEvTxO4xh5f3MjCq?usp=sharing">Model Codebase</a> | <a href="https://drive.google.com/drive/folders/1Ats3koAJmDejcj40p_vLkqagCHVgb6et?usp=sharing">Checkpoints</a></p>
@@ -23,9 +25,9 @@
 
 <p>A two-stage fine-tuning pipeline on LLaMA 3.2B-Instruct:</p>
 <ul>
-    <li>First stage: Train a <strong>medical adapter</strong> on domain-specific dataset</li>
-    <li>Second stage: Train a <strong>perspective adapter</strong> using structured prompts and summaries guided by RoBERTa classifier</li>
-    <li>Uses energy-based loss to encourage perspective alignment</li>
+   <li>First stage: Train a <strong>medical adapter</strong> on domain-specific dataset</li>
+   <li>Second stage: Train a <strong>perspective adapter</strong> using structured prompts and summaries guided by RoBERTa classifier</li>
+   <li>Uses energy-based loss to encourage perspective alignment</li>
 </ul>
 
 <p><a href="https://drive.google.com/drive/folders/1EQ7ywKsDVpsP4keDbSUqqRTKP1j1Lk2l">RoBERTa Classifier</a> | <a href="https://drive.google.com/drive/folders/1rAMX6HIV0KuIojrynFLn9sPG2GirQK1f">Medical Adapter</a> | <a href="https://drive.google.com/drive/folders/1I-aShHCAlNOCbyooiixOG6xH0Fwd49rn">Perspective Adapter</a></p>
@@ -34,9 +36,9 @@
 
 <p>Creates separate adapters for each perspective category using LLaMA 3.2B model:</p>
 <ul>
-    <li>Individual adapters help identify perspectives with greater accuracy</li>
-    <li>Uses Cross Entropy Loss during training</li>
-    <li>LoRA-based PEFT on 4-bit quantized model</li>
+   <li>Individual adapters help identify perspectives with greater accuracy</li>
+   <li>Uses Cross Entropy Loss during training</li>
+   <li>LoRA-based PEFT on 4-bit quantized model</li>
 </ul>
 
 <p><a href="https://drive.google.com/drive/folders/1_7VS6Y1daxTzGE6VK64cM-WYFj83Jmq7?usp=sharing">RoBERTa Classifier</a> | <a href="https://drive.google.com/drive/folders/1HF8Nx4Cb0RZTVt1t7ySzMFaO-iYl8fe4?usp=sharing">Perspective-Specific Adapters</a></p>
@@ -46,9 +48,9 @@
 <p>The table below presents a direct comparison of performance metrics across all models:</p>
 
 <table>
-    <tr>
-        <th>Metric</th>
-        <th>Model 2<br>(Baseline)</th>
+   <tr>
+   	<th>Metric</th>
+	<th>Model 2<br>(Baseline)</th>
         <th>Model 3</th>
         <th>Model 4</th>
         <th>Model 5</th>
@@ -95,13 +97,13 @@
 <p>The evaluation results reveal interesting patterns across models:</p>
 
 <ul>
-    <li><strong>Model 3 (Tiny LLaMA 3.2B-Instruct)</strong> demonstrates the highest performance across most metrics, particularly in ROUGE scores and BERTScore, indicating strong lexical and semantic alignment with reference summaries.</li>
+   <li> <strong>Model 3 (Tiny LLaMA 3.2B-Instruct)</strong> demonstrates the highest performance across most metrics, particularly in ROUGE scores and BERTScore, indicating strong lexical and semantic alignment with reference summaries.</li>
     
-    <li><strong>Model 2 (Baseline)</strong> shows moderate performance with room for improvement, particularly in capturing n-gram overlap.</li>
+   <li><strong>Model 2 (Baseline)</strong> shows moderate performance with room for improvement, particularly in capturing n-gram overlap.</li>
     
-    <li><strong>Models 4 and 5</strong> show lower ROUGE scores but relatively strong BLEU scores, suggesting they may generate summaries that are less lexically aligned with references but maintain semantic coherence.</li>
+   <li><strong>Models 4 and 5</strong> show lower ROUGE scores but relatively strong BLEU scores, suggesting they may generate summaries that are less lexically aligned with references but maintain semantic coherence.</li>
     
-    <li>The BERTScore comparison reveals smaller variance across models than other metrics, indicating all approaches maintain semantic relevance to a reasonable degree.</li>
+   <li>The BERTScore comparison reveals smaller variance across models than other metrics, indicating all approaches maintain semantic relevance to a reasonable degree.</li>
 </ul>
 
 <h2>Conclusion</h2>
